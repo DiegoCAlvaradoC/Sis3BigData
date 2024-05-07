@@ -39,6 +39,32 @@ class SelectDoc extends StatelessWidget {
                   if (filePath != null) {
                     // Your code here to handle the selected file
                     // For example, you can display the file name or upload it to a server
+                    // alert to create a decision treee
+                    // Navigator.pushNamed(context, '/decision_tree', arguments: filePath);
+                    // ignore: use_build_context_synchronously
+                    showDialog(
+                        context: context,
+                        builder: (BuildContext context) {
+                          return AlertDialog(
+                            title: const Text('File Selected'),
+                            content: Text('Selected file: $filePath'),
+                            actions: <Widget>[
+                              MyButton(
+                                text: "OK",
+                                fontSize: 20,
+                                width:
+                                    3 / 5 * MediaQuery.of(context).size.width,
+                                height: MediaQuery.of(context).size.height / 11,
+                                color: AppTheme.secondary,
+                                textColor: Colors.white,
+                                onPressed: () {
+                                  Navigator.pushNamed(context, '/decision_tree',
+                                      arguments: filePath);
+                                },
+                              )
+                            ],
+                          );
+                        });
                     print('Selected file: $filePath');
                   }
                 } else {
