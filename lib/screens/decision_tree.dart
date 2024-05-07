@@ -7,11 +7,15 @@ import 'package:file_picker/file_picker.dart';
 
 class DecisionTree extends StatelessWidget {
   //get file path from arguments
-  final String? filePath;
 
-  const DecisionTree({Key? key, required this.filePath}) : super(key: key);
+  const DecisionTree({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
+    final arguments = ModalRoute.of(context)?.settings.arguments;
+    final String? filePath = arguments as String?;
+    print("decision tree");
+    print(filePath);
+
     return Scaffold(
       appBar: MyAppBar(
         title: "Decision Tree",
@@ -22,18 +26,13 @@ class DecisionTree extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            MyButton(
-              text: "Create Decision Tree",
-              fontSize: 20,
-              width: 3 / 5 * MediaQuery.of(context).size.width,
-              height: MediaQuery.of(context).size.height / 11,
-              color: AppTheme.secondary,
-              textColor: Colors.white,
-              onPressed: () async {
-                //Create Decision Tree
-                // ...
-              },
-            ),
+            MyText(
+              bold: true,
+              text: filePath,
+              color: AppTheme.primary,
+              fontSize: 25,
+              textAlign: TextAlign.center,
+            )
           ],
         ),
       ),

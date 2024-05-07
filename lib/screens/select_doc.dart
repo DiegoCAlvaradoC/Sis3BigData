@@ -58,6 +58,7 @@ class SelectDoc extends StatelessWidget {
                                 color: AppTheme.secondary,
                                 textColor: Colors.white,
                                 onPressed: () {
+                                  Navigator.pop(context);
                                   Navigator.pushNamed(context, '/decision_tree',
                                       arguments: filePath);
                                 },

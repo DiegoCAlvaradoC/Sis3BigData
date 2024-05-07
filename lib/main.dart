@@ -17,9 +17,7 @@ class MyApp extends StatelessWidget {
       initialRoute: "/",
       routes: {
         "/": (context) => const SelectDoc(),
-        "/decision_tree": (context) => const DecisionTree(
-              filePath: '',
-            ),
+        "/decision_tree": (context) => const DecisionTree(),
       },
     );
   }
