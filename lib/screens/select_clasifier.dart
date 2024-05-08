@@ -18,14 +18,23 @@ class SelectClasifier extends StatelessWidget {
 
     return Scaffold(
       appBar: MyAppBar(
-        title: "Decision Tree",
+        title: "Select Classifier",
         fontSize: 25,
         color: Colors.white,
       ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisSize: MainAxisSize.max,
           children: [
+            Center(
+                child: MyText(
+                    text: "Seleccionar Clasificador para $filePath",
+                    fontSize: 15,
+                    color: AppTheme.primary,
+                    bold: true)),
+            SizedBox(height: 20),
+            MyDropdown(),
             MyButton(
               text: "Create Decision Tree",
               fontSize: 20,
@@ -33,7 +42,9 @@ class SelectClasifier extends StatelessWidget {
               height: MediaQuery.of(context).size.height / 11,
               color: AppTheme.secondary,
               textColor: Colors.white,
+              onPressed: () {},
             ),
+            SizedBox(height: 20),
             MyButton(
               text: "Create Random Forest",
               fontSize: 20,
@@ -41,14 +52,17 @@ class SelectClasifier extends StatelessWidget {
               height: MediaQuery.of(context).size.height / 11,
               color: AppTheme.secondary,
               textColor: Colors.white,
+              onPressed: () {},
             ),
+            SizedBox(height: 20),
             MyButton(
-              text: "Multilayer Perceptron",
+              text: "Create Multilayer Perceptron",
               fontSize: 20,
               width: 3 / 5 * MediaQuery.of(context).size.width,
               height: MediaQuery.of(context).size.height / 11,
               color: AppTheme.secondary,
               textColor: Colors.white,
+              onPressed: () {},
             ),
           ],
         ),

@@ -8,7 +8,7 @@ class ShowResult extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return const Scaffold(
         appBar: MyAppBar(
           color: Colors.white,
           fontSize: 25,

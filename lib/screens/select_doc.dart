@@ -33,7 +33,7 @@ class SelectDoc extends StatelessWidget {
 
                 if (result != null) {
                   // Get the file path
-                  String? filePath = result.files.single.path;
+                  String? filePath = result.files.single.name;
 
                   // Do something with the selected file
                   if (filePath != null) {
@@ -49,19 +49,40 @@ class SelectDoc extends StatelessWidget {
                             title: const Text('File Selected'),
                             content: Text('Selected file: $filePath'),
                             actions: <Widget>[
-                              MyButton(
-                                text: "OK",
-                                fontSize: 20,
-                                width:
-                                    3 / 5 * MediaQuery.of(context).size.width,
-                                height: MediaQuery.of(context).size.height / 11,
-                                color: AppTheme.secondary,
-                                textColor: Colors.white,
-                                onPressed: () {
-                                  Navigator.pop(context);
-                                  Navigator.pushNamed(context, '/decision_tree',
-                                      arguments: filePath);
-                                },
+                              Row(
+                                children: [
+                                  MyButton(
+                                    text: "OK",
+                                    fontSize: 20,
+                                    width: 2 /
+                                        5 *
+                                        MediaQuery.of(context).size.width,
+                                    height:
+                                        MediaQuery.of(context).size.height / 11,
+                                    color: AppTheme.secondary,
+                                    textColor: Colors.white,
+                                    onPressed: () {
+                                      Navigator.pop(context);
+                                      Navigator.pushNamed(
+                                          context, '/decision_tree',
+                                          arguments: filePath);
+                                    },
+                                  ),
+                                  MyButton(
+                                    text: "Cancel",
+                                    fontSize: 20,
+                                    width: 2 /
+                                        5 *
+                                        MediaQuery.of(context).size.width,
+                                    height:
+                                        MediaQuery.of(context).size.height / 11,
+                                    color: AppTheme.alert,
+                                    textColor: Colors.white,
+                                    onPressed: () {
+                                      Navigator.pop(context);
+                                    },
+                                  ),
+                                ],
                               )
                             ],
                           );
