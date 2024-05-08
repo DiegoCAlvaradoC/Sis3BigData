@@ -1,4 +1,4 @@
-import 'package:big_data/screens/decision_tree.dart';
+import 'package:big_data/screens/select_clasifier.dart';
 import 'package:big_data/screens/select_doc.dart';
 import 'package:flutter/material.dart';
 
@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
       initialRoute: "/",
       routes: {
         "/": (context) => const SelectDoc(),
-        "/decision_tree": (context) => const DecisionTree(),
+        "/decision_tree": (context) => const SelectClasifier(),
       },
     );
   }
