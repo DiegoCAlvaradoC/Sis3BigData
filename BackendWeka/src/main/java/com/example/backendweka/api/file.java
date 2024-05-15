@@ -56,7 +56,7 @@ import weka.core.converters.ConverterUtils.DataSource;
 @RestController
 public class file {
 
-    public Instances DataLoad = null;
+    public Instances DataLoad;
 
     // Funcion para cargar el archivo CSV y guardarlo
     @PostMapping("/upload")
@@ -75,27 +75,26 @@ public class file {
             // Cargar archivo CSV
             CSVLoader loader = new CSVLoader();
             loader.setSource(file.getInputStream());
-            Instances data = loader.getDataSet();
+            DataLoad = loader.getDataSet();
+
 
             // Agregar la funcionalidad para convertir atributos String a Nominal
-            for (int i = 0; i < data.numAttributes(); i++) {
-                if (data.attribute(i).isString()) {
+            for (int i = 0; i < DataLoad.numAttributes(); i++) {
+                if (DataLoad.attribute(i).isString()) {
                     // Convertir el atributo de tipo String a Nominal
                     StringToNominal filter = new StringToNominal();
                     String[] options = {"-R", String.valueOf(i + 1)}; // i+1 porque los índices en Weka comienzan desde 1
                     filter.setOptions(options);
-                    filter.setInputFormat(data);
-                    data = weka.filters.Filter.useFilter(data, filter);
+                    filter.setInputFormat(DataLoad);
+                    DataLoad = weka.filters.Filter.useFilter(DataLoad, filter);
                 }
             }
 
             // Guardar como ARFF
             ArffSaver saver = new ArffSaver();
-            saver.setInstances(data);
+            saver.setInstances(DataLoad);
             saver.setFile(new java.io.File("DataCleanWEKA.arff"));
             saver.writeBatch();
-
-            DataLoad = data;
 
             System.out.println("Archivo ARFF creado con éxito.");
         } catch (Exception e) {
@@ -283,9 +282,9 @@ public class file {
     public Map<String, Integer> getARFFMetadata() {
         Map<String, Integer> metadata = new HashMap<>();
         try {
-            String filename = "dataset_modified.arff"; // Nombre del archivo ARFF
-            DataSource source = new DataSource(filename);
-            Instances data = source.getDataSet();
+            //String filename = "dataset_modified.arff"; // Nombre del archivo ARFF
+            //DataSource source = new DataSource(filename);
+            Instances data = DataLoad; // Cargar el archivo ARFF
 
             // Obtener nombres de las columnas y sus índices
             for (int i = 0; i < data.numAttributes(); i++) {
