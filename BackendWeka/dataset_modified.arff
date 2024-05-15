@@ -1,0 +1,315 @@
+@relation DataClean-weka.filters.unsupervised.attribute.StringToNominal-R11-weka.filters.unsupervised.attribute.StringToNominal-R12
+
+@attribute Sexo {Female,Male}
+@attribute Promedio12 numeric
+@attribute UltimoAnio {'2nd Year','1st Year','3rd Year','4th Year',Postgraduate}
+@attribute Facultad {'Arts & Social Sciences','Economic & Management Sciences',AgriSciences,Engineering,Science,Law,'Medicine and Health Services',Education}
+@attribute 'Promedio2023\%' numeric
+@attribute Asignacion {'R 4001- R 5000','R 7001 - R 8000','R 6001 - R 7000','R 5001 - R 6000','R 8000+'}
+@attribute Beca {No,Yes}
+@attribute HorasEstudio {8+,3-5,1-3,5-8,0}
+@attribute Fiestas {'Only weekends',2,3,1,4+,0}
+@attribute Bebidas {8+,3-5,5-8,1-3,0}
+@attribute ClasesPerdidas {3,4+,2,1,0}
+@attribute ModulosSuspendidos {0,3,4+,1,2}
+@attribute Relacion {Yes,No}
+@attribute AprobacionPadres {Yes,No}
+@attribute RelacionPadres {'Very close',Fair,Close,Distant}
+
+@data
+Female,76,'2nd Year','Arts & Social Sciences',72,'R 4001- R 5000',No,8+,'Only weekends',8+,3,0,Yes,Yes,'Very close'
+Male,89,'2nd Year','Economic & Management Sciences',75,'R 7001 - R 8000',Yes,8+,'Only weekends',3-5,4+,0,No,Yes,'Very close'
+Male,76,'1st Year',AgriSciences,55,'R 4001- R 5000',No,3-5,2,8+,3,0,No,Yes,'Very close'
+Male,89,'2nd Year',Engineering,84,'R 6001 - R 7000',No,3-5,3,8+,2,0,Yes,Yes,'Very close'
+Female,74,'2nd Year','Arts & Social Sciences',52,'R 4001- R 5000',No,3-5,'Only weekends',5-8,1,3,No,Yes,Fair
+Male,80,'2nd Year','Economic & Management Sciences',54,'R 5001 - R 6000',No,8+,2,5-8,1,0,No,Yes,'Very close'
+Female,85,'2nd Year','Arts & Social Sciences',75,'R 5001 - R 6000',No,3-5,3,3-5,2,0,Yes,Yes,'Very close'
+Female,80,'2nd Year','Arts & Social Sciences',75,'R 6001 - R 7000',No,8+,3,8+,0,0,No,Yes,Close
+Male,79,'2nd Year','Economic & Management Sciences',64,'R 5001 - R 6000',No,3-5,2,3-5,2,4+,No,Yes,'Very close'
+Female,72,'2nd Year','Economic & Management Sciences',76,'R 6001 - R 7000',No,1-3,1,3-5,0,0,Yes,Yes,'Very close'
+Female,87,'1st Year',Science,75,'R 4001- R 5000',No,8+,'Only weekends',1-3,0,0,No,Yes,'Very close'
+Male,74,'1st Year','Economic & Management Sciences',65,'R 5001 - R 6000',No,1-3,4+,5-8,0,0,Yes,Yes,'Very close'
+Male,69,'2nd Year','Arts & Social Sciences',55,'R 6001 - R 7000',No,5-8,'Only weekends',5-8,3,3,No,Yes,'Very close'
+Male,79,'2nd Year','Economic & Management Sciences',54,'R 5001 - R 6000',No,5-8,2,0,0,1,No,Yes,Fair
+Male,80,'2nd Year',Engineering,62,'R 4001- R 5000',Yes,8+,'Only weekends',5-8,0,2,No,Yes,'Very close'
+Female,83,'2nd Year',Law,55,'R 4001- R 5000',No,1-3,'Only weekends',3-5,2,4+,No,Yes,'Very close'
+Female,78,'1st Year','Economic & Management Sciences',76,'R 6001 - R 7000',No,8+,2,3-5,2,0,No,Yes,'Very close'
+Male,74,'2nd Year','Arts & Social Sciences',65,'R 6001 - R 7000',No,3-5,2,8+,2,2,No,Yes,'Very close'
+Male,83,'3rd Year',Engineering,69,'R 5001 - R 6000',No,8+,'Only weekends',3-5,0,0,Yes,Yes,'Very close'
+Male,79,'2nd Year',Engineering,60,'R 8000+',No,5-8,'Only weekends',8+,1,3,No,Yes,'Very close'
+Female,83,'2nd Year','Economic & Management Sciences',55,'R 5001 - R 6000',No,8+,'Only weekends',1-3,0,1,No,Yes,'Very close'
+Female,79,'1st Year','Economic & Management Sciences',74,'R 6001 - R 7000',No,3-5,3,5-8,0,0,No,Yes,'Very close'
+Male,87,'2nd Year',Engineering,70,'R 5001 - R 6000',No,8+,1,5-8,0,0,No,Yes,'Very close'
+Male,84,'1st Year',Engineering,60,'R 4001- R 5000',No,8+,'Only weekends',5-8,0,0,No,Yes,'Very close'
+Male,86,'2nd Year','Economic & Management Sciences',54,'R 5001 - R 6000',No,5-8,1,5-8,2,1,Yes,Yes,'Very close'
+Female,80,'2nd Year',Science,75,'R 6001 - R 7000',No,8+,1,3-5,0,1,Yes,Yes,'Very close'
+Male,80,'1st Year','Economic & Management Sciences',63,'R 4001- R 5000',No,3-5,0,8+,2,0,No,Yes,'Very close'
+Male,78,'2nd Year','Economic & Management Sciences',73,'R 5001 - R 6000',No,5-8,2,5-8,2,0,No,Yes,'Very close'
+Male,73,'1st Year','Economic & Management Sciences',57,'R 5001 - R 6000',No,5-8,1,8+,2,3,Yes,Yes,Close
+Male,99,'2nd Year','Economic & Management Sciences',90,'R 4001- R 5000',No,5-8,'Only weekends',3-5,3,4+,No,Yes,'Very close'
+Female,82.6,'2nd Year','Arts & Social Sciences',75,'R 4001- R 5000',No,8+,3,1-3,0,0,Yes,Yes,Close
+Female,78,'1st Year','Economic & Management Sciences',78,'R 8000+',No,1-3,3,5-8,2,0,Yes,Yes,Close
+Female,65,'2nd Year','Economic & Management Sciences',55,'R 4001- R 5000',No,3-5,1,3-5,2,4+,Yes,Yes,'Very close'
+Male,84,'2nd Year','Economic & Management Sciences',70,'R 5001 - R 6000',No,1-3,1,8+,4+,0,Yes,Yes,'Very close'
+Male,81,'2nd Year','Economic & Management Sciences',60,'R 6001 - R 7000',No,1-3,2,5-8,0,3,Yes,Yes,'Very close'
+Male,76,'1st Year','Arts & Social Sciences',61,'R 5001 - R 6000',No,3-5,1,1-3,0,0,Yes,Yes,'Very close'
+Male,76,'2nd Year','Economic & Management Sciences',63,'R 4001- R 5000',No,8+,0,5-8,0,0,Yes,Yes,Close
+Female,88,'1st Year','Economic & Management Sciences',60,'R 5001 - R 6000',No,1-3,1,1-3,0,1,Yes,Yes,'Very close'
+Male,75,'2nd Year','Economic & Management Sciences',57,'R 8000+',No,5-8,'Only weekends',1-3,1,2,No,Yes,Close
+Male,84,'1st Year',Science,74,'R 4001- R 5000',No,1-3,1,1-3,0,0,No,Yes,Close
+Male,98,'1st Year',Engineering,89,'R 4001- R 5000',Yes,1-3,'Only weekends',8+,0,4+,Yes,No,Distant
+Male,72,'2nd Year','Arts & Social Sciences',76,'R 4001- R 5000',No,1-3,1,1-3,0,0,Yes,Yes,Close
+Female,84,'1st Year','Medicine and Health Services',80,'R 6001 - R 7000',No,8+,'Only weekends',5-8,2,0,No,Yes,'Very close'
+Male,85,'2nd Year','Economic & Management Sciences',66,'R 4001- R 5000',Yes,8+,1,8+,4+,0,Yes,Yes,Fair
+Female,84,'1st Year','Medicine and Health Services',80,'R 4001- R 5000',No,1-3,'Only weekends',3-5,0,0,No,Yes,'Very close'
+Female,90,'2nd Year',Law,70,'R 5001 - R 6000',No,5-8,'Only weekends',3-5,0,3,No,Yes,'Very close'
+Female,72,'3rd Year',Education,65,'R 6001 - R 7000',No,3-5,2,5-8,0,1,No,Yes,'Very close'
+Female,78,'1st Year',Science,75,'R 4001- R 5000',No,5-8,3,3-5,2,0,No,Yes,Close
+Female,83,'2nd Year',Engineering,63,'R 4001- R 5000',No,8+,'Only weekends',3-5,0,0,No,Yes,Close
+Female,85,'1st Year','Economic & Management Sciences',80,'R 4001- R 5000',No,8+,1,1-3,0,0,Yes,Yes,'Very close'
+Female,84,'1st Year',Science,75,'R 4001- R 5000',No,8+,1,3-5,3,0,Yes,Yes,'Very close'
+Male,76,'2nd Year',Science,65,'R 7001 - R 8000',No,8+,1,0,0,0,Yes,Yes,'Very close'
+Male,85,'4th Year',AgriSciences,76,'R 6001 - R 7000',No,5-8,2,8+,0,0,Yes,Yes,'Very close'
+Male,85,'1st Year','Arts & Social Sciences',58,'R 5001 - R 6000',No,3-5,'Only weekends',5-8,2,0,No,Yes,'Very close'
+Female,98.33,'2nd Year','Economic & Management Sciences',95.22,'R 4001- R 5000',No,8+,1,0,0,0,No,Yes,Close
+Female,70,'1st Year',AgriSciences,60,'R 6001 - R 7000',No,5-8,3,1-3,0,1,No,No,'Very close'
+Male,75,'2nd Year','Economic & Management Sciences',65,'R 6001 - R 7000',No,8+,1,5-8,0,2,Yes,Yes,'Very close'
+Female,76,'2nd Year',Law,60,'R 4001- R 5000',No,1-3,3,5-8,2,0,No,Yes,'Very close'
+Male,75,'2nd Year','Economic & Management Sciences',58,'R 5001 - R 6000',No,3-5,2,8+,0,0,Yes,No,'Very close'
+Male,86,'3rd Year',AgriSciences,55,'R 5001 - R 6000',Yes,1-3,1,8+,1,3,No,Yes,'Very close'
+Female,80,'3rd Year','Medicine and Health Services',71,'R 8000+',No,5-8,'Only weekends',1-3,0,0,No,Yes,'Very close'
+Female,75,'3rd Year','Arts & Social Sciences',60,'R 5001 - R 6000',No,8+,1,8+,0,0,Yes,Yes,'Very close'
+Female,75,'2nd Year','Economic & Management Sciences',70,'R 8000+',No,5-8,1,5-8,3,0,No,Yes,'Very close'
+Female,80,'2nd Year','Economic & Management Sciences',60,'R 4001- R 5000',No,8+,'Only weekends',5-8,0,1,Yes,Yes,'Very close'
+Female,75,'3rd Year','Economic & Management Sciences',64,'R 5001 - R 6000',No,8+,'Only weekends',5-8,0,1,No,Yes,'Very close'
+Female,85,'3rd Year',Science,84,'R 5001 - R 6000',Yes,8+,2,5-8,0,0,Yes,Yes,'Very close'
+Female,79,'2nd Year','Economic & Management Sciences',60,'R 5001 - R 6000',No,5-8,1,5-8,1,2,No,Yes,'Very close'
+Female,78,'2nd Year',Law,66,'R 6001 - R 7000',No,3-5,1,5-8,3,1,No,Yes,'Very close'
+Male,65,'1st Year','Economic & Management Sciences',65,'R 4001- R 5000',No,3-5,2,3-5,1,0,No,Yes,'Very close'
+Female,82,'2nd Year',Engineering,53,'R 4001- R 5000',No,5-8,1,5-8,2,4+,No,Yes,'Very close'
+Female,77,'1st Year',AgriSciences,62,'R 5001 - R 6000',No,5-8,'Only weekends',3-5,0,0,No,Yes,'Very close'
+Female,85,'2nd Year',Science,65,'R 7001 - R 8000',No,8+,1,5-8,3,0,No,Yes,'Very close'
+Female,81,'3rd Year','Arts & Social Sciences',62,'R 8000+',No,5-8,'Only weekends',5-8,1,1,Yes,Yes,Close
+Male,77,'2nd Year','Economic & Management Sciences',61,'R 7001 - R 8000',No,8+,2,8+,1,1,No,Yes,'Very close'
+Male,82,'2nd Year','Economic & Management Sciences',73,'R 4001- R 5000',No,5-8,'Only weekends',8+,1,0,No,Yes,Fair
+Female,73,'3rd Year','Economic & Management Sciences',60,'R 5001 - R 6000',No,3-5,3,5-8,1,0,No,Yes,Close
+Male,70,'2nd Year','Economic & Management Sciences',60,'R 7001 - R 8000',No,3-5,1,3-5,0,0,Yes,Yes,'Very close'
+Male,75,'3rd Year',AgriSciences,64,'R 4001- R 5000',No,3-5,2,3-5,1,0,No,Yes,'Very close'
+Male,78,'2nd Year','Economic & Management Sciences',62,'R 5001 - R 6000',No,8+,1,5-8,1,1,No,Yes,'Very close'
+Female,73,'1st Year','Arts & Social Sciences',69,'R 6001 - R 7000',No,3-5,2,3-5,0,0,Yes,Yes,'Very close'
+Male,74,'2nd Year','Economic & Management Sciences',57,'R 7001 - R 8000',No,5-8,'Only weekends',5-8,2,1,No,No,Fair
+Male,77,'1st Year','Economic & Management Sciences',60,'R 4001- R 5000',No,5-8,'Only weekends',1-3,0,0,Yes,No,'Very close'
+Male,80,'2nd Year',Engineering,60,'R 8000+',No,0,1,0,4+,0,Yes,Yes,'Very close'
+Female,78,'1st Year','Economic & Management Sciences',66,'R 4001- R 5000',Yes,3-5,'Only weekends',5-8,2,3,Yes,No,'Very close'
+Male,72,'1st Year','Economic & Management Sciences',70,'R 6001 - R 7000',No,0,1,8+,0,0,No,Yes,Fair
+Male,80,'3rd Year',Science,65,'R 8000+',No,5-8,1,3-5,0,1,Yes,Yes,Close
+Male,75,'2nd Year','Economic & Management Sciences',72,'R 5001 - R 6000',No,0,'Only weekends',8+,4+,0,No,Yes,Close
+Female,73,'2nd Year','Economic & Management Sciences',62,'R 7001 - R 8000',No,8+,2,3-5,1,2,Yes,Yes,'Very close'
+Female,86,'3rd Year',Science,76,'R 4001- R 5000',No,5-8,1,5-8,1,0,No,Yes,Close
+Male,70,'1st Year',AgriSciences,75,'R 5001 - R 6000',No,5-8,'Only weekends',5-8,0,0,Yes,Yes,'Very close'
+Male,85,'1st Year',Science,88,'R 4001- R 5000',Yes,8+,'Only weekends',0,0,0,Yes,Yes,Distant
+Female,72,'2nd Year','Arts & Social Sciences',61,'R 4001- R 5000',No,3-5,'Only weekends',1-3,0,0,Yes,Yes,'Very close'
+Male,73,'1st Year','Economic & Management Sciences',52,'R 4001- R 5000',No,3-5,2,1-3,1,4+,No,Yes,'Very close'
+Female,76,Postgraduate,'Economic & Management Sciences',79,'R 8000+',No,5-8,2,1-3,0,0,No,Yes,'Very close'
+Male,76,'1st Year',Engineering,56,'R 4001- R 5000',No,8+,'Only weekends',1-3,0,0,Yes,Yes,Close
+Male,82,'2nd Year','Arts & Social Sciences',70,'R 4001- R 5000',No,1-3,2,8+,4+,0,Yes,Yes,Close
+Male,82,'2nd Year','Economic & Management Sciences',60,'R 4001- R 5000',No,8+,1,5-8,0,0,No,Yes,'Very close'
+Male,68,'2nd Year',AgriSciences,57,'R 4001- R 5000',No,3-5,1,5-8,1,3,Yes,No,Close
+Female,84,'1st Year',Science,64,'R 4001- R 5000',No,1-3,2,3-5,1,0,No,Yes,'Very close'
+Male,79,'2nd Year','Economic & Management Sciences',60,'R 8000+',No,8+,1,5-8,2,2,No,No,Close
+Male,89,'2nd Year','Economic & Management Sciences',74,'R 4001- R 5000',No,3-5,1,3-5,0,0,No,Yes,'Very close'
+Female,82,'2nd Year',Education,73,'R 5001 - R 6000',No,3-5,'Only weekends',5-8,0,0,Yes,Yes,Close
+Female,83,'2nd Year','Economic & Management Sciences',51,'R 4001- R 5000',No,8+,'Only weekends',1-3,0,4+,Yes,Yes,Fair
+Male,83,'2nd Year',Engineering,60,'R 4001- R 5000',No,5-8,3,5-8,4+,1,No,Yes,'Very close'
+Female,76,'2nd Year','Economic & Management Sciences',60,'R 5001 - R 6000',No,3-5,3,5-8,2,2,No,Yes,'Very close'
+Female,76,'1st Year','Arts & Social Sciences',54,'R 5001 - R 6000',No,1-3,4+,5-8,4+,3,Yes,Yes,'Very close'
+Male,78,'1st Year',Science,65,'R 5001 - R 6000',No,1-3,'Only weekends',0,0,2,No,Yes,'Very close'
+Male,79,'2nd Year','Economic & Management Sciences',64,'R 5001 - R 6000',No,3-5,2,3-5,3,3,Yes,Yes,'Very close'
+Female,72,'1st Year','Economic & Management Sciences',61,'R 4001- R 5000',No,3-5,1,0,0,1,No,Yes,'Very close'
+Male,70,Postgraduate,AgriSciences,68,'R 4001- R 5000',No,1-3,3,3-5,2,0,No,Yes,'Very close'
+Male,72,'2nd Year','Economic & Management Sciences',53,'R 4001- R 5000',No,5-8,'Only weekends',8+,0,4+,Yes,Yes,Close
+Female,76,'1st Year','Economic & Management Sciences',50,'R 7001 - R 8000',No,0,'Only weekends',5-8,0,4+,Yes,Yes,'Very close'
+Female,81,'1st Year',AgriSciences,64,'R 4001- R 5000',No,1-3,1,5-8,1,0,No,No,Close
+Female,85,'2nd Year','Economic & Management Sciences',73,'R 5001 - R 6000',No,8+,2,1-3,4+,0,Yes,Yes,'Very close'
+Female,85,'2nd Year','Economic & Management Sciences',73,'R 5001 - R 6000',No,8+,2,1-3,4+,0,Yes,Yes,'Very close'
+Female,80,'2nd Year','Economic & Management Sciences',50,'R 5001 - R 6000',No,5-8,1,1-3,0,1,Yes,Yes,'Very close'
+Female,84,'2nd Year','Economic & Management Sciences',68,'R 6001 - R 7000',No,5-8,3,3-5,1,0,No,Yes,'Very close'
+Male,69,'4th Year',AgriSciences,65,'R 7001 - R 8000',No,5-8,2,8+,2,2,No,Yes,'Very close'
+Male,76,'4th Year','Economic & Management Sciences',71,'R 5001 - R 6000',No,1-3,1,5-8,0,0,No,Yes,'Very close'
+Female,78,'2nd Year','Arts & Social Sciences',65,'R 5001 - R 6000',No,5-8,'Only weekends',3-5,2,1,No,Yes,Close
+Female,88,'2nd Year','Economic & Management Sciences',72,'R 4001- R 5000',No,8+,1,1-3,1,0,Yes,Yes,Fair
+Female,92,'3rd Year',Science,70,'R 7001 - R 8000',No,3-5,4+,8+,2,0,No,Yes,'Very close'
+Male,74,'3rd Year','Economic & Management Sciences',77,'R 6001 - R 7000',No,3-5,1,8+,1,0,Yes,Yes,'Very close'
+Male,78,'2nd Year',AgriSciences,60,'R 4001- R 5000',No,0,3,8+,4+,0,No,Yes,Close
+Female,90,'1st Year','Economic & Management Sciences',75,'R 4001- R 5000',Yes,3-5,'Only weekends',1-3,0,1,No,Yes,Close
+Male,84,'2nd Year','Economic & Management Sciences',68,'R 4001- R 5000',No,1-3,4+,5-8,0,0,No,Yes,Close
+Male,80,'4th Year','Economic & Management Sciences',63,'R 5001 - R 6000',No,8+,'Only weekends',5-8,0,2,Yes,Yes,'Very close'
+Male,71,'2nd Year','Economic & Management Sciences',55,'R 6001 - R 7000',No,8+,'Only weekends',8+,2,2,Yes,Yes,'Very close'
+Female,80,'2nd Year','Economic & Management Sciences',73,'R 7001 - R 8000',No,3-5,1,1-3,1,0,Yes,No,'Very close'
+Female,75,'2nd Year','Arts & Social Sciences',80,'R 6001 - R 7000',No,3-5,'Only weekends',5-8,0,0,No,Yes,Close
+Male,82,'2nd Year','Economic & Management Sciences',69,'R 4001- R 5000',No,0,4+,8+,0,0,No,No,'Very close'
+Female,80,'2nd Year','Arts & Social Sciences',70,'R 6001 - R 7000',No,8+,3,3-5,4+,0,Yes,Yes,'Very close'
+Male,73,'2nd Year','Economic & Management Sciences',73.5,'R 4001- R 5000',No,8+,'Only weekends',3-5,0,0,Yes,Yes,'Very close'
+Male,63,'1st Year','Economic & Management Sciences',68,'R 4001- R 5000',No,3-5,3,8+,1,0,No,Yes,Close
+Female,79,'1st Year',Education,77,'R 7001 - R 8000',Yes,5-8,3,1-3,0,0,No,Yes,'Very close'
+Female,81,'2nd Year',Science,70,'R 4001- R 5000',No,3-5,'Only weekends',1-3,0,1,No,No,'Very close'
+Female,82,'2nd Year','Economic & Management Sciences',60,'R 7001 - R 8000',No,8+,2,1-3,0,4+,No,Yes,'Very close'
+Female,75,'3rd Year','Economic & Management Sciences',50,'R 7001 - R 8000',No,0,'Only weekends',3-5,0,4+,Yes,Yes,'Very close'
+Female,72,'1st Year','Arts & Social Sciences',73,'R 4001- R 5000',No,1-3,'Only weekends',5-8,0,0,No,Yes,Close
+Female,70,'2nd Year','Arts & Social Sciences',65,'R 4001- R 5000',Yes,1-3,3,0,0,1,Yes,Yes,Fair
+Female,86,'2nd Year',Science,75,'R 4001- R 5000',No,5-8,'Only weekends',3-5,0,0,No,Yes,Fair
+Male,76,'1st Year',AgriSciences,62,'R 5001 - R 6000',No,8+,1,5-8,3,0,No,Yes,'Very close'
+Male,80,'1st Year','Economic & Management Sciences',63,'R 4001- R 5000',No,8+,3,5-8,3,0,No,Yes,Fair
+Male,76,'3rd Year',Science,62,'R 5001 - R 6000',No,8+,1,5-8,1,3,Yes,No,Fair
+Male,75,'1st Year',Science,60,'R 4001- R 5000',No,5-8,3,8+,3,2,No,Yes,'Very close'
+Female,83,'3rd Year','Economic & Management Sciences',55,'R 5001 - R 6000',No,8+,'Only weekends',1-3,0,1,Yes,Yes,'Very close'
+Female,70,'1st Year','Economic & Management Sciences',65,'R 5001 - R 6000',No,8+,2,5-8,1,0,Yes,Yes,'Very close'
+Female,70,'1st Year',Science,57,'R 5001 - R 6000',Yes,8+,'Only weekends',1-3,0,1,Yes,Yes,'Very close'
+Female,81,'2nd Year','Arts & Social Sciences',72,'R 4001- R 5000',Yes,3-5,2,3-5,0,0,No,Yes,'Very close'
+Male,75,'2nd Year',Science,50,'R 6001 - R 7000',No,1-3,'Only weekends',3-5,0,4+,Yes,Yes,Close
+Male,83,'2nd Year','Economic & Management Sciences',51,'R 4001- R 5000',No,5-8,'Only weekends',3-5,0,4+,Yes,Yes,'Very close'
+Male,92,'4th Year','Economic & Management Sciences',88,'R 5001 - R 6000',No,8+,'Only weekends',1-3,0,0,No,Yes,'Very close'
+Male,72,'1st Year','Economic & Management Sciences',54,'R 6001 - R 7000',No,1-3,3,8+,4+,3,No,Yes,'Very close'
+Female,83,'1st Year',Science,68,'R 6001 - R 7000',No,5-8,3,1-3,0,0,No,Yes,'Very close'
+Male,79,'2nd Year','Economic & Management Sciences',59,'R 4001- R 5000',No,8+,1,5-8,0,3,No,Yes,'Very close'
+Male,67,'1st Year','Economic & Management Sciences',65,'R 5001 - R 6000',No,1-3,2,5-8,2,0,No,Yes,Close
+Male,67,'1st Year','Economic & Management Sciences',77,'R 5001 - R 6000',No,5-8,2,8+,0,0,No,Yes,'Very close'
+Female,71,'1st Year','Economic & Management Sciences',62,'R 8000+',No,3-5,'Only weekends',1-3,0,1,No,Yes,'Very close'
+Male,78,'1st Year','Economic & Management Sciences',60,'R 4001- R 5000',No,3-5,0,0,0,1,No,No,'Very close'
+Female,83,'1st Year','Economic & Management Sciences',84,'R 4001- R 5000',No,0,2,0,0,0,Yes,Yes,Fair
+Female,76,'1st Year','Economic & Management Sciences',70,'R 8000+',No,3-5,'Only weekends',3-5,0,1,No,Yes,'Very close'
+Female,75,'1st Year','Economic & Management Sciences',60,'R 8000+',No,0,3,8+,1,0,Yes,Yes,'Very close'
+Male,80,'3rd Year','Economic & Management Sciences',63,'R 5001 - R 6000',No,1-3,2,5-8,3,0,Yes,Yes,'Very close'
+Female,78,'1st Year','Economic & Management Sciences',80,'R 6001 - R 7000',No,1-3,2,5-8,1,0,Yes,Yes,Close
+Female,67,'1st Year','Economic & Management Sciences',78,'R 5001 - R 6000',No,1-3,1,5-8,1,1,Yes,Yes,'Very close'
+Female,70,'2nd Year','Economic & Management Sciences',76,'R 4001- R 5000',No,1-3,2,3-5,1,0,No,Yes,'Very close'
+Female,67,'2nd Year','Arts & Social Sciences',63,'R 4001- R 5000',No,3-5,'Only weekends',1-3,0,2,No,No,Close
+Male,85,'3rd Year',Science,65,'R 5001 - R 6000',No,3-5,0,5-8,0,2,No,Yes,Close
+Female,73,'2nd Year','Economic & Management Sciences',58,'R 5001 - R 6000',No,3-5,'Only weekends',1-3,0,2,No,No,Fair
+Male,84,'2nd Year','Economic & Management Sciences',67,'R 5001 - R 6000',No,5-8,1,8+,1,0,No,Yes,'Very close'
+Male,76,'1st Year','Economic & Management Sciences',59,'R 4001- R 5000',No,1-3,2,8+,2,0,No,Yes,'Very close'
+Female,65,'2nd Year','Arts & Social Sciences',65,'R 4001- R 5000',No,5-8,'Only weekends',1-3,0,2,No,No,Close
+Male,87,'3rd Year','Economic & Management Sciences',74,'R 4001- R 5000',Yes,8+,2,8+,3,0,No,Yes,'Very close'
+Female,78,'2nd Year','Economic & Management Sciences',64,'R 5001 - R 6000',No,5-8,2,5-8,4+,4+,Yes,Yes,'Very close'
+Male,80,'2nd Year',Engineering,65,'R 4001- R 5000',Yes,3-5,1,1-3,1,4+,Yes,No,Fair
+Female,67,'1st Year','Economic & Management Sciences',80,'R 4001- R 5000',No,1-3,3,5-8,2,0,No,Yes,Close
+Male,72,'1st Year','Arts & Social Sciences',64,'R 6001 - R 7000',No,5-8,3,8+,0,0,No,Yes,'Very close'
+Female,75,'2nd Year','Economic & Management Sciences',75,'R 4001- R 5000',No,5-8,0,1-3,0,0,Yes,Yes,'Very close'
+Female,82,'2nd Year','Economic & Management Sciences',72,'R 5001 - R 6000',No,3-5,3,1-3,0,0,No,Yes,Close
+Male,82,'3rd Year','Economic & Management Sciences',63,'R 5001 - R 6000',No,8+,1,3-5,0,0,Yes,Yes,Close
+Female,80,'3rd Year',Education,74,'R 7001 - R 8000',No,5-8,2,1-3,0,0,No,Yes,'Very close'
+Female,65,'3rd Year','Economic & Management Sciences',60,'R 4001- R 5000',No,5-8,'Only weekends',1-3,0,1,No,No,'Very close'
+Male,85,'2nd Year','Economic & Management Sciences',60,'R 4001- R 5000',No,8+,1,5-8,2,2,No,Yes,'Very close'
+Male,69,'2nd Year','Economic & Management Sciences',55,'R 5001 - R 6000',No,0,1,3-5,0,1,Yes,Yes,'Very close'
+Female,68,'1st Year','Economic & Management Sciences',55,'R 4001- R 5000',Yes,3-5,0,0,0,1,No,No,'Very close'
+Male,72,'1st Year','Economic & Management Sciences',58,'R 6001 - R 7000',No,1-3,3,8+,2,0,No,Yes,'Very close'
+Male,84,'1st Year',Science,92,'R 5001 - R 6000',No,3-5,'Only weekends',8+,0,0,Yes,Yes,'Very close'
+Male,70,'3rd Year','Economic & Management Sciences',53,'R 4001- R 5000',No,3-5,1,8+,4+,4+,Yes,Yes,'Very close'
+Male,82,'3rd Year','Economic & Management Sciences',77,'R 5001 - R 6000',Yes,8+,0,0,0,0,No,Yes,Close
+Female,70,'1st Year','Economic & Management Sciences',70,'R 4001- R 5000',No,1-3,'Only weekends',1-3,1,0,Yes,Yes,'Very close'
+Female,78,'2nd Year','Economic & Management Sciences',57,'R 8000+',No,5-8,3,5-8,0,4+,No,Yes,'Very close'
+Female,95,'2nd Year',Engineering,87.6,'R 8000+',No,8+,'Only weekends',1-3,0,0,No,Yes,'Very close'
+Female,75,'1st Year','Economic & Management Sciences',60,'R 4001- R 5000',Yes,3-5,'Only weekends',1-3,0,0,Yes,No,Close
+Female,80,'4th Year','Economic & Management Sciences',55,'R 5001 - R 6000',No,3-5,1,1-3,1,4+,No,Yes,'Very close'
+Male,86,'1st Year',Science,73,'R 7001 - R 8000',No,8+,2,3-5,4+,0,No,Yes,'Very close'
+Male,84,'1st Year',Science,76,'R 7001 - R 8000',No,8+,1,3-5,2,0,No,Yes,'Very close'
+Female,82,'2nd Year','Arts & Social Sciences',68,'R 4001- R 5000',No,3-5,1,8+,1,3,No,Yes,'Very close'
+Male,73,'2nd Year','Economic & Management Sciences',57,'R 4001- R 5000',Yes,8+,1,1-3,1,3,No,No,Close
+Female,75,'1st Year',AgriSciences,63,'R 5001 - R 6000',No,8+,2,1-3,2,0,Yes,Yes,Close
+Male,74,'1st Year','Economic & Management Sciences',64,'R 4001- R 5000',Yes,5-8,1,8+,1,0,No,Yes,'Very close'
+Male,68,'1st Year','Economic & Management Sciences',55,'R 4001- R 5000',No,1-3,3,8+,4+,1,No,No,'Very close'
+Male,78,'1st Year',Science,76,'R 6001 - R 7000',No,1-3,3,3-5,4+,0,No,No,'Very close'
+Male,77,'1st Year','Economic & Management Sciences',65,'R 5001 - R 6000',No,5-8,1,8+,2,0,No,Yes,Close
+Female,79,'1st Year','Economic & Management Sciences',71,'R 8000+',No,8+,2,5-8,0,0,Yes,No,Fair
+Male,78,'1st Year','Economic & Management Sciences',73,'R 6001 - R 7000',No,5-8,3,8+,2,2,No,Yes,Fair
+Male,86.4,'1st Year',Engineering,57,'R 4001- R 5000',No,1-3,2,8+,2,0,Yes,Yes,'Very close'
+Male,82,Postgraduate,Engineering,62,'R 7001 - R 8000',No,8+,1,8+,0,1,Yes,Yes,'Very close'
+Male,60,'1st Year','Economic & Management Sciences',75,'R 4001- R 5000',No,1-3,1,5-8,0,0,Yes,Yes,'Very close'
+Male,84,'1st Year',Science,69,'R 5001 - R 6000',Yes,5-8,2,3-5,0,0,No,Yes,'Very close'
+Male,75,'1st Year','Economic & Management Sciences',65,'R 5001 - R 6000',No,3-5,4+,5-8,4+,0,Yes,Yes,Close
+Male,81,'2nd Year','Economic & Management Sciences',64,'R 6001 - R 7000',No,8+,1,8+,2,3,Yes,Yes,'Very close'
+Female,85,'2nd Year',Science,76,'R 6001 - R 7000',No,8+,1,1-3,1,2,No,Yes,'Very close'
+Male,95.5,Postgraduate,Engineering,65,'R 4001- R 5000',Yes,8+,3,8+,0,0,Yes,Yes,Fair
+Male,76,'1st Year',Science,60,'R 5001 - R 6000',No,1-3,1,8+,1,1,No,Yes,Close
+Male,72,'3rd Year',Law,68,'R 8000+',No,8+,3,5-8,0,0,Yes,Yes,Close
+Male,76,'2nd Year','Economic & Management Sciences',64,'R 8000+',No,8+,3,5-8,2,1,Yes,Yes,Close
+Female,71,'1st Year',Education,67,'R 4001- R 5000',Yes,5-8,2,5-8,3,1,No,Yes,'Very close'
+Female,72,'1st Year',AgriSciences,77,'R 4001- R 5000',No,3-5,1,3-5,0,0,Yes,Yes,'Very close'
+Female,78,'2nd Year','Arts & Social Sciences',83,'R 7001 - R 8000',No,8+,'Only weekends',3-5,0,0,No,Yes,'Very close'
+Female,87,'2nd Year',Science,61,'R 5001 - R 6000',No,8+,3,1-3,0,1,Yes,Yes,'Very close'
+Female,76,'1st Year','Economic & Management Sciences',65,'R 5001 - R 6000',No,5-8,'Only weekends',1-3,0,0,No,Yes,'Very close'
+Male,76,'2nd Year','Economic & Management Sciences',65,'R 4001- R 5000',No,3-5,3,5-8,0,2,No,Yes,'Very close'
+Female,94,'2nd Year','Economic & Management Sciences',67,'R 4001- R 5000',No,8+,'Only weekends',1-3,0,1,No,Yes,'Very close'
+Female,78,'1st Year',Engineering,58,'R 6001 - R 7000',No,5-8,2,3-5,2,0,No,Yes,'Very close'
+Female,84,'2nd Year','Economic & Management Sciences',61,'R 5001 - R 6000',No,1-3,2,5-8,3,0,Yes,Yes,Close
+Female,79,'2nd Year','Economic & Management Sciences',77,'R 5001 - R 6000',No,1-3,1,1-3,0,0,Yes,Yes,Close
+Male,80,'2nd Year',Science,57,'R 4001- R 5000',No,3-5,1,5-8,1,1,No,Yes,Close
+Male,67,'1st Year','Economic & Management Sciences',30,'R 4001- R 5000',No,1-3,4+,8+,4+,4+,No,Yes,'Very close'
+Female,76,'1st Year','Economic & Management Sciences',80,'R 4001- R 5000',No,1-3,2,8+,1,4+,No,Yes,'Very close'
+Male,72,'1st Year','Economic & Management Sciences',65,'R 6001 - R 7000',No,5-8,1,8+,0,0,Yes,Yes,Fair
+Male,73,'1st Year','Arts & Social Sciences',70,'R 7001 - R 8000',No,3-5,2,5-8,1,0,No,Yes,'Very close'
+Male,78,'1st Year','Economic & Management Sciences',83,'R 4001- R 5000',No,1-3,3,8+,2,0,Yes,Yes,'Very close'
+Male,82,'1st Year',Engineering,73,'R 5001 - R 6000',No,8+,2,3-5,0,0,No,Yes,'Very close'
+Female,75,'1st Year','Economic & Management Sciences',89,'R 6001 - R 7000',No,5-8,0,3-5,0,0,Yes,Yes,'Very close'
+Male,67,'2nd Year','Economic & Management Sciences',81,'R 5001 - R 6000',No,8+,3,5-8,1,1,No,Yes,'Very close'
+Female,78,'2nd Year','Economic & Management Sciences',71,'R 4001- R 5000',No,5-8,2,3-5,2,0,No,Yes,Fair
+Female,79,'1st Year','Economic & Management Sciences',76,'R 5001 - R 6000',No,1-3,2,3-5,0,0,Yes,Yes,'Very close'
+Female,89,'2nd Year','Economic & Management Sciences',80,'R 8000+',No,3-5,3,3-5,1,0,Yes,Yes,'Very close'
+Male,73,'2nd Year','Medicine and Health Services',62,'R 4001- R 5000',No,3-5,1,5-8,1,0,No,Yes,Close
+Male,85,'2nd Year','Economic & Management Sciences',58,'R 4001- R 5000',No,8+,1,8+,2,1,No,Yes,Close
+Male,72,'1st Year','Economic & Management Sciences',76,'R 6001 - R 7000',No,0,1,3-5,0,4+,No,Yes,Fair
+Female,83,'2nd Year','Arts & Social Sciences',72,'R 6001 - R 7000',No,1-3,1,5-8,2,0,No,Yes,'Very close'
+Male,83,'2nd Year','Economic & Management Sciences',55,'R 4001- R 5000',No,3-5,2,3-5,2,2,Yes,Yes,'Very close'
+Female,78,'2nd Year','Economic & Management Sciences',70,'R 7001 - R 8000',Yes,1-3,1,3-5,1,1,Yes,Yes,Close
+Male,66,'3rd Year',AgriSciences,61,'R 5001 - R 6000',No,1-3,2,8+,1,2,No,Yes,'Very close'
+Female,90,'3rd Year','Economic & Management Sciences',73,'R 5001 - R 6000',No,8+,1,1-3,0,0,Yes,Yes,'Very close'
+Male,82,'3rd Year',Engineering,74,'R 5001 - R 6000',No,8+,0,5-8,0,0,Yes,Yes,Close
+Male,77,'3rd Year',Law,63,'R 6001 - R 7000',No,3-5,1,8+,3,1,No,Yes,Close
+Female,83,'3rd Year',Engineering,61,'R 5001 - R 6000',No,8+,'Only weekends',5-8,1,1,Yes,Yes,'Very close'
+Male,76,'2nd Year',Science,58,'R 4001- R 5000',No,3-5,1,5-8,2,0,No,Yes,'Very close'
+Female,76,'3rd Year',Science,63,'R 5001 - R 6000',No,1-3,3,1-3,0,0,Yes,Yes,'Very close'
+Female,73,'1st Year',Engineering,59,'R 4001- R 5000',No,8+,'Only weekends',1-3,0,0,Yes,Yes,'Very close'
+Male,74,'2nd Year','Economic & Management Sciences',56,'R 4001- R 5000',Yes,8+,1,1-3,1,0,Yes,No,Fair
+Male,68,'1st Year','Arts & Social Sciences',54,'R 8000+',No,1-3,2,5-8,2,2,No,No,Close
+Male,80,'2nd Year',Law,60,'R 4001- R 5000',Yes,1-3,1,5-8,0,3,Yes,Yes,Fair
+Female,65,'2nd Year','Economic & Management Sciences',80,'R 5001 - R 6000',No,0,4+,8+,0,0,No,Yes,'Very close'
+Male,75,'3rd Year','Economic & Management Sciences',80,'R 4001- R 5000',No,5-8,'Only weekends',1-3,0,0,No,Yes,'Very close'
+Male,71,'1st Year','Economic & Management Sciences',77,'R 5001 - R 6000',No,3-5,2,3-5,1,0,No,Yes,'Very close'
+Female,85,'2nd Year',Engineering,60,'R 5001 - R 6000',No,8+,'Only weekends',5-8,0,2,No,Yes,Close
+Male,70,'1st Year','Economic & Management Sciences',76,'R 4001- R 5000',No,5-8,'Only weekends',1-3,1,0,Yes,No,'Very close'
+Female,74,'2nd Year','Medicine and Health Services',69.7,'R 5001 - R 6000',No,5-8,3,8+,2,0,Yes,Yes,'Very close'
+Male,86,'2nd Year','Economic & Management Sciences',85,'R 5001 - R 6000',No,0,1,3-5,0,2,Yes,Yes,Fair
+Male,83,'2nd Year','Economic & Management Sciences',70,'R 7001 - R 8000',No,8+,3,8+,2,1,Yes,Yes,Close
+Male,78,'2nd Year','Economic & Management Sciences',63,'R 5001 - R 6000',No,8+,1,5-8,0,3,No,Yes,Close
+Male,83,'2nd Year','Economic & Management Sciences',63,'R 4001- R 5000',No,1-3,4+,3-5,1,0,No,No,'Very close'
+Male,78,'1st Year','Economic & Management Sciences',85,'R 4001- R 5000',No,1-3,2,5-8,1,0,No,Yes,'Very close'
+Male,75,'3rd Year',Engineering,59,'R 4001- R 5000',No,3-5,'Only weekends',3-5,0,2,Yes,No,Close
+Female,87,'2nd Year','Economic & Management Sciences',74,'R 4001- R 5000',No,3-5,2,1-3,0,0,No,No,Fair
+Male,77,'1st Year','Economic & Management Sciences',64,'R 4001- R 5000',No,0,4+,1-3,0,0,Yes,Yes,'Very close'
+Male,85,Postgraduate,AgriSciences,78,'R 6001 - R 7000',No,8+,3,8+,0,0,Yes,Yes,'Very close'
+Male,60,'2nd Year','Arts & Social Sciences',50,'R 4001- R 5000',No,3-5,2,5-8,0,3,No,Yes,Fair
+Male,80,'2nd Year',Science,50,'R 5001 - R 6000',No,8+,1,1-3,0,3,No,No,Close
+Female,80,'3rd Year',Law,75,'R 6001 - R 7000',No,8+,'Only weekends',1-3,1,1,No,No,Fair
+Male,75,'1st Year',Science,63,'R 5001 - R 6000',No,3-5,'Only weekends',3-5,0,0,No,Yes,'Very close'
+Male,76,'1st Year',Science,56,'R 4001- R 5000',No,1-3,0,0,0,1,No,Yes,'Very close'
+Female,83,'1st Year','Arts & Social Sciences',61,'R 5001 - R 6000',No,8+,3,3-5,0,0,No,Yes,'Very close'
+Male,80,'1st Year','Arts & Social Sciences',74,'R 4001- R 5000',No,3-5,2,5-8,1,0,Yes,Yes,'Very close'
+Female,70,'2nd Year','Economic & Management Sciences',60,'R 4001- R 5000',No,8+,'Only weekends',3-5,0,0,No,Yes,Close
+Male,86,'2nd Year','Economic & Management Sciences',69,'R 5001 - R 6000',No,1-3,2,8+,2,0,Yes,Yes,'Very close'
+Female,85,'1st Year','Medicine and Health Services',60,'R 4001- R 5000',No,1-3,2,3-5,3,0,Yes,Yes,'Very close'
+Male,79,'1st Year','Economic & Management Sciences',83,'R 7001 - R 8000',No,8+,3,1-3,0,0,Yes,Yes,'Very close'
+Male,70,'2nd Year','Economic & Management Sciences',56,'R 8000+',No,3-5,4+,8+,2,3,No,Yes,'Very close'
+Female,75,'1st Year','Arts & Social Sciences',65,'R 4001- R 5000',No,1-3,'Only weekends',3-5,0,2,Yes,Yes,'Very close'
+Female,78,'2nd Year','Medicine and Health Services',79,'R 6001 - R 7000',No,1-3,1,1-3,0,0,Yes,Yes,'Very close'
+Male,76,'2nd Year','Economic & Management Sciences',64,'R 4001- R 5000',No,3-5,1,5-8,1,1,No,Yes,'Very close'
+Male,76,'2nd Year','Economic & Management Sciences',57,'R 4001- R 5000',No,8+,1,1-3,0,0,No,Yes,'Very close'
+Female,85,'1st Year','Economic & Management Sciences',58,'R 8000+',No,1-3,3,3-5,2,0,Yes,Yes,Close
+Female,86,'1st Year',Science,71,'R 4001- R 5000',No,8+,1,0,0,0,Yes,Yes,'Very close'
+Male,78,'3rd Year',Law,66,'R 4001- R 5000',No,0,1,1-3,1,0,Yes,Yes,Close
+Male,64,'1st Year','Economic & Management Sciences',70,'R 8000+',No,0,4+,8+,0,1,Yes,Yes,'Very close'
+Male,76,'1st Year',Science,58,'R 5001 - R 6000',No,1-3,2,8+,1,1,No,Yes,Close
+Male,75,'2nd Year','Economic & Management Sciences',80,'R 8000+',No,0,4+,8+,4+,0,No,No,'Very close'
+Female,78,'2nd Year','Medicine and Health Services',74,'R 4001- R 5000',No,1-3,'Only weekends',1-3,0,0,No,Yes,'Very close'
+Male,86,'1st Year','Economic & Management Sciences',70,'R 4001- R 5000',No,5-8,2,3-5,2,0,Yes,Yes,Fair
+Female,74,'2nd Year','Economic & Management Sciences',60,'R 6001 - R 7000',No,5-8,'Only weekends',1-3,0,3,No,No,Close
+Female,73,'2nd Year','Economic & Management Sciences',58,'R 6001 - R 7000',Yes,5-8,1,8+,0,0,Yes,Yes,'Very close'
