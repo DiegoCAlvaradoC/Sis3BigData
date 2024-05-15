@@ -2,6 +2,7 @@ package com.example.backendweka.api;
 
 // Generales
 
+import org.jfree.chart.axis.NumberAxis;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.http.HttpStatus;
@@ -12,14 +13,17 @@ import org.springframework.web.multipart.MultipartFile;
 
 // Carga CSV
 
-import weka.core.Instances;
+import weka.classifiers.functions.MultilayerPerceptron;
+import weka.classifiers.trees.HoeffdingTree;
+import weka.classifiers.trees.RandomForest;
+import weka.core.*;
 import weka.core.converters.ArffSaver;
 import weka.core.converters.CSVLoader;
 import weka.filters.unsupervised.attribute.StringToNominal;
 
 
 import java.awt.*;
-import java.io.File;
+import java.io.*;
 
 
 // Para imagen
@@ -27,12 +31,22 @@ import weka.classifiers.trees.J48;
 import weka.core.Instances;
 import weka.core.converters.ConverterUtils.DataSource;
 
-import java.io.BufferedWriter;
-import java.io.FileWriter;
-import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 
+import java.awt.Color;
+import java.io.File;
+import org.jfree.chart.ChartFactory;
+import org.jfree.chart.ChartUtils;
+import org.jfree.chart.JFreeChart;
+import org.jfree.chart.plot.PlotOrientation;
+import org.jfree.chart.plot.XYPlot;
+import org.jfree.chart.renderer.xy.XYItemRenderer;
+import org.jfree.data.xy.XYSeries;
+import org.jfree.data.xy.XYSeriesCollection;
+import weka.clusterers.SimpleKMeans;
+import weka.core.Instances;
+import weka.core.converters.ConverterUtils.DataSource;
 
 @SpringBootApplication
 @RestController
@@ -108,7 +122,7 @@ public class file {
             saveTreeAsDot(cls, dotFileName);
 
             // Convert DOT file to image using Graphviz (assuming Graphviz is installed)
-            convertDotToImage(dotFileName);
+            convertDotToImage(dotFileName,"tree");
             String imageFilePath = "tree.png"; // Cambia esto por la ruta real de tu imagen generada
             File fileImg = new File(imageFilePath);
             Path path = fileImg.toPath();
@@ -126,8 +140,139 @@ public class file {
         }
     }
 
-    private void convertDotToImage(String dotFileName) throws IOException, InterruptedException {
-        Process p = Runtime.getRuntime().exec("dot -Tpng " + dotFileName + " -o tree.png");
+    private void convertDotToImage(String dotFileName, String nameImg) throws IOException, InterruptedException {
+        Process p = Runtime.getRuntime().exec("dot -Tpng " + dotFileName + " -o "+nameImg+".png");
+        System.out.println("Imagen generada con éxito: "+ nameImg + ".png");
         p.waitFor();
     }
+
+    // Nueva función para el clasificador MultilayerPerceptron
+    @GetMapping(value = "/generate-perceptron")
+    public ResponseEntity<String> generatePerceptronInfo() {
+        try {
+            MultilayerPerceptron cls = new MultilayerPerceptron();
+            String file = "dataset_modified.arff";
+            Instances data = DataSource.read(file);
+
+            int classIndex = 0; // Cambia este valor al índice de la columna que deseas establecer como clase
+            data.setClassIndex(classIndex);
+
+            cls.buildClassifier(data);
+
+            // Guardar resultados del clasificador en una variable
+            StringWriter modelResults = new StringWriter();
+            modelResults.append(cls.toString());
+            String classificationResults = modelResults.toString();
+            System.out.println(classificationResults);
+
+            return ResponseEntity.status(HttpStatus.OK).body(classificationResults);
+        } catch (Exception e) {
+            e.printStackTrace();
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Se produjo un error al generar la información del clasificador.");
+        }
+    }
+
+    // Nueva función para el clasificador RandomForest
+    private void saveHoeffdingTreeAsDot(HoeffdingTree tree, String fileName) throws Exception {
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter(fileName))) {
+            writer.write(tree.graph());
+        }
+    }
+
+    // Nueva función para el clasificador HoeffdingTree
+    @GetMapping(value = "/generate-hoeffdingtree", produces = MediaType.IMAGE_PNG_VALUE)
+    public @ResponseBody byte[] generateHoeffdingTreeImage() {
+        try {
+            HoeffdingTree cls = new HoeffdingTree();
+            String file = "dataset_modified.arff";
+            Instances data = DataSource.read(file);
+
+            int classIndex = 0; // Cambia este valor al índice de la columna que deseas establecer como clase
+            data.setClassIndex(classIndex);
+
+            cls.buildClassifier(data);
+
+            // Guardar el HoeffdingTree como archivo DOT
+            String dotFileName = "hoeffding_tree.dot";
+            saveHoeffdingTreeAsDot(cls, dotFileName);
+
+            // Convertir archivo DOT a imagen usando Graphviz
+            convertDotToImage(dotFileName,"hoeffding_tree");
+            String imageFilePath = "hoeffding_tree.png"; // Cambia esto por la ruta real de tu imagen generada
+            File fileImg = new File(imageFilePath);
+            Path path = fileImg.toPath();
+            return Files.readAllBytes(path);
+        } catch (Exception e) {
+            e.printStackTrace();
+            return null;
+        }
+    }
+
+    @GetMapping("/generate-cluster-image")
+    public String clusterData() {
+        try {
+            // Cargar el archivo ARFF
+            DataSource source = new DataSource("dataset_modified.arff");
+            Instances data = source.getDataSet();
+
+            // Seleccionar los índices de los atributos que deseas utilizar
+            int attributeX = 1; // Índice del atributo X
+            int attributeY = 2; // Índice del atributo Y
+
+            // Instanciar SimpleKMeans
+            SimpleKMeans kmeans = new SimpleKMeans();
+
+            // Configurar el número de clusters (k)
+            kmeans.setNumClusters(3); // Por ejemplo, 3 clusters
+
+            // Asegurar que el orden de las instancias se mantenga
+            kmeans.setPreserveInstancesOrder(true);
+
+            // Construir el modelo
+            kmeans.buildClusterer(data);
+
+            // Obtener los resultados del clustering
+            int[] assignments = kmeans.getAssignments();
+
+            // Crear un conjunto de datos para el gráfico de dispersión
+            XYSeriesCollection dataset = new XYSeriesCollection();
+            XYSeries[] series = new XYSeries[kmeans.getNumClusters()];
+
+            for (int i = 0; i < kmeans.getNumClusters(); i++) {
+                series[i] = new XYSeries("Cluster " + (i + 1));
+                dataset.addSeries(series[i]);
+            }
+
+            // Agregar las instancias al conjunto de datos según el cluster al que pertenecen
+            for (int i = 0; i < data.numInstances(); i++) {
+                Instance instance = data.instance(i);
+                int cluster = assignments[i];
+                series[cluster].add(instance.value(attributeX), instance.value(attributeY));
+            }
+
+            // Crear el gráfico de dispersión
+            JFreeChart chart = ChartFactory.createScatterPlot(
+                    "Clustering Results",
+                    "Atributo " + attributeX,
+                    "Atributo " + attributeY,
+                    dataset,
+                    PlotOrientation.VERTICAL,
+                    true,
+                    true,
+                    false
+            );
+
+            // Guardar el gráfico como un archivo PNG
+            String chartFilePath = "clustering_results.png";
+            File chartFile = new File(chartFilePath);
+            ChartUtils.saveChartAsPNG(chartFile, chart, 800, 600);
+
+            return "Gráfico de clustering generado correctamente. La imagen ha sido guardada en " + chartFilePath;
+
+        } catch (Exception e) {
+            e.printStackTrace();
+            return "Error al procesar los datos para clustering.";
+        }
+    }
+
 }

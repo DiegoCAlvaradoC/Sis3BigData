@@ -21,6 +21,8 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	implementation 'org.springframework.boot:spring-boot-starter-test'
 	implementation 'nz.ac.waikato.cms.weka:isolationForest:1.0.2'
+	implementation 'org.jfree:jfreechart:1.5.4'
+
 }
 
 tasks.named('test') {
