@@ -106,6 +106,8 @@ public class file {
         // En este ejemplo, simplemente devolvemos un mensaje indicando que el archivo se recibió correctamente.
         return ResponseEntity.status(HttpStatus.OK).body("El archivo CSV fue recibido correctamente.");
     }
+
+    @CrossOrigin(origins = "http://10.0.2.2:8080")
     @GetMapping(value = "/generate-tree", produces = MediaType.IMAGE_PNG_VALUE)
     public @ResponseBody byte[] generateTree() {
         try {
