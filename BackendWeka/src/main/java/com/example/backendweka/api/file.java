@@ -55,6 +55,7 @@ public class file {
     public Instances DataLoad = null;
 
     // Funcion para cargar el archivo CSV y guardarlo
+    @CrossOrigin(origins = "http://10.0.2.2:8080") // Add the origin you want to allow
     @PostMapping("/upload")
     public ResponseEntity<String> uploadCsv(@RequestBody MultipartFile file) {
         // Verificar si el archivo es nulo o está vacío
