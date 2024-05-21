@@ -113,7 +113,17 @@ public class file {
         try {
             J48 cls = new J48();
             String file = "dataset_modified.arff";
-            Instances data = DataSource.read(file);
+
+            Instances data = null;
+            try{
+                data = DataSource.read(file);
+                System.out.println("File successfuly loaded");
+            }
+            catch (Exception e){
+                System.out.println("No file found");
+                e.printStackTrace();
+            }
+
 
             int classIndex = 0; // Cambia este valor al índice de la columna que deseas establecer como clase
             data.setClassIndex(classIndex);
@@ -150,6 +160,7 @@ public class file {
     }
 
     // Nueva función para el clasificador MultilayerPerceptron
+    @CrossOrigin(origins = "http://10.0.2.2:8080")
     @GetMapping(value = "/generate-perceptron")
     public ResponseEntity<String> generatePerceptronInfo() {
         try {
@@ -183,6 +194,7 @@ public class file {
     }
 
     // Nueva función para el clasificador HoeffdingTree
+    @CrossOrigin(origins = "http://10.0.2.2:8080")
     @GetMapping(value = "/generate-hoeffdingtree", produces = MediaType.IMAGE_PNG_VALUE)
     public @ResponseBody byte[] generateHoeffdingTreeImage() {
         try {
@@ -211,6 +223,7 @@ public class file {
         }
     }
 
+    @CrossOrigin(origins = "http://10.0.2.2:8080")
     @GetMapping("/generate-cluster-image")
     public String clusterData() {
         try {

@@ -4,7 +4,10 @@ import 'package:big_data/theme/my_theme.dart';
 import 'package:http/http.dart' as http;
 
 class ShowResult extends StatelessWidget {
-  const ShowResult({super.key});
+  Widget imageContainer;
+
+
+  ShowResult({required this.imageContainer, super.key});
 
   Future<String> fetchImageUrl() async {
     // Replace with your endpoint URL
