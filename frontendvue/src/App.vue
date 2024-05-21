@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <!-- File Upload Section -->
+    
     <div class="card">
       <h2>Subir Archivo CSV</h2>
       <div class="file-upload">
@@ -9,7 +9,7 @@
       </div>
     </div>
 
-    <!-- Decision Tree Generation Section -->
+
     <div class="card">
       <h2>Generar Árbol de Decisión J48</h2>
       <form @submit.prevent="generateDecisionTree">
@@ -24,7 +24,7 @@
       <img :src="imagePath" alt="Decision Tree" v-if="imagePath">
     </div>
 
-    <!-- Perceptron Information Generation Section -->
+
     <div class="card">
       <h2>Generar Información del Perceptrón Multicapa</h2>
       <form @submit.prevent="generatePerceptronInfo">
@@ -42,7 +42,7 @@
       </div>
     </div>
 
-    <!-- Clustering Image Generation Section -->
+
     <div class="card">
       <h2>Generar Clustering KMeans</h2>
       <form @submit.prevent="generateClusterImage">
@@ -67,7 +67,7 @@
       <img :src="imagePath" alt="Cluster Image" v-if="imagePath">
     </div>
 
-    <!-- Attribute Selection Section -->
+
     <div class="card">
       <h2>Seleccionar Atributo</h2>
       <div v-if="metadataLoaded" class="form-group">
@@ -102,7 +102,7 @@ export default {
       metadata: {},
       metadataLoaded: false,
       selectedAttribute: '',
-      attributeName: '' // Nuevo dato para almacenar el nombre del atributo
+      attributeName: '' 
     };
   },
   methods: {
@@ -120,7 +120,6 @@ export default {
       })
           .then(response => {
             console.log(response.data);
-            // Aquí puedes manejar la respuesta del servidor
             this.fetchARFFMetadata();
           })
           .catch(error => {
