@@ -1,61 +1,92 @@
 <template>
-  <div>
-    <input type="file" @change="handleFileUpload">
-    <button @click="uploadCsv">Subir CSV</button>
-  </div>
-  <div>
-    <form @submit.prevent="generateDecisionTree">
-      <label for="classIndex">Índice de la columna de clase:</label>
-      <input type="number" id="classIndex" v-model="classIndex" required>
-      <br>
-      <button type="submit">Generar Árbol de Decisión</button>
-    </form>
-    <h2>{{ message }}</h2>
-    <img :src="imagePath" alt="Decision Tree" v-if="imagePath">
-  </div>
-  <div>
-    <form @submit.prevent="generatePerceptronInfo">
-      <label for="classIndex">Índice de la columna de clase:</label>
-      <input type="number" id="classIndex" v-model="classIndex" required>
-      <br>
-      <button type="submit">Generar Información del Perceptrón</button>
-    </form>
-    <h2>{{ message }}</h2>
-    <div v-if="classificationResults">
-      <h3>Resultados de la clasificación:</h3>
-      <pre>{{ classificationResults }}</pre>
+  <div class="container">
+    <!-- File Upload Section -->
+    <div>
+      <input type="file" @change="handleFileUpload">
+      <button @click="uploadCsv">Subir CSV</button>
     </div>
-  </div>
-  <div>
-    <button @click="generateRandomForestImage">Generar Bosque Aleatorio</button>
-    <div v-if="loading">Generando bosque aleatorio...</div>
-    <div v-else-if="error">{{ error }}</div>
-    <div v-else>
-      <img v-if="randomForestImage" :src="randomForestImage" alt="Bosque Aleatorio">
+
+    <!-- Decision Tree Generation Section -->
+    <div>
+      <h2>Arbol J48</h2>
+      <form @submit.prevent="generateDecisionTree">
+        <div v-if="metadataLoaded">
+          <label for="classIndex">Índice de la columna de clase:</label>
+          <select id="classIndex" v-model="classIndex">
+            <option v-for="(index, attributeName) in metadata" :value="index">{{ attributeName }}</option>
+          </select>
+        </div>
+        <br>
+        <button type="submit">Generar Árbol de Decisión</button>
+      </form>
+      <img :src="imagePath" alt="Decision Tree" v-if="imagePath">
     </div>
-  </div>
-  <div>
-    <form @submit.prevent="generateClusterImage">
-      <label for="attributeX">Atributo X:</label>
-      <input type="number" id="attributeX" v-model="attributeX" required>
-      <br>
-      <label for="attributeY">Atributo Y:</label>
-      <input type="number" id="attributeY" v-model="attributeY" required>
-      <br>
-      <label for="numClusters">Número de clusters:</label>
-      <input type="number" id="numClusters" v-model="numClusters" required>
-      <br>
-      <button type="submit">Generar imagen de clustering</button>
-    </form>
-    <h2>{{ message }}</h2>
-    <img :src="imagePath" alt="Cluster Image" v-if="imagePath">
-  </div>
-  <div>
-    <button @click="fetchARFFMetadata">Obtener Metadata del ARFF</button>
-    <h2>{{ message }}</h2>
-    <div v-if="metadata">
-      <h3>Metadata del archivo ARFF:</h3>
-      <pre>{{ metadata }}</pre>
+
+    <!-- Perceptron Information Generation Section -->
+    <div>
+      <h2>Multilayer Perceptron</h2>
+      <form @submit.prevent="generatePerceptronInfo">
+        <div v-if="metadataLoaded">
+          <label for="classIndex">Índice de la columna de clase:</label>
+          <select id="classIndex" v-model="classIndex">
+            <option v-for="(index, attributeName) in metadata" :value="index">{{ attributeName }}</option>
+          </select>
+        </div>
+        <br>
+        <button type="submit">Generar Información del Perceptrón</button>
+      </form>
+      <div v-if="classificationResults">
+        <h3>Resultados de la clasificación:</h3>
+        <pre>{{ classificationResults }}</pre>
+      </div>
+    </div>
+
+    <!-- Random Forest Generation Section -->
+    <!--<div>
+      <button @click="generateRandomForestImage">Generar Bosque Aleatorio</button>
+      <div v-if="loading" class="loading">Generando bosque aleatorio...</div>
+      <div v-else-if="error" class="error">{{ error }}</div>
+      <div v-else>
+        <img v-if="randomForestImage" :src="randomForestImage" alt="Bosque Aleatorio">
+      </div>
+    </div>-->
+
+    <!-- Clustering Image Generation Section -->
+    <div>
+      <h2>Clustering KMeans</h2>
+      <form @submit.prevent="generateClusterImage">
+        <div v-if="metadataLoaded">
+          <label for="attributeX">Atributo X:</label>
+          <select id="attributeX" v-model="attributeX">
+            <option v-for="(index, attributeName) in metadata" :value="index">{{ attributeName }}</option>
+          </select>
+        </div>
+        <br>
+        <div v-if="metadataLoaded">
+          <label for="attributeY">Atributo Y:</label>
+          <select id="attributeY" v-model="attributeY">
+            <option v-for="(index, attributeName) in metadata" :value="index">{{ attributeName }}</option>
+          </select>
+        </div>
+        <br>
+        <label for="numClusters">Número de clusters:</label>
+        <input type="number" id="numClusters" v-model="numClusters" required>
+        <br>
+        <button type="submit">Generar imagen de clustering</button>
+      </form>
+
+      <img :src="imagePath" alt="Cluster Image" v-if="imagePath">
+    </div>
+
+    <!-- Attribute Selection Section -->
+    <div>
+      <h2>{{ message }}</h2>
+      <div v-if="metadataLoaded">
+        <label for="attributeSelect">Selecciona un atributo:</label>
+        <select id="attributeSelect" v-model="selectedAttribute">
+          <option v-for="(index, attributeName) in metadata" :value="index">{{ attributeName }}</option>
+        </select>
+      </div>
     </div>
   </div>
 </template>
@@ -79,7 +110,9 @@ export default {
       imagePath: '',
       classIndex: 0,
       classificationResults: '',
-      metadata: null,
+      metadata: {},
+      metadataLoaded: false,
+      selectedAttribute: '',
       attributeName: '' // Nuevo dato para almacenar el nombre del atributo
     };
   },
@@ -99,6 +132,7 @@ export default {
           .then(response => {
             console.log(response.data);
             // Aquí puedes manejar la respuesta del servidor
+            this.fetchARFFMetadata();
           })
           .catch(error => {
             console.error('Error al subir el archivo CSV:', error);
@@ -162,7 +196,6 @@ export default {
             this.loading = false;
           });
     },
-
     generateClusterImage() {
       fetch(`http://localhost:8080/generate-cluster-image?attributeX=${this.attributeX}&attributeY=${this.attributeY}&numClusters=${this.numClusters}`)
           .then(response => {
@@ -190,28 +223,85 @@ export default {
           })
           .then(data => {
             this.message = 'Metadata obtenida correctamente.';
-            this.metadata = JSON.stringify(data, null, 2);
+            this.metadata = data;
+            this.metadataLoaded = true;
           })
           .catch(error => {
             console.error('Error:', error);
             this.message = 'Error al obtener la metadata del archivo ARFF.';
-            this.metadata = null;
+            this.metadataLoaded = false;
           });
     }
   },
 };
 </script>
 
-
 <style>
-#app {
+body {
   font-family: Arial, sans-serif;
-  text-align: center;
-  margin-top: 50px;
+  margin: 0;
+  padding: 0;
 }
 
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="file"] {
+  margin-bottom: 10px;
+}
+
+select {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+img {
+  max-width: 100%;
+  margin-top: 10px;
+}
+
+.error {
+  color: #ff0000;
+  margin-top: 10px;
+}
+
+.loading {
+  margin-top: 10px;
+}
 </style>
-
-
-
-

@@ -108,6 +108,7 @@ public class file {
         // En este ejemplo, simplemente devolvemos un mensaje indicando que el archivo se recibió correctamente.
         return ResponseEntity.status(HttpStatus.OK).body("El archivo CSV fue recibido correctamente.");
     }
+
     @GetMapping(value = "/generate-tree", produces = MediaType.IMAGE_PNG_VALUE)
     public @ResponseBody byte[] generateTree(@RequestParam(value = "classIndex") int classIndex) {
         try {
@@ -150,11 +151,13 @@ public class file {
 
     // Nueva función para el clasificador MultilayerPerceptron
     @GetMapping(value = "/generate-perceptron")
-    public ResponseEntity<String> generatePerceptronInfo(@RequestParam(value = "classIndex") int classIndex) {
+    public ResponseEntity<String> generatePerceptronInfo() {
         try {
             MultilayerPerceptron cls = new MultilayerPerceptron();
-            Instances data = DataLoad;
+            String file = "dataset_modified.arff";
+            Instances data = DataSource.read(file);
 
+            int classIndex = 0; // Cambia este valor al índice de la columna que deseas establecer como clase
             data.setClassIndex(classIndex);
 
             cls.buildClassifier(data);
@@ -163,13 +166,36 @@ public class file {
             StringWriter modelResults = new StringWriter();
             modelResults.append(cls.toString());
             String classificationResults = modelResults.toString();
-            System.out.println(classificationResults);
 
-            return ResponseEntity.status(HttpStatus.OK).body(classificationResults);
+            // Extraer información relevante
+            String relevantInfo = extractRelevantInfo(classificationResults);
+
+            return ResponseEntity.status(HttpStatus.OK).body(relevantInfo);
         } catch (Exception e) {
             e.printStackTrace();
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Se produjo un error al generar la información del clasificador.");
         }
+    }
+
+    private String extractRelevantInfo(String classificationResults) {
+        StringBuilder relevantInfo = new StringBuilder();
+
+        // Aquí puedes agregar los criterios para filtrar la información relevante
+        String[] lines = classificationResults.split("\n");
+        for (String line : lines) {
+            if (line.contains("Correctly Classified Instances") ||
+                    line.contains("Incorrectly Classified Instances") ||
+                    line.contains("Kappa statistic") ||
+                    line.contains("Mean absolute error") ||
+                    line.contains("Root mean squared error") ||
+                    line.contains("Relative absolute error") ||
+                    line.contains("Root relative squared error") ||
+                    line.contains("Total Number of Instances")) {
+                relevantInfo.append(line).append("\n");
+            }
+        }
+
+        return relevantInfo.toString();
     }
 
 
@@ -282,8 +308,8 @@ public class file {
     public Map<String, Integer> getARFFMetadata() {
         Map<String, Integer> metadata = new HashMap<>();
         try {
-            //String filename = "dataset_modified.arff"; // Nombre del archivo ARFF
-            //DataSource source = new DataSource(filename);
+            // String filename = "dataset_modified.arff"; // Nombre del archivo ARFF
+            // DataSource source = new DataSource(filename);
             Instances data = DataLoad; // Cargar el archivo ARFF
 
             // Obtener nombres de las columnas y sus índices
