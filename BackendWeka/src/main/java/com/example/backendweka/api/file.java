@@ -23,6 +23,7 @@ import weka.filters.unsupervised.attribute.StringToNominal;
 
 
 import java.awt.*;
+import java.awt.image.BufferedImage;
 import java.io.*;
 
 
@@ -36,6 +37,9 @@ import java.nio.file.Path;
 
 import java.awt.Color;
 import java.io.File;
+import java.util.HashMap;
+import java.util.Map;
+
 import org.jfree.chart.ChartFactory;
 import org.jfree.chart.ChartUtils;
 import org.jfree.chart.JFreeChart;
@@ -52,7 +56,7 @@ import weka.core.converters.ConverterUtils.DataSource;
 @RestController
 public class file {
 
-    public Instances DataLoad = null;
+    public Instances DataLoad;
 
     // Funcion para cargar el archivo CSV y guardarlo
     @PostMapping("/upload")
@@ -71,27 +75,26 @@ public class file {
             // Cargar archivo CSV
             CSVLoader loader = new CSVLoader();
             loader.setSource(file.getInputStream());
-            Instances data = loader.getDataSet();
+            DataLoad = loader.getDataSet();
+
 
             // Agregar la funcionalidad para convertir atributos String a Nominal
-            for (int i = 0; i < data.numAttributes(); i++) {
-                if (data.attribute(i).isString()) {
+            for (int i = 0; i < DataLoad.numAttributes(); i++) {
+                if (DataLoad.attribute(i).isString()) {
                     // Convertir el atributo de tipo String a Nominal
                     StringToNominal filter = new StringToNominal();
                     String[] options = {"-R", String.valueOf(i + 1)}; // i+1 porque los índices en Weka comienzan desde 1
                     filter.setOptions(options);
-                    filter.setInputFormat(data);
-                    data = weka.filters.Filter.useFilter(data, filter);
+                    filter.setInputFormat(DataLoad);
+                    DataLoad = weka.filters.Filter.useFilter(DataLoad, filter);
                 }
             }
 
             // Guardar como ARFF
             ArffSaver saver = new ArffSaver();
-            saver.setInstances(data);
+            saver.setInstances(DataLoad);
             saver.setFile(new java.io.File("DataCleanWEKA.arff"));
             saver.writeBatch();
-
-            DataLoad = data;
 
             System.out.println("Archivo ARFF creado con éxito.");
         } catch (Exception e) {
@@ -105,14 +108,13 @@ public class file {
         // En este ejemplo, simplemente devolvemos un mensaje indicando que el archivo se recibió correctamente.
         return ResponseEntity.status(HttpStatus.OK).body("El archivo CSV fue recibido correctamente.");
     }
+
     @GetMapping(value = "/generate-tree", produces = MediaType.IMAGE_PNG_VALUE)
-    public @ResponseBody byte[] generateTree() {
+    public @ResponseBody byte[] generateTree(@RequestParam(value = "classIndex") int classIndex) {
         try {
             J48 cls = new J48();
-            String file = "dataset_modified.arff";
-            Instances data = DataSource.read(file);
+            Instances data = DataLoad;
 
-            int classIndex = 0; // Cambia este valor al índice de la columna que deseas establecer como clase
             data.setClassIndex(classIndex);
 
             cls.buildClassifier(data);
@@ -122,7 +124,7 @@ public class file {
             saveTreeAsDot(cls, dotFileName);
 
             // Convert DOT file to image using Graphviz (assuming Graphviz is installed)
-            convertDotToImage(dotFileName,"tree");
+            convertDotToImage(dotFileName, "tree");
             String imageFilePath = "tree.png"; // Cambia esto por la ruta real de tu imagen generada
             File fileImg = new File(imageFilePath);
             Path path = fileImg.toPath();
@@ -133,6 +135,7 @@ public class file {
             return null;
         }
     }
+
 
     private void saveTreeAsDot(J48 cls, String fileName) throws Exception {
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(fileName))) {
@@ -163,14 +166,38 @@ public class file {
             StringWriter modelResults = new StringWriter();
             modelResults.append(cls.toString());
             String classificationResults = modelResults.toString();
-            System.out.println(classificationResults);
 
-            return ResponseEntity.status(HttpStatus.OK).body(classificationResults);
+            // Extraer información relevante
+            String relevantInfo = extractRelevantInfo(classificationResults);
+
+            return ResponseEntity.status(HttpStatus.OK).body(relevantInfo);
         } catch (Exception e) {
             e.printStackTrace();
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Se produjo un error al generar la información del clasificador.");
         }
     }
+
+    private String extractRelevantInfo(String classificationResults) {
+        StringBuilder relevantInfo = new StringBuilder();
+
+        // Aquí puedes agregar los criterios para filtrar la información relevante
+        String[] lines = classificationResults.split("\n");
+        for (String line : lines) {
+            if (line.contains("Correctly Classified Instances") ||
+                    line.contains("Incorrectly Classified Instances") ||
+                    line.contains("Kappa statistic") ||
+                    line.contains("Mean absolute error") ||
+                    line.contains("Root mean squared error") ||
+                    line.contains("Relative absolute error") ||
+                    line.contains("Root relative squared error") ||
+                    line.contains("Total Number of Instances")) {
+                relevantInfo.append(line).append("\n");
+            }
+        }
+
+        return relevantInfo.toString();
+    }
+
 
     // Nueva función para el clasificador RandomForest
     private void saveHoeffdingTreeAsDot(HoeffdingTree tree, String fileName) throws Exception {
@@ -184,8 +211,7 @@ public class file {
     public @ResponseBody byte[] generateHoeffdingTreeImage() {
         try {
             HoeffdingTree cls = new HoeffdingTree();
-            String file = "dataset_modified.arff";
-            Instances data = DataSource.read(file);
+            Instances data = DataLoad;
 
             int classIndex = 0; // Cambia este valor al índice de la columna que deseas establecer como clase
             data.setClassIndex(classIndex);
@@ -209,21 +235,18 @@ public class file {
     }
 
     @GetMapping("/generate-cluster-image")
-    public String clusterData() {
+    public byte[] generateClusterImage(@RequestParam(value = "attributeX") int attributeX,
+                                       @RequestParam(value = "attributeY") int attributeY,
+                                       @RequestParam(value = "numClusters", defaultValue = "3") int numClusters) {
         try {
             // Cargar el archivo ARFF
-            DataSource source = new DataSource("dataset_modified.arff");
-            Instances data = source.getDataSet();
-
-            // Seleccionar los índices de los atributos que deseas utilizar
-            int attributeX = 1; // Índice del atributo X
-            int attributeY = 2; // Índice del atributo Y
+            Instances data = DataLoad;
 
             // Instanciar SimpleKMeans
             SimpleKMeans kmeans = new SimpleKMeans();
 
             // Configurar el número de clusters (k)
-            kmeans.setNumClusters(3); // Por ejemplo, 3 clusters
+            kmeans.setNumClusters(numClusters);
 
             // Asegurar que el orden de las instancias se mantenga
             kmeans.setPreserveInstancesOrder(true);
@@ -262,17 +285,42 @@ public class file {
                     false
             );
 
-            // Guardar el gráfico como un archivo PNG
-            String chartFilePath = "clustering_results.png";
-            File chartFile = new File(chartFilePath);
-            ChartUtils.saveChartAsPNG(chartFile, chart, 800, 600);
+            // Convertir el gráfico en un array de bytes
+            BufferedImage image = chart.createBufferedImage(800, 600);
+            ByteArrayOutputStream baos = new ByteArrayOutputStream();
+            ChartUtils.writeBufferedImageAsPNG(baos, image);
 
-            return "Gráfico de clustering generado correctamente. La imagen ha sido guardada en " + chartFilePath;
+            // Guardar la imagen en un archivo PNG
+            String imagePath = "clustering_results.png";
+            File outputFile = new File(imagePath);
+            ChartUtils.saveChartAsPNG(outputFile, chart, 800, 600);
+
+            // Devolver los bytes de la imagen
+            return baos.toByteArray();
 
         } catch (Exception e) {
             e.printStackTrace();
-            return "Error al procesar los datos para clustering.";
+            return null;
         }
+    }
+
+    @GetMapping("/arff-metadata")
+    public Map<String, Integer> getARFFMetadata() {
+        Map<String, Integer> metadata = new HashMap<>();
+        try {
+            // String filename = "dataset_modified.arff"; // Nombre del archivo ARFF
+            // DataSource source = new DataSource(filename);
+            Instances data = DataLoad; // Cargar el archivo ARFF
+
+            // Obtener nombres de las columnas y sus índices
+            for (int i = 0; i < data.numAttributes(); i++) {
+                metadata.put(data.attribute(i).name(), i);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            // Manejar errores según sea necesario
+        }
+        return metadata;
     }
 
 }
