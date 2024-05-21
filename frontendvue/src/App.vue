@@ -19,7 +19,7 @@
         <br>
         <button type="submit">Generar Árbol de Decisión</button>
       </form>
-      <img :src="imagePath" alt="Decision Tree" v-if="imagePath">
+      <img :src="imagePath2" alt="Decision Tree" v-if="imagePath2">
     </div>
 
     <!-- Perceptron Information Generation Section -->
@@ -75,7 +75,7 @@
         <button type="submit">Generar imagen de clustering</button>
       </form>
 
-      <img :src="imagePath" alt="Cluster Image" v-if="imagePath">
+      <img :src="imagePath1" alt="Cluster Image" v-if="imagePath1">
     </div>
 
     <!-- Attribute Selection Section -->
@@ -107,7 +107,8 @@ export default {
       attributeY: 2,
       numClusters: 3,
       message: '',
-      imagePath: '',
+      imagePath1: '',
+      imagePath2: '',
       classIndex: 0,
       classificationResults: '',
       metadata: {},
@@ -148,7 +149,7 @@ export default {
           })
           .then(imageBlob => {
             this.message = 'Árbol de decisión generado correctamente.';
-            this.imagePath = URL.createObjectURL(imageBlob);
+            this.imagePath2 = URL.createObjectURL(imageBlob);
           })
           .catch(error => {
             console.error('Error:', error);
@@ -206,7 +207,7 @@ export default {
           })
           .then(imageBlob => {
             this.message = 'Imagen de clustering generada correctamente.';
-            this.imagePath = URL.createObjectURL(imageBlob);
+            this.imagePath1 = URL.createObjectURL(imageBlob);
           })
           .catch(error => {
             console.error('Error:', error);
