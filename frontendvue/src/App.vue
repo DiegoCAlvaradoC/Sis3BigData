@@ -42,7 +42,7 @@
       </form>
       <div v-if="perceptronFilePath">
         <h3>Información del Perceptrón generada:</h3>
-        <a :href="perceptronFilePath" download="perceptron_info.txt">Descargar archivo de información del perceptrón</a>
+        <a :href="perceptronFilePath" download="perceptron_info.txt" class="link">Descargar archivo de información del perceptrón</a>
         </div>
 
     </div>
@@ -232,6 +232,11 @@ body {
   color: #fff;
   margin: 0;
   padding: 0;
+}
+
+.link {
+  color: #b3d6fb;
+
 }
 
 .container {
