@@ -37,8 +37,8 @@ import java.nio.file.Path;
 
 import java.awt.Color;
 import java.io.File;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
+import java.util.List;
 
 import org.jfree.chart.ChartFactory;
 import org.jfree.chart.ChartUtils;
@@ -51,11 +51,6 @@ import org.jfree.data.xy.XYSeriesCollection;
 import weka.clusterers.SimpleKMeans;
 import weka.core.Instances;
 import weka.core.converters.ConverterUtils.DataSource;
-
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.List;
 
 @SpringBootApplication
 @RestController
@@ -153,6 +148,105 @@ public class file {
         System.out.println("Imagen generada con éxito: "+ nameImg + ".png");
         p.waitFor();
     }
+
+
+    @GetMapping(value = "/image-perceptron", produces = MediaType.IMAGE_PNG_VALUE)
+    public @ResponseBody byte[] generateImgP(@RequestParam(value = "classIndex") int classIndex) {
+        try {
+            MultilayerPerceptron cls = new MultilayerPerceptron();
+            Instances data = DataLoad;
+
+            data.setClassIndex(classIndex);
+
+            cls.buildClassifier(data);
+
+            // Guardar resultados del clasificador en una variable
+            StringWriter modelResults = new StringWriter();
+            modelResults.append(cls.toString());
+            String classificationResults = modelResults.toString();
+
+
+            // Dividir la entrada en nodos y pesos
+            Scanner scanner = new Scanner(classificationResults);
+            String[] nodeArray = scanner.nextLine().split(", ");
+            List<List<Double>> weights = new ArrayList<>();
+
+            while (scanner.hasNextLine()) {
+                String line = scanner.nextLine();
+                if (!line.matches(".*\\d.*")) {
+                    continue; // Ignorar líneas sin números
+                }
+                String[] weightArray = line.split(", ");
+                List<Double> weightList = new ArrayList<>();
+                for (String weight : weightArray) {
+                    try {
+                        weightList.add(Double.parseDouble(weight));
+                    } catch (NumberFormatException e) {
+                        // Ignorar cualquier valor no numérico
+                    }
+                }
+                if (!weightList.isEmpty()) {
+                    weights.add(weightList);
+                }
+            }
+
+            // Generar archivo DOT
+            try {
+                generateDotFile(nodeArray, weights);
+                generateGraphImage();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+
+            String imageFilePath = "network.png"; // Cambia esto por la ruta real de tu imagen generada
+            File fileImg = new File(imageFilePath);
+            Path path = fileImg.toPath();
+            return Files.readAllBytes(path);
+        } catch (Exception e) {
+            // Maneja los errores según sea necesario
+            e.printStackTrace();
+            return null;
+        }
+    }
+
+
+    private static void generateDotFile(String[] nodes, List<List<Double>> weights) throws IOException {
+        FileWriter fileWriter = new FileWriter("network.dot");
+        fileWriter.write("digraph G {\n");
+
+        // Definir nodos
+        for (String node : nodes) {
+            fileWriter.write(String.format("\"%s\";\n", node));
+        }
+
+        // Definir aristas con pesos
+        for (int i = 0; i < nodes.length - 1; i++) {
+            for (int j = 0; j < weights.get(i).size(); j++) {
+                fileWriter.write(String.format("\"%s\" -> \"%s\" [label=\"%.2f\"];\n", nodes[i], nodes[i + 1], weights.get(i).get(j)));
+            }
+        }
+
+        fileWriter.write("}\n");
+        fileWriter.close();
+    }
+
+    private static void generateGraphImage() throws IOException {
+        // Comando para generar la imagen con Graphviz
+        ProcessBuilder processBuilder = new ProcessBuilder("dot", "-Tpng", "network.dot", "-o", "network.png");
+        processBuilder.redirectErrorStream(true);
+        Process process = processBuilder.start();
+
+        // Esperar a que el proceso termine
+        try {
+            process.waitFor();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
+
+
+
+
     // Nueva función para el clasificador MultilayerPerceptron
     @GetMapping(value = "/generate-perceptron", produces = MediaType.APPLICATION_OCTET_STREAM_VALUE)
     public ResponseEntity<byte[]> generatePerceptronInfo(@RequestParam(value = "classIndex") int classIndex) {
