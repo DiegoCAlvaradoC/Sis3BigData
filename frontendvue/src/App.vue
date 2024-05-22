@@ -26,20 +26,24 @@
 
 
     <div class="card">
-      <h2>Generar Información del Perceptrón Multicapa</h2>
+      <!-- Perceptron Information Generation Section -->
+
+      <h2>Multilayer Perceptron</h2>
       <form @submit.prevent="generatePerceptronInfo">
-        <div v-if="metadataLoaded" class="form-group">
+        <div v-if="metadataLoaded">
           <label for="classIndex">Índice de la columna de clase:</label>
           <select id="classIndex" v-model="classIndex">
             <option v-for="(index, attributeName) in metadata" :value="index">{{ attributeName }}</option>
           </select>
         </div>
+        <br>
         <button type="submit">Generar Información del Perceptrón</button>
       </form>
-      <div v-if="classificationResults">
-        <h3>Resultados de la Clasificación:</h3>
-        <pre>{{ classificationResults }}</pre>
-      </div>
+      <div v-if="perceptronFilePath">
+        <h3>Información del Perceptrón generada:</h3>
+        <a :href="perceptronFilePath" download="perceptron_info.txt">Descargar archivo de información del perceptrón</a>
+        </div>
+
     </div>
 
 
@@ -67,16 +71,7 @@
       <img :src="imagePath" alt="Cluster Image" v-if="imagePath">
     </div>
 
-
-    <div class="card">
-      <h2>Seleccionar Atributo</h2>
-      <div v-if="metadataLoaded" class="form-group">
-        <label for="attributeSelect">Selecciona un atributo:</label>
-        <select id="attributeSelect" v-model="selectedAttribute">
-          <option v-for="(index, attributeName) in metadata" :value="index">{{ attributeName }}</option>
-        </select>
-      </div>
-    </div>
+    
   </div>
 </template>
 
@@ -102,7 +97,8 @@ export default {
       metadata: {},
       metadataLoaded: false,
       selectedAttribute: '',
-      attributeName: '' 
+      attributeName: '',
+      perceptronFilePath: '',
     };
   },
   methods: {
@@ -145,20 +141,21 @@ export default {
     },
     generatePerceptronInfo() {
       fetch(`http://localhost:8080/generate-perceptron?classIndex=${this.classIndex}`)
-          .then(response => {
+        .then(response => {
             if (!response.ok) {
               throw new Error('Network response was not ok');
             }
-            return response.text();
+            return response.blob();
           })
-          .then(data => {
+          .then(blob => {
+            const url = URL.createObjectURL(blob);
             this.message = 'Información del perceptrón generada correctamente.';
-            this.classificationResults = data;
+            this.perceptronFilePath = url;
           })
           .catch(error => {
             console.error('Error:', error);
             this.message = 'Error al generar la información del perceptrón.';
-            this.classificationResults = '';
+            this.perceptronFilePath = '';
           });
     },
     generateRandomForestImage() {

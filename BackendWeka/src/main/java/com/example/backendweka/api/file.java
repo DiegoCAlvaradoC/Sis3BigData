@@ -52,6 +52,11 @@ import weka.clusterers.SimpleKMeans;
 import weka.core.Instances;
 import weka.core.converters.ConverterUtils.DataSource;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
+
 @SpringBootApplication
 @RestController
 public class file {
@@ -148,16 +153,13 @@ public class file {
         System.out.println("Imagen generada con éxito: "+ nameImg + ".png");
         p.waitFor();
     }
-
     // Nueva función para el clasificador MultilayerPerceptron
-    @GetMapping(value = "/generate-perceptron")
-    public ResponseEntity<String> generatePerceptronInfo() {
+    @GetMapping(value = "/generate-perceptron", produces = MediaType.APPLICATION_OCTET_STREAM_VALUE)
+    public ResponseEntity<byte[]> generatePerceptronInfo(@RequestParam(value = "classIndex") int classIndex) {
         try {
             MultilayerPerceptron cls = new MultilayerPerceptron();
-            String file = "dataset_modified.arff";
-            Instances data = DataSource.read(file);
+            Instances data = DataLoad;
 
-            int classIndex = 0; // Cambia este valor al índice de la columna que deseas establecer como clase
             data.setClassIndex(classIndex);
 
             cls.buildClassifier(data);
@@ -168,35 +170,32 @@ public class file {
             String classificationResults = modelResults.toString();
 
             // Extraer información relevante
+            //System.out.println("Información: ");
+            //System.out.println(classificationResults);
             String relevantInfo = extractRelevantInfo(classificationResults);
+            //System.out.println("Información relevante: ");
+            //System.out.println(relevantInfo);
 
-            return ResponseEntity.status(HttpStatus.OK).body(relevantInfo);
+            // Guardar la información relevante en un archivo .txt
+            String filePath = "perceptron_info.txt";
+            try (BufferedWriter writer = new BufferedWriter(new FileWriter(filePath))) {
+                writer.write(classificationResults);
+            }
+
+            // Leer el archivo y devolverlo como byte[]
+            File file = new File(filePath);
+            byte[] fileContent = Files.readAllBytes(file.toPath());
+
+            return ResponseEntity.ok()
+                    .header("Content-Disposition", "attachment; filename=" + file.getName())
+                    .body(fileContent);
+
         } catch (Exception e) {
             e.printStackTrace();
-            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Se produjo un error al generar la información del clasificador.");
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(null);
         }
     }
 
-    private String extractRelevantInfo(String classificationResults) {
-        StringBuilder relevantInfo = new StringBuilder();
-
-        // Aquí puedes agregar los criterios para filtrar la información relevante
-        String[] lines = classificationResults.split("\n");
-        for (String line : lines) {
-            if (line.contains("Correctly Classified Instances") ||
-                    line.contains("Incorrectly Classified Instances") ||
-                    line.contains("Kappa statistic") ||
-                    line.contains("Mean absolute error") ||
-                    line.contains("Root mean squared error") ||
-                    line.contains("Relative absolute error") ||
-                    line.contains("Root relative squared error") ||
-                    line.contains("Total Number of Instances")) {
-                relevantInfo.append(line).append("\n");
-            }
-        }
-
-        return relevantInfo.toString();
-    }
 
 
     // Nueva función para el clasificador RandomForest
@@ -234,6 +233,27 @@ public class file {
         }
     }
 
+    private String extractRelevantInfo(String classificationResults) {
+        StringBuilder relevantInfo = new StringBuilder();
+
+        // Aquí puedes agregar los criterios para filtrar la información relevante
+        String[] lines = classificationResults.split("\n");
+        for (String line : lines) {
+            if (line.contains("Correctly Classified Instances") ||
+                    line.contains("Incorrectly Classified Instances") ||
+                    line.contains("Kappa statistic") ||
+                    line.contains("Mean absolute error") ||
+                    line.contains("Root mean squared error") ||
+                    line.contains("Relative absolute error") ||
+                    line.contains("Root relative squared error") ||
+                    line.contains("Total Number of Instances")) {
+                relevantInfo.append(line).append("\n");
+            }
+        }
+
+        return relevantInfo.toString();
+    }
+
     @GetMapping("/generate-cluster-image")
     public byte[] generateClusterImage(@RequestParam(value = "attributeX") int attributeX,
                                        @RequestParam(value = "attributeY") int attributeY,
@@ -244,6 +264,7 @@ public class file {
 
             // Instanciar SimpleKMeans
             SimpleKMeans kmeans = new SimpleKMeans();
+            data.setClassIndex(-1);
 
             // Configurar el número de clusters (k)
             kmeans.setNumClusters(numClusters);
