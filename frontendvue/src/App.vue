@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    
+
     <div class="card">
       <h2>Subir Archivo CSV</h2>
       <div class="file-upload">
@@ -19,9 +19,10 @@
             <option v-for="(index, attributeName) in metadata" :value="index">{{ attributeName }}</option>
           </select>
         </div>
+        <br>
         <button type="submit">Generar Árbol de Decisión</button>
       </form>
-      <img :src="imagePath" alt="Decision Tree" v-if="imagePath">
+      <img :src="imagePath2" alt="Decision Tree" v-if="imagePath2">
     </div>
 
 
@@ -68,10 +69,11 @@
         </div>
         <button type="submit">Generar Imagen de Clustering</button>
       </form>
-      <img :src="imagePath" alt="Cluster Image" v-if="imagePath">
+
+      <img :src="imagePath1" alt="Cluster Image" v-if="imagePath1">
     </div>
 
-    
+
   </div>
 </template>
 
@@ -91,7 +93,8 @@ export default {
       attributeY: 2,
       numClusters: 3,
       message: '',
-      imagePath: '',
+      imagePath1: '',
+      imagePath2: '',
       classIndex: 0,
       classificationResults: '',
       metadata: {},
@@ -116,6 +119,7 @@ export default {
       })
           .then(response => {
             console.log(response.data);
+            // Aquí puedes manejar la respuesta del servidor
             this.fetchARFFMetadata();
           })
           .catch(error => {
@@ -132,7 +136,7 @@ export default {
           })
           .then(imageBlob => {
             this.message = 'Árbol de decisión generado correctamente.';
-            this.imagePath = URL.createObjectURL(imageBlob);
+            this.imagePath2 = URL.createObjectURL(imageBlob);
           })
           .catch(error => {
             console.error('Error:', error);
@@ -191,7 +195,7 @@ export default {
           })
           .then(imageBlob => {
             this.message = 'Imagen de clustering generada correctamente.';
-            this.imagePath = URL.createObjectURL(imageBlob);
+            this.imagePath1 = URL.createObjectURL(imageBlob);
           })
           .catch(error => {
             console.error('Error:', error);
