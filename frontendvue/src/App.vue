@@ -1,16 +1,19 @@
 <template>
   <div class="container">
-    <!-- File Upload Section -->
-    <div>
-      <input type="file" @change="handleFileUpload">
-      <button @click="uploadCsv">Subir CSV</button>
+
+    <div class="card">
+      <h2>Subir Archivo CSV</h2>
+      <div class="file-upload">
+        <input type="file" @change="handleFileUpload">
+        <button @click="uploadCsv">Subir CSV</button>
+      </div>
     </div>
 
-    <!-- Decision Tree Generation Section -->
-    <div>
-      <h2>Arbol J48</h2>
+
+    <div class="card">
+      <h2>Generar Árbol de Decisión J48</h2>
       <form @submit.prevent="generateDecisionTree">
-        <div v-if="metadataLoaded">
+        <div v-if="metadataLoaded" class="form-group">
           <label for="classIndex">Índice de la columna de clase:</label>
           <select id="classIndex" v-model="classIndex">
             <option v-for="(index, attributeName) in metadata" :value="index">{{ attributeName }}</option>
@@ -22,8 +25,10 @@
       <img :src="imagePath2" alt="Decision Tree" v-if="imagePath2">
     </div>
 
-    <!-- Perceptron Information Generation Section -->
-    <div>
+
+    <div class="card">
+      <!-- Perceptron Information Generation Section -->
+
       <h2>Multilayer Perceptron</h2>
       <form @submit.prevent="generatePerceptronInfo">
         <div v-if="metadataLoaded">
@@ -35,59 +40,40 @@
         <br>
         <button type="submit">Generar Información del Perceptrón</button>
       </form>
-      <div v-if="classificationResults">
-        <h3>Resultados de la clasificación:</h3>
-        <pre>{{ classificationResults }}</pre>
-      </div>
+      <div v-if="perceptronFilePath">
+        <h3>Información del Perceptrón generada:</h3>
+        <a :href="perceptronFilePath" download="perceptron_info.txt">Descargar archivo de información del perceptrón</a>
+        </div>
+
     </div>
 
-    <!-- Random Forest Generation Section -->
-    <!--<div>
-      <button @click="generateRandomForestImage">Generar Bosque Aleatorio</button>
-      <div v-if="loading" class="loading">Generando bosque aleatorio...</div>
-      <div v-else-if="error" class="error">{{ error }}</div>
-      <div v-else>
-        <img v-if="randomForestImage" :src="randomForestImage" alt="Bosque Aleatorio">
-      </div>
-    </div>-->
 
-    <!-- Clustering Image Generation Section -->
-    <div>
-      <h2>Clustering KMeans</h2>
+    <div class="card">
+      <h2>Generar Clustering KMeans</h2>
       <form @submit.prevent="generateClusterImage">
-        <div v-if="metadataLoaded">
+        <div v-if="metadataLoaded" class="form-group">
           <label for="attributeX">Atributo X:</label>
           <select id="attributeX" v-model="attributeX">
             <option v-for="(index, attributeName) in metadata" :value="index">{{ attributeName }}</option>
           </select>
         </div>
-        <br>
-        <div v-if="metadataLoaded">
+        <div v-if="metadataLoaded" class="form-group">
           <label for="attributeY">Atributo Y:</label>
           <select id="attributeY" v-model="attributeY">
             <option v-for="(index, attributeName) in metadata" :value="index">{{ attributeName }}</option>
           </select>
         </div>
-        <br>
-        <label for="numClusters">Número de clusters:</label>
-        <input type="number" id="numClusters" v-model="numClusters" required>
-        <br>
-        <button type="submit">Generar imagen de clustering</button>
+        <div class="form-group">
+          <label for="numClusters">Número de Clusters:</label>
+          <input type="number" id="numClusters" v-model="numClusters" required>
+        </div>
+        <button type="submit">Generar Imagen de Clustering</button>
       </form>
 
       <img :src="imagePath1" alt="Cluster Image" v-if="imagePath1">
     </div>
 
-    <!-- Attribute Selection Section -->
-    <div>
-      <h2>{{ message }}</h2>
-      <div v-if="metadataLoaded">
-        <label for="attributeSelect">Selecciona un atributo:</label>
-        <select id="attributeSelect" v-model="selectedAttribute">
-          <option v-for="(index, attributeName) in metadata" :value="index">{{ attributeName }}</option>
-        </select>
-      </div>
-    </div>
+
   </div>
 </template>
 
@@ -114,7 +100,8 @@ export default {
       metadata: {},
       metadataLoaded: false,
       selectedAttribute: '',
-      attributeName: '' // Nuevo dato para almacenar el nombre del atributo
+      attributeName: '',
+      perceptronFilePath: '',
     };
   },
   methods: {
@@ -158,20 +145,21 @@ export default {
     },
     generatePerceptronInfo() {
       fetch(`http://localhost:8080/generate-perceptron?classIndex=${this.classIndex}`)
-          .then(response => {
+        .then(response => {
             if (!response.ok) {
               throw new Error('Network response was not ok');
             }
-            return response.text();
+            return response.blob();
           })
-          .then(data => {
+          .then(blob => {
+            const url = URL.createObjectURL(blob);
             this.message = 'Información del perceptrón generada correctamente.';
-            this.classificationResults = data;
+            this.perceptronFilePath = url;
           })
           .catch(error => {
             console.error('Error:', error);
             this.message = 'Error al generar la información del perceptrón.';
-            this.classificationResults = '';
+            this.perceptronFilePath = '';
           });
     },
     generateRandomForestImage() {
@@ -239,44 +227,59 @@ export default {
 
 <style>
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Metropolis', sans-serif;
+  background-color: #1f1f1f;
+  color: #fff;
   margin: 0;
   padding: 0;
 }
 
 .container {
-  max-width: 800px;
+  max-width: 1200px;
   margin: 20px auto;
   padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
-h2 {
+.card {
+  background-color: #2c2c2c;
+  border: 1px solid #444;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card h2 {
   margin-top: 0;
 }
 
-form {
-  margin-bottom: 20px;
+.file-upload {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 label {
-  display: block;
-  margin-bottom: 5px;
+  font-weight: bold;
 }
 
-input[type="file"] {
-  margin-bottom: 10px;
-}
-
-select {
+input[type="file"],
+select,
+input[type="number"] {
   width: 100%;
-  padding: 5px;
-  margin-bottom: 10px;
-  border: 1px solid #ccc;
-  border-radius: 3px;
-  box-sizing: border-box;
+  padding: 10px;
+  border: 1px solid #444;
+  border-radius: 4px;
+  background-color: #333;
+  color: #fff;
 }
 
 button {
@@ -284,8 +287,9 @@ button {
   background-color: #007bff;
   color: #fff;
   border: none;
-  border-radius: 3px;
+  border-radius: 4px;
   cursor: pointer;
+  align-self: flex-start;
 }
 
 button:hover {
@@ -294,7 +298,15 @@ button:hover {
 
 img {
   max-width: 100%;
-  margin-top: 10px;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+
+pre {
+  background-color: #333;
+  padding: 10px;
+  border-radius: 4px;
+  overflow-x: auto;
 }
 
 .error {
