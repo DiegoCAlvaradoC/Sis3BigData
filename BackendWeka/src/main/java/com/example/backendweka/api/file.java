@@ -438,4 +438,60 @@ public class file {
         return metadata;
     }
 
+    // Endpoint para obtener los datos del CSV
+@GetMapping("/csv-data")
+public ResponseEntity<List<Map<String, String>>> getCsvData() {
+    try {
+        // Convertir Instances a una lista de mapas
+        List<Map<String, String>> data = new ArrayList<>();
+        for (int i = 0; i < DataLoad.numInstances(); i++) {
+            Instance instance = DataLoad.instance(i);
+            Map<String, String> row = new HashMap<>();
+            for (int j = 0; j < DataLoad.numAttributes(); j++) {
+                row.put(DataLoad.attribute(j).name(), instance.toString(j));
+            }
+            data.add(row);
+        }
+        return ResponseEntity.ok(data);
+    } catch (Exception e) {
+        e.printStackTrace();
+        return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(null);
+    }
+}
+
+// Endpoint para actualizar los datos del CSV
+@PostMapping("/update-csv")
+public ResponseEntity<String> updateCsvData(@RequestBody List<Map<String, String>> data) {
+    try {
+        // Convertir la lista de mapas de vuelta a Instances
+        FastVector attributes = new FastVector();
+        for (String attributeName : data.get(0).keySet()) {
+            attributes.addElement(new Attribute(attributeName));
+        }
+
+        Instances newData = new Instances("UpdatedData", attributes, data.size());
+        for (Map<String, String> row : data) {
+            double[] instanceValues = new double[newData.numAttributes()];
+            for (int j = 0; j < newData.numAttributes(); j++) {
+                instanceValues[j] = Double.parseDouble(row.get(newData.attribute(j).name()));
+            }
+            newData.add(new DenseInstance(1.0, instanceValues));
+        }
+
+        DataLoad = newData;
+
+        // Guardar como ARFF
+        ArffSaver saver = new ArffSaver();
+        saver.setInstances(DataLoad);
+        saver.setFile(new java.io.File("DataCleanWEKA.arff"));
+        saver.writeBatch();
+
+        return ResponseEntity.ok("CSV actualizado correctamente.");
+    } catch (Exception e) {
+        e.printStackTrace();
+        return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Error al actualizar el CSV.");
+    }
+}
+
+
 }
