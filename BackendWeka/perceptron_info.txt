@@ -1,1578 +1,1575 @@
 Sigmoid Node 0
     Inputs    Weights
-    Threshold    1.6462108537469298
-    Node 2    0.036557358443124965
-    Node 3    0.4682441565612254
-    Node 4    -4.981746266861806
-    Node 5    2.3544208043793184
-    Node 6    -3.11396211582222
-    Node 7    -1.981691895784089
-    Node 8    -0.0296456257300937
-    Node 9    -2.339760833881533
-    Node 10    0.10321084988312482
-    Node 11    -2.6153463331149704
-    Node 12    -3.1410619333548477
-    Node 13    -0.8805086276590437
-    Node 14    4.39390851723106
-    Node 15    -3.3163944847410773
-    Node 16    -2.6535011018561394
-    Node 17    -1.1494824694482009
-    Node 18    4.308090402940202
-    Node 19    0.35415523656782466
-    Node 20    1.5195265459823357
-    Node 21    3.6164088380872976
-    Node 22    -1.873212328326877
-    Node 23    -0.7710118811461244
-    Node 24    -5.601474168145247
-    Node 25    3.3071964215286505
-    Node 26    -1.6936338791287675
-    Node 27    5.458442431651789
-    Node 28    -2.5021642446146815
+    Threshold    -3.742802575628102
+    Node 6    -1.5258581402457871
+    Node 7    1.6742524176797464
+    Node 8    -0.9929807687068339
+    Node 9    -0.7865981712988857
+    Node 10    -3.2201086802096874
+    Node 11    -1.4194498757032168
+    Node 12    4.403110261589136
+    Node 13    2.8747055297387263
+    Node 14    -4.865841196929876
+    Node 15    1.0823951346950915
+    Node 16    6.242911220449139
+    Node 17    5.052509726903543
+    Node 18    2.2490651410068456
+    Node 19    -0.916277133321697
+    Node 20    -1.3620417828099327
+    Node 21    4.885951291330606
+    Node 22    0.5369091504544676
+    Node 23    -2.79575525339767
+    Node 24    -5.6504138902170356
+    Node 25    -2.865730701613876
+    Node 26    3.3331364324670854
+    Node 27    0.03154047573477457
+    Node 28    -4.64689121506031
+    Node 29    5.704538485623138
+    Node 30    -5.4711301758068025
+    Node 31    -3.308567528386956
+    Node 32    -2.490143539260323
 Sigmoid Node 1
     Inputs    Weights
-    Threshold    -1.6416558002598798
-    Node 2    0.02665595203597988
-    Node 3    -0.47552856180987646
-    Node 4    4.988331431265359
-    Node 5    -2.318510900768397
-    Node 6    3.1114672071178284
-    Node 7    1.9674853255333264
-    Node 8    -0.03485676298658655
-    Node 9    2.333736206111892
-    Node 10    -0.05593167519493762
-    Node 11    2.596191444862698
-    Node 12    3.138614361909523
-    Node 13    0.8667427499083554
-    Node 14    -4.397540161653108
-    Node 15    3.3339252561842767
-    Node 16    2.655749246423127
-    Node 17    1.1658904876858918
-    Node 18    -4.304384570064256
-    Node 19    -0.4075562473293234
-    Node 20    -1.540191243731959
-    Node 21    -3.61756719248897
-    Node 22    1.8898682979655574
-    Node 23    0.782200065629319
-    Node 24    5.603727975758006
-    Node 25    -3.303274863758438
-    Node 26    1.7115586914567775
-    Node 27    -5.458178174349695
-    Node 28    2.4959779790156635
+    Threshold    -2.3992684398693687
+    Node 6    -3.4052513623380545
+    Node 7    -7.097606960663038
+    Node 8    -2.4718908694357435
+    Node 9    5.394439332443347
+    Node 10    -2.961726424633743
+    Node 11    -4.2987901099838615
+    Node 12    -5.930156872034035
+    Node 13    1.5197791047087197
+    Node 14    0.8557295444582989
+    Node 15    -3.102210768224193
+    Node 16    -2.302550139436345
+    Node 17    0.5817964587157363
+    Node 18    0.8307753613461487
+    Node 19    4.128771974301152
+    Node 20    0.9990580595833249
+    Node 21    -0.6196739548870458
+    Node 22    5.339865526733954
+    Node 23    3.0812335578771473
+    Node 24    4.116610102402429
+    Node 25    -0.8960332568815388
+    Node 26    -3.709178354783145
+    Node 27    -2.982172146673294
+    Node 28    3.2531020940753277
+    Node 29    0.8228326343441934
+    Node 30    -4.626432836207418
+    Node 31    6.0059888471168525
+    Node 32    -1.0934030914026833
 Sigmoid Node 2
     Inputs    Weights
-    Threshold    -0.16279240259335417
-    Attrib Promedio12    -0.05773156255243418
-    Attrib UltimoAnio=2nd Year    -0.025279225136002285
-    Attrib UltimoAnio=1st Year    0.011250457745593592
-    Attrib UltimoAnio=3rd Year    0.11612657284259344
-    Attrib UltimoAnio=4th Year    0.10150542833380168
-    Attrib UltimoAnio=Postgraduate    0.10702443174442257
-    Attrib Facultad=Arts & Social Sciences    0.12129149244594284
-    Attrib Facultad=Economic & Management Sciences    -0.015099467968457764
-    Attrib Facultad=AgriSciences    0.11107036087005122
-    Attrib Facultad=Engineering    0.1214385104900009
-    Attrib Facultad=Science    0.07418110692376323
-    Attrib Facultad=Law    0.06239830393384118
-    Attrib Facultad=Medicine and Health Services    0.05892157694252039
-    Attrib Facultad=Education    0.06667162441474112
-    Attrib Promedio2023%    -0.035682074486309175
-    Attrib Asignacion=R 4001- R 5000    -0.03336699713652445
-    Attrib Asignacion=R 7001 - R 8000    0.1148775591167051
-    Attrib Asignacion=R 6001 - R 7000    0.08043606657013301
-    Attrib Asignacion=R 5001 - R 6000    0.06288196494401511
-    Attrib Asignacion=R 8000+    0.04961157610779545
-    Attrib Beca=Yes    0.06007893789322759
-    Attrib HorasEstudio=8+    0.018272950288336965
-    Attrib HorasEstudio=3-5    0.13102505433774334
-    Attrib HorasEstudio=1-3    -0.033272305755027855
-    Attrib HorasEstudio=5-8    0.060995266554735764
-    Attrib HorasEstudio=0    0.09183141646301839
-    Attrib Fiestas=Only weekends    -0.0060760235684951406
-    Attrib Fiestas=2    0.1579517573079746
-    Attrib Fiestas=3    0.05228669801269949
-    Attrib Fiestas=1    0.008675941947415812
-    Attrib Fiestas=4+    0.10977693913574998
-    Attrib Fiestas=0    0.1455270268125479
-    Attrib Bebidas=8+    0.18407404991224005
-    Attrib Bebidas=3-5    0.03172082715692085
-    Attrib Bebidas=5-8    0.12072740072819715
-    Attrib Bebidas=1-3    -0.012948822118005071
-    Attrib Bebidas=0    0.038197518296013755
-    Attrib ClasesPerdidas=3    0.10799945441977081
-    Attrib ClasesPerdidas=4+    0.16418397172895183
-    Attrib ClasesPerdidas=2    0.04811076484294277
-    Attrib ClasesPerdidas=1    0.07678887133216133
-    Attrib ClasesPerdidas=0    -0.03578064667831751
-    Attrib ModulosSuspendidos=0    -0.04742576244980905
-    Attrib ModulosSuspendidos=3    0.13670133389162917
-    Attrib ModulosSuspendidos=4+    0.08731767411221578
-    Attrib ModulosSuspendidos=1    0.058157320856191526
-    Attrib ModulosSuspendidos=2    0.0939300149949896
-    Attrib Relacion=No    -0.0020855733424699637
-    Attrib AprobacionPadres=No    0.05867592613110948
-    Attrib RelacionPadres=Very close    0.007882116192815126
-    Attrib RelacionPadres=Fair    0.12316899793467402
-    Attrib RelacionPadres=Close    0.025669169584917776
-    Attrib RelacionPadres=Distant    0.18373422421955218
+    Threshold    -1.0538433553568145
+    Node 6    3.5026209011555975
+    Node 7    -2.8992501694439294
+    Node 8    -3.7241509498156553
+    Node 9    -6.839629951068983
+    Node 10    5.423518461441758
+    Node 11    -3.1502995903492774
+    Node 12    2.273299726733048
+    Node 13    -1.8662595949677536
+    Node 14    0.1681586611226914
+    Node 15    -4.567067966299799
+    Node 16    0.0385671294949427
+    Node 17    -4.676730803145767
+    Node 18    -3.58152038108059
+    Node 19    -4.961903938530409
+    Node 20    3.4329322287931485
+    Node 21    1.8377031675476292
+    Node 22    -2.555761622434251
+    Node 23    2.7256553771561602
+    Node 24    -0.3783244903948915
+    Node 25    -1.3277370918411406
+    Node 26    -1.5125614857004246
+    Node 27    6.039204333985456
+    Node 28    2.7839631292065317
+    Node 29    -2.8931573943576088
+    Node 30    2.7767178557779033
+    Node 31    -3.281369714941666
+    Node 32    -1.6976590546951138
 Sigmoid Node 3
     Inputs    Weights
-    Threshold    -0.026717637810283197
-    Attrib Promedio12    0.10506274045774573
-    Attrib UltimoAnio=2nd Year    0.0864238141594006
-    Attrib UltimoAnio=1st Year    -0.1084235647375238
-    Attrib UltimoAnio=3rd Year    0.03271190017498361
-    Attrib UltimoAnio=4th Year    -0.024096614418338626
-    Attrib UltimoAnio=Postgraduate    -0.004937323550671123
-    Attrib Facultad=Arts & Social Sciences    -0.09079995481001275
-    Attrib Facultad=Economic & Management Sciences    -0.1570211044289017
-    Attrib Facultad=AgriSciences    0.035406574640941255
-    Attrib Facultad=Engineering    0.18896940354873687
-    Attrib Facultad=Science    0.16846003768073453
-    Attrib Facultad=Law    0.03378389561797986
-    Attrib Facultad=Medicine and Health Services    0.008946980325902564
-    Attrib Facultad=Education    0.026346191381400687
-    Attrib Promedio2023%    0.007293110124199576
-    Attrib Asignacion=R 4001- R 5000    -0.030638045133577003
-    Attrib Asignacion=R 7001 - R 8000    0.06230146626048576
-    Attrib Asignacion=R 6001 - R 7000    -0.05717625914662239
-    Attrib Asignacion=R 5001 - R 6000    0.06644512957370934
-    Attrib Asignacion=R 8000+    0.0668978814789398
-    Attrib Beca=Yes    -0.004875319840680622
-    Attrib HorasEstudio=8+    0.046866903543290116
-    Attrib HorasEstudio=3-5    -0.014780112738675697
-    Attrib HorasEstudio=1-3    0.006168259401809764
-    Attrib HorasEstudio=5-8    0.011405384003944538
-    Attrib HorasEstudio=0    0.06381193691372737
-    Attrib Fiestas=Only weekends    -0.04636663858689057
-    Attrib Fiestas=2    -0.04332799737019052
-    Attrib Fiestas=3    0.08841709442682873
-    Attrib Fiestas=1    0.018614543836409175
-    Attrib Fiestas=4+    0.10827924527276676
-    Attrib Fiestas=0    0.001133905078442092
-    Attrib Bebidas=8+    0.07975582822919719
-    Attrib Bebidas=3-5    0.020319288636557287
-    Attrib Bebidas=5-8    0.14623027593653995
-    Attrib Bebidas=1-3    -0.18211379287682392
-    Attrib Bebidas=0    0.04521726805701772
-    Attrib ClasesPerdidas=3    -0.0010966279599769317
-    Attrib ClasesPerdidas=4+    0.0020456584604498507
-    Attrib ClasesPerdidas=2    0.13876751134105636
-    Attrib ClasesPerdidas=1    0.05673779984167397
-    Attrib ClasesPerdidas=0    -0.03326269884920554
-    Attrib ModulosSuspendidos=0    0.037811507033315046
-    Attrib ModulosSuspendidos=3    -0.10242793063388811
-    Attrib ModulosSuspendidos=4+    0.05560976040650322
-    Attrib ModulosSuspendidos=1    -0.14305867782672763
-    Attrib ModulosSuspendidos=2    0.24278108946380159
-    Attrib Relacion=No    0.1885391433080891
-    Attrib AprobacionPadres=No    -0.0464325328259914
-    Attrib RelacionPadres=Very close    -0.13199709472475937
-    Attrib RelacionPadres=Fair    0.009634225353383994
-    Attrib RelacionPadres=Close    0.20398286218661363
-    Attrib RelacionPadres=Distant    -0.024008526768524618
+    Threshold    -4.49911252309757
+    Node 6    -1.7049323306064113
+    Node 7    5.157278692914938
+    Node 8    3.9930114935589547
+    Node 9    -2.1703378341688557
+    Node 10    -1.8037372251901815
+    Node 11    9.44515449734233
+    Node 12    2.560234354853688
+    Node 13    -3.8947428195045295
+    Node 14    -1.1746959151220502
+    Node 15    -3.5146886271083284
+    Node 16    -5.063661391012593
+    Node 17    0.5379626480287271
+    Node 18    3.1798313799072857
+    Node 19    0.7282178813650546
+    Node 20    -2.788607077575258
+    Node 21    -4.125600291305545
+    Node 22    -1.8276698128353768
+    Node 23    -5.017735973760178
+    Node 24    2.991891650872112
+    Node 25    3.78157533964903
+    Node 26    -3.8947055626441993
+    Node 27    -3.352400537195716
+    Node 28    -0.8019628076334449
+    Node 29    -3.3079568164122386
+    Node 30    5.259179155227085
+    Node 31    -3.248567945804722
+    Node 32    3.6857338883869413
 Sigmoid Node 4
     Inputs    Weights
-    Threshold    -0.030875469891059527
-    Attrib Promedio12    0.04638359090509243
-    Attrib UltimoAnio=2nd Year    -0.27064310513994216
-    Attrib UltimoAnio=1st Year    -1.5049925836578701
-    Attrib UltimoAnio=3rd Year    0.3279182176026707
-    Attrib UltimoAnio=4th Year    1.0854469504042528
-    Attrib UltimoAnio=Postgraduate    0.4255978277179057
-    Attrib Facultad=Arts & Social Sciences    -0.1909416151674018
-    Attrib Facultad=Economic & Management Sciences    1.167346764839525
-    Attrib Facultad=AgriSciences    0.25478078314709857
-    Attrib Facultad=Engineering    0.1958205137533245
-    Attrib Facultad=Science    -0.761428176699228
-    Attrib Facultad=Law    0.11792311177111352
-    Attrib Facultad=Medicine and Health Services    -0.49622804119078107
-    Attrib Facultad=Education    -0.20458981697095246
-    Attrib Promedio2023%    0.6757767712696134
-    Attrib Asignacion=R 4001- R 5000    -0.1477792789045376
-    Attrib Asignacion=R 7001 - R 8000    0.8653755425988282
-    Attrib Asignacion=R 6001 - R 7000    1.183226932915331
-    Attrib Asignacion=R 5001 - R 6000    -0.4885106788752993
-    Attrib Asignacion=R 8000+    -1.3344397576309834
-    Attrib Beca=Yes    1.106487404994166
-    Attrib HorasEstudio=8+    0.5277234476701053
-    Attrib HorasEstudio=3-5    -1.5583570120472934
-    Attrib HorasEstudio=1-3    0.5953966875913573
-    Attrib HorasEstudio=5-8    2.199572750648292
-    Attrib HorasEstudio=0    -1.577082440625725
-    Attrib Fiestas=Only weekends    0.8133186437621449
-    Attrib Fiestas=2    -1.136187006951578
-    Attrib Fiestas=3    1.39322608620216
-    Attrib Fiestas=1    -0.5444487268809847
-    Attrib Fiestas=4+    -0.2897101792417158
-    Attrib Fiestas=0    -0.10215062230576827
-    Attrib Bebidas=8+    2.1424803653628572
-    Attrib Bebidas=3-5    -0.31875831924792375
-    Attrib Bebidas=5-8    -0.04411717031730844
-    Attrib Bebidas=1-3    -1.7917494728857961
-    Attrib Bebidas=0    0.21330928791668385
-    Attrib ClasesPerdidas=3    0.33024205380214955
-    Attrib ClasesPerdidas=4+    1.183628333057877
-    Attrib ClasesPerdidas=2    -0.23817080869984392
-    Attrib ClasesPerdidas=1    -1.2313119128020777
-    Attrib ClasesPerdidas=0    -0.04549104535979408
-    Attrib ModulosSuspendidos=0    0.5711830869541892
-    Attrib ModulosSuspendidos=3    0.10199935949427211
-    Attrib ModulosSuspendidos=4+    -0.0888718794163637
-    Attrib ModulosSuspendidos=1    -0.5696227313569086
-    Attrib ModulosSuspendidos=2    0.14015977213897418
-    Attrib Relacion=No    -2.423308807961355
-    Attrib AprobacionPadres=No    0.6793575604610214
-    Attrib RelacionPadres=Very close    -0.13444688677539188
-    Attrib RelacionPadres=Fair    0.018643656982792113
-    Attrib RelacionPadres=Close    -0.8171541118615879
-    Attrib RelacionPadres=Distant    0.9610897964407701
+    Threshold    -1.1602026862584365
+    Node 6    -0.6614803150209159
+    Node 7    -0.9880308337981362
+    Node 8    0.5748429222809491
+    Node 9    4.9604909779338735
+    Node 10    -0.5626420710326279
+    Node 11    -2.048240680439292
+    Node 12    -3.356282715440005
+    Node 13    0.6412590932413801
+    Node 14    -2.4046410659462922
+    Node 15    4.966413612780155
+    Node 16    -1.3078889082783596
+    Node 17    -3.0705611976119465
+    Node 18    -2.7225113402177374
+    Node 19    -2.538294747273963
+    Node 20    -1.990965168554797
+    Node 21    -2.502356438173481
+    Node 22    -3.172608393312954
+    Node 23    -3.2426711939473236
+    Node 24    -3.1628248468692304
+    Node 25    -1.2473411859873176
+    Node 26    -2.277753752542077
+    Node 27    -2.498441532480877
+    Node 28    -3.0665888317617482
+    Node 29    -1.8042147199954979
+    Node 30    0.9040013203445543
+    Node 31    -0.7917000806213035
+    Node 32    -0.4854340546494966
 Sigmoid Node 5
     Inputs    Weights
-    Threshold    -0.11928386822686143
-    Attrib Promedio12    0.1898701063631654
-    Attrib UltimoAnio=2nd Year    0.8332729710249264
-    Attrib UltimoAnio=1st Year    -0.36516831464670263
-    Attrib UltimoAnio=3rd Year    -0.3201183274201676
-    Attrib UltimoAnio=4th Year    0.07409214223133377
-    Attrib UltimoAnio=Postgraduate    -0.0052283764392021155
-    Attrib Facultad=Arts & Social Sciences    -0.023392391007738385
-    Attrib Facultad=Economic & Management Sciences    -0.8567505909464411
-    Attrib Facultad=AgriSciences    0.06157636050649966
-    Attrib Facultad=Engineering    0.4191661951969489
-    Attrib Facultad=Science    0.5489738748526849
-    Attrib Facultad=Law    0.0823468047603545
-    Attrib Facultad=Medicine and Health Services    0.1621274803149012
-    Attrib Facultad=Education    0.18444545190890804
-    Attrib Promedio2023%    0.10939352035695003
-    Attrib Asignacion=R 4001- R 5000    0.059945256408191205
-    Attrib Asignacion=R 7001 - R 8000    0.1929237275994803
-    Attrib Asignacion=R 6001 - R 7000    -0.23882367707451177
-    Attrib Asignacion=R 5001 - R 6000    0.19526863153041557
-    Attrib Asignacion=R 8000+    -0.04521120373545072
-    Attrib Beca=Yes    -0.6023738224141757
-    Attrib HorasEstudio=8+    0.29650508302610834
-    Attrib HorasEstudio=3-5    -0.41764507967911224
-    Attrib HorasEstudio=1-3    0.03364619759949995
-    Attrib HorasEstudio=5-8    -0.040865633933453556
-    Attrib HorasEstudio=0    0.4151965070229477
-    Attrib Fiestas=Only weekends    -0.5767894829100745
-    Attrib Fiestas=2    -0.2708999299220584
-    Attrib Fiestas=3    0.01616726790152267
-    Attrib Fiestas=1    0.5510860959203046
-    Attrib Fiestas=4+    0.655688192013768
-    Attrib Fiestas=0    -0.031812720251817785
-    Attrib Bebidas=8+    0.2875424455533069
-    Attrib Bebidas=3-5    0.49769751572090487
-    Attrib Bebidas=5-8    -0.004629271096275421
-    Attrib Bebidas=1-3    -1.1007840737377317
-    Attrib Bebidas=0    0.5868384285319541
-    Attrib ClasesPerdidas=3    0.09479981516608948
-    Attrib ClasesPerdidas=4+    -0.158722261162494
-    Attrib ClasesPerdidas=2    0.43198565483043955
-    Attrib ClasesPerdidas=1    0.516546158950336
-    Attrib ClasesPerdidas=0    -0.6886474029201237
-    Attrib ModulosSuspendidos=0    0.6946057514357052
-    Attrib ModulosSuspendidos=3    -0.1971015556948412
-    Attrib ModulosSuspendidos=4+    -0.08842916770363579
-    Attrib ModulosSuspendidos=1    -0.860946223930857
-    Attrib ModulosSuspendidos=2    0.7232721469118004
-    Attrib Relacion=No    0.18827428906130078
-    Attrib AprobacionPadres=No    -0.4442363672129592
-    Attrib RelacionPadres=Very close    -0.32755802673440115
-    Attrib RelacionPadres=Fair    0.05227168241008149
-    Attrib RelacionPadres=Close    0.5306556250157118
-    Attrib RelacionPadres=Distant    -0.13519434373580758
+    Threshold    -4.715472147368986
+    Node 6    2.188596349501323
+    Node 7    -2.224410896893124
+    Node 8    0.18113221335576243
+    Node 9    -0.6687474015861116
+    Node 10    -1.6930346209110716
+    Node 11    -1.5022845270250946
+    Node 12    -2.5776504681267367
+    Node 13    -2.5539968893379164
+    Node 14    4.079241497332876
+    Node 15    1.0819925178646836
+    Node 16    -2.9772190252961686
+    Node 17    -2.048507960494376
+    Node 18    1.7261056445540552
+    Node 19    -3.73834962422433
+    Node 20    -1.2091490427870542
+    Node 21    -3.7524337787066946
+    Node 22    -2.3540488341464636
+    Node 23    0.8460460486722945
+    Node 24    -1.9621422509533442
+    Node 25    0.06229591076622768
+    Node 26    6.002127867598566
+    Node 27    -0.09019243984312068
+    Node 28    0.990958877559614
+    Node 29    -2.159189223166074
+    Node 30    1.336439079560877
+    Node 31    -1.7938373377920183
+    Node 32    -0.6759624539185791
 Sigmoid Node 6
     Inputs    Weights
-    Threshold    -0.004989452011959454
-    Attrib Promedio12    -0.8188768763790404
-    Attrib UltimoAnio=2nd Year    -0.3205835321012505
-    Attrib UltimoAnio=1st Year    -0.5966414383286405
-    Attrib UltimoAnio=3rd Year    0.5784154479155963
-    Attrib UltimoAnio=4th Year    0.1291227227038247
-    Attrib UltimoAnio=Postgraduate    0.2642247802218583
-    Attrib Facultad=Arts & Social Sciences    -0.9141708475330941
-    Attrib Facultad=Economic & Management Sciences    0.5066840165938509
-    Attrib Facultad=AgriSciences    -0.0322282131010141
-    Attrib Facultad=Engineering    -0.015754786489722453
-    Attrib Facultad=Science    0.30922307141966887
-    Attrib Facultad=Law    0.2936377749521368
-    Attrib Facultad=Medicine and Health Services    0.01856226740018853
-    Attrib Facultad=Education    -0.2591181253883629
-    Attrib Promedio2023%    -0.9094739625149652
-    Attrib Asignacion=R 4001- R 5000    -0.8859167765062326
-    Attrib Asignacion=R 7001 - R 8000    -0.7281239893027213
-    Attrib Asignacion=R 6001 - R 7000    0.5489934674855237
-    Attrib Asignacion=R 5001 - R 6000    -0.05934842340641694
-    Attrib Asignacion=R 8000+    1.139639324702079
-    Attrib Beca=Yes    0.09259118007228771
-    Attrib HorasEstudio=8+    -0.1937442826499944
-    Attrib HorasEstudio=3-5    -0.13564218619527288
-    Attrib HorasEstudio=1-3    0.15519793633433482
-    Attrib HorasEstudio=5-8    -0.255267989740398
-    Attrib HorasEstudio=0    0.38293706646176773
-    Attrib Fiestas=Only weekends    -1.4593805309389474
-    Attrib Fiestas=2    0.7598302877063553
-    Attrib Fiestas=3    -0.5690234487463662
-    Attrib Fiestas=1    0.5835520441404325
-    Attrib Fiestas=4+    -0.1781876139435531
-    Attrib Fiestas=0    0.9230491735832442
-    Attrib Bebidas=8+    1.000598866092388
-    Attrib Bebidas=3-5    0.3991090455649187
-    Attrib Bebidas=5-8    -0.6138774285469202
-    Attrib Bebidas=1-3    -0.6747555700676783
-    Attrib Bebidas=0    -3.6485394280257006E-4
-    Attrib ClasesPerdidas=3    -0.29717423184625513
-    Attrib ClasesPerdidas=4+    0.35908346078294995
-    Attrib ClasesPerdidas=2    0.641001767444676
-    Attrib ClasesPerdidas=1    -0.5005091245584864
-    Attrib ClasesPerdidas=0    -0.30397074085079034
-    Attrib ModulosSuspendidos=0    -2.0044661777749435
-    Attrib ModulosSuspendidos=3    1.2391272769628865
-    Attrib ModulosSuspendidos=4+    -0.3679306467200146
-    Attrib ModulosSuspendidos=1    0.49072611429731633
-    Attrib ModulosSuspendidos=2    0.6369357239140723
-    Attrib Relacion=No    -0.4049123640424717
-    Attrib AprobacionPadres=No    -0.5443550647956926
-    Attrib RelacionPadres=Very close    -1.5261960462565278
-    Attrib RelacionPadres=Fair    0.4963577231992167
-    Attrib RelacionPadres=Close    0.924889051527863
-    Attrib RelacionPadres=Distant    0.08540436141122516
+    Threshold    -0.5092856544116822
+    Attrib Sexo=Male    -0.9801333926752616
+    Attrib Promedio12    -0.09824674972229985
+    Attrib UltimoAnio=2nd Year    -0.807891486307722
+    Attrib UltimoAnio=1st Year    1.204870609394399
+    Attrib UltimoAnio=3rd Year    -0.2936802492793127
+    Attrib UltimoAnio=4th Year    -0.049831952633247086
+    Attrib UltimoAnio=Postgraduate    1.4506668388235353
+    Attrib Facultad=Arts & Social Sciences    0.7997346373676946
+    Attrib Facultad=Economic & Management Sciences    0.8138666147952582
+    Attrib Facultad=AgriSciences    0.2947336906979459
+    Attrib Facultad=Engineering    0.8003991263986734
+    Attrib Facultad=Science    -0.4862541784379056
+    Attrib Facultad=Law    0.27727589237700756
+    Attrib Facultad=Medicine and Health Services    -0.34694146919489594
+    Attrib Facultad=Education    0.7747754699377736
+    Attrib Promedio2023%    -0.11862725227900978
+    Attrib Asignacion=R 4001- R 5000    -0.5521237876594568
+    Attrib Asignacion=R 7001 - R 8000    -0.9529050918722756
+    Attrib Asignacion=R 6001 - R 7000    2.4258643267770488
+    Attrib Asignacion=R 5001 - R 6000    0.0289654250904966
+    Attrib Asignacion=R 8000+    0.6210544888338659
+    Attrib Beca=Yes    -0.9847571658158796
+    Attrib HorasEstudio=8+    0.44268949701371985
+    Attrib HorasEstudio=3-5    1.390402146462962
+    Attrib HorasEstudio=1-3    -0.6769312022110644
+    Attrib HorasEstudio=5-8    0.14526355781189398
+    Attrib HorasEstudio=0    0.13790374202501926
+    Attrib Bebidas=8+    1.2297880005085169
+    Attrib Bebidas=3-5    2.1476566852081773
+    Attrib Bebidas=5-8    -1.0958444299870536
+    Attrib Bebidas=1-3    -0.8706906310060085
+    Attrib Bebidas=0    0.20724549173996612
+    Attrib ClasesPerdidas=3    -0.66151598340012
+    Attrib ClasesPerdidas=4+    0.8017270288497962
+    Attrib ClasesPerdidas=2    0.7098812853967883
+    Attrib ClasesPerdidas=1    1.4133922613519312
+    Attrib ClasesPerdidas=0    -0.6398859258993216
+    Attrib ModulosSuspendidos=0    1.9085161171592215
+    Attrib ModulosSuspendidos=3    0.13853045750961157
+    Attrib ModulosSuspendidos=4+    0.09395365544169827
+    Attrib ModulosSuspendidos=1    -0.5853878062048862
+    Attrib ModulosSuspendidos=2    -0.1442926857343908
+    Attrib Relacion=No    0.7995718066319943
+    Attrib AprobacionPadres=No    0.9958075069669473
+    Attrib RelacionPadres=Very close    0.7432094633310273
+    Attrib RelacionPadres=Fair    -0.7691258001854263
+    Attrib RelacionPadres=Close    0.6363912236248638
+    Attrib RelacionPadres=Distant    0.4669617495563878
 Sigmoid Node 7
     Inputs    Weights
-    Threshold    -0.2295262030108539
-    Attrib Promedio12    -0.07891883122153334
-    Attrib UltimoAnio=2nd Year    -0.29543314881915755
-    Attrib UltimoAnio=1st Year    0.30244578140777223
-    Attrib UltimoAnio=3rd Year    0.33979353048011135
-    Attrib UltimoAnio=4th Year    0.015167087033752486
-    Attrib UltimoAnio=Postgraduate    0.19594607967560118
-    Attrib Facultad=Arts & Social Sciences    1.2282877047488878
-    Attrib Facultad=Economic & Management Sciences    -0.02345440989212726
-    Attrib Facultad=AgriSciences    0.3276121335172271
-    Attrib Facultad=Engineering    -0.14539257301409433
-    Attrib Facultad=Science    -0.5441068337610209
-    Attrib Facultad=Law    0.21140902532241554
-    Attrib Facultad=Medicine and Health Services    0.21685054251196798
-    Attrib Facultad=Education    0.06661169644755292
-    Attrib Promedio2023%    -0.06724274210425914
-    Attrib Asignacion=R 4001- R 5000    0.42465755888734935
-    Attrib Asignacion=R 7001 - R 8000    0.05539148207954932
-    Attrib Asignacion=R 6001 - R 7000    0.13141623152452633
-    Attrib Asignacion=R 5001 - R 6000    0.2819164517246891
-    Attrib Asignacion=R 8000+    -0.23081690542643923
-    Attrib Beca=Yes    -0.3586977005365172
-    Attrib HorasEstudio=8+    -0.9178588134626272
-    Attrib HorasEstudio=3-5    0.8611745812534699
-    Attrib HorasEstudio=1-3    -0.3844743589345161
-    Attrib HorasEstudio=5-8    0.9523591445847909
-    Attrib HorasEstudio=0    0.09639011063203966
-    Attrib Fiestas=Only weekends    0.010203691990395582
-    Attrib Fiestas=2    1.0616995524706716
-    Attrib Fiestas=3    -0.15198473647107308
-    Attrib Fiestas=1    -0.29466446992178685
-    Attrib Fiestas=4+    0.3058814092499683
-    Attrib Fiestas=0    -0.06534680500521661
-    Attrib Bebidas=8+    0.03393182031953381
-    Attrib Bebidas=3-5    -0.06604446117892358
-    Attrib Bebidas=5-8    0.5681839113140127
-    Attrib Bebidas=1-3    0.4699993865002823
-    Attrib Bebidas=0    -0.4630198406715433
-    Attrib ClasesPerdidas=3    0.8092107376714567
-    Attrib ClasesPerdidas=4+    0.08101552516745184
-    Attrib ClasesPerdidas=2    -0.047876430250622284
-    Attrib ClasesPerdidas=1    0.008811234677333326
-    Attrib ClasesPerdidas=0    -0.217218789459161
-    Attrib ModulosSuspendidos=0    0.5112310906271076
-    Attrib ModulosSuspendidos=3    0.2450345971367275
-    Attrib ModulosSuspendidos=4+    0.24040222898535862
-    Attrib ModulosSuspendidos=1    -0.13676555562814116
-    Attrib ModulosSuspendidos=2    -0.10789270583407384
-    Attrib Relacion=No    -0.33918389504107166
-    Attrib AprobacionPadres=No    -0.023925010898309507
-    Attrib RelacionPadres=Very close    0.4949968836577752
-    Attrib RelacionPadres=Fair    -0.10737679555809758
-    Attrib RelacionPadres=Close    -0.35085822321576976
-    Attrib RelacionPadres=Distant    0.27230935227708447
+    Threshold    -0.2875046710903888
+    Attrib Sexo=Male    -1.3973732076501812
+    Attrib Promedio12    2.726236555923768
+    Attrib UltimoAnio=2nd Year    -0.3448386970270297
+    Attrib UltimoAnio=1st Year    -0.11840864065145278
+    Attrib UltimoAnio=3rd Year    1.4100618416881576
+    Attrib UltimoAnio=4th Year    1.0822611282984747
+    Attrib UltimoAnio=Postgraduate    -1.2748217593205287
+    Attrib Facultad=Arts & Social Sciences    3.3388776910033298
+    Attrib Facultad=Economic & Management Sciences    1.3764828117058518
+    Attrib Facultad=AgriSciences    0.5542731756674771
+    Attrib Facultad=Engineering    0.15514894404259097
+    Attrib Facultad=Science    -3.217884454711109
+    Attrib Facultad=Law    0.7159280824572889
+    Attrib Facultad=Medicine and Health Services    -0.0286937519592252
+    Attrib Facultad=Education    -1.1749178560385385
+    Attrib Promedio2023%    -1.6351007475913435
+    Attrib Asignacion=R 4001- R 5000    2.8300759781591873
+    Attrib Asignacion=R 7001 - R 8000    -1.9258346915910627
+    Attrib Asignacion=R 6001 - R 7000    -1.3249399082397704
+    Attrib Asignacion=R 5001 - R 6000    2.1663724963805318
+    Attrib Asignacion=R 8000+    -0.9052256995391338
+    Attrib Beca=Yes    0.8672208496153215
+    Attrib HorasEstudio=8+    0.03735677851376559
+    Attrib HorasEstudio=3-5    -1.9236413110239685
+    Attrib HorasEstudio=1-3    -0.3597451025250664
+    Attrib HorasEstudio=5-8    3.984629804092084
+    Attrib HorasEstudio=0    -0.9406149480791964
+    Attrib Bebidas=8+    0.5432511496684298
+    Attrib Bebidas=3-5    0.1998751022589383
+    Attrib Bebidas=5-8    0.04814287235202025
+    Attrib Bebidas=1-3    2.024953958622434
+    Attrib Bebidas=0    -1.9772986571992859
+    Attrib ClasesPerdidas=3    0.4673099025701244
+    Attrib ClasesPerdidas=4+    -3.355524564498493
+    Attrib ClasesPerdidas=2    -0.047109478140774055
+    Attrib ClasesPerdidas=1    2.539571402370252
+    Attrib ClasesPerdidas=0    1.1127389582207738
+    Attrib ModulosSuspendidos=0    -2.152681636958047
+    Attrib ModulosSuspendidos=3    2.062327372727689
+    Attrib ModulosSuspendidos=4+    -1.1180639988293013
+    Attrib ModulosSuspendidos=1    0.8741413994210333
+    Attrib ModulosSuspendidos=2    1.1421545456836355
+    Attrib Relacion=No    -1.5129781575250878
+    Attrib AprobacionPadres=No    2.193821038044918
+    Attrib RelacionPadres=Very close    0.15421097501155573
+    Attrib RelacionPadres=Fair    -1.672515077811529
+    Attrib RelacionPadres=Close    1.5645414016288843
+    Attrib RelacionPadres=Distant    0.583987167313857
 Sigmoid Node 8
     Inputs    Weights
-    Threshold    -0.10858549267879063
-    Attrib Promedio12    0.007452394207120575
-    Attrib UltimoAnio=2nd Year    0.024228883217333616
-    Attrib UltimoAnio=1st Year    -0.05835458746231202
-    Attrib UltimoAnio=3rd Year    0.09431803486242828
-    Attrib UltimoAnio=4th Year    0.12912706548826908
-    Attrib UltimoAnio=Postgraduate    0.164956686967107
-    Attrib Facultad=Arts & Social Sciences    0.12048053294831867
-    Attrib Facultad=Economic & Management Sciences    0.0058396971259251
-    Attrib Facultad=AgriSciences    0.13180036499660858
-    Attrib Facultad=Engineering    0.10927816526576296
-    Attrib Facultad=Science    0.0384901256304826
-    Attrib Facultad=Law    0.10807890791743162
-    Attrib Facultad=Medicine and Health Services    0.10963239155981416
-    Attrib Facultad=Education    0.12118015515946631
-    Attrib Promedio2023%    -0.05227712163773955
-    Attrib Asignacion=R 4001- R 5000    0.05605544921808443
-    Attrib Asignacion=R 7001 - R 8000    0.06735993053041302
-    Attrib Asignacion=R 6001 - R 7000    0.07558873129948765
-    Attrib Asignacion=R 5001 - R 6000    0.09023436981790728
-    Attrib Asignacion=R 8000+    0.1276605995077041
-    Attrib Beca=Yes    0.11431032845115997
-    Attrib HorasEstudio=8+    0.017773783216294758
-    Attrib HorasEstudio=3-5    0.09117277299130462
-    Attrib HorasEstudio=1-3    -0.004794774463040678
-    Attrib HorasEstudio=5-8    0.10908048070518626
-    Attrib HorasEstudio=0    0.09922853689908934
-    Attrib Fiestas=Only weekends    0.053544105944434324
-    Attrib Fiestas=2    0.1182272956109445
-    Attrib Fiestas=3    0.044903378395250854
-    Attrib Fiestas=1    -0.01184720716771039
-    Attrib Fiestas=4+    0.13309635298214215
-    Attrib Fiestas=0    0.11214526425261163
-    Attrib Bebidas=8+    0.18308566434830512
-    Attrib Bebidas=3-5    -0.01726946013570666
-    Attrib Bebidas=5-8    0.09640953414951184
-    Attrib Bebidas=1-3    0.00345361606237621
-    Attrib Bebidas=0    0.09724859829793389
-    Attrib ClasesPerdidas=3    0.10602408047899863
-    Attrib ClasesPerdidas=4+    0.11748861389293998
-    Attrib ClasesPerdidas=2    0.02633743554155789
-    Attrib ClasesPerdidas=1    0.09440849160590892
-    Attrib ClasesPerdidas=0    0.008733670388440367
-    Attrib ModulosSuspendidos=0    -0.0725248909552675
-    Attrib ModulosSuspendidos=3    0.07058498110110702
-    Attrib ModulosSuspendidos=4+    0.06475706317324649
-    Attrib ModulosSuspendidos=1    0.002965239557595026
-    Attrib ModulosSuspendidos=2    0.0887961898883952
-    Attrib Relacion=No    -0.018762349295879818
-    Attrib AprobacionPadres=No    0.04961997232584459
-    Attrib RelacionPadres=Very close    -0.002172556440146005
-    Attrib RelacionPadres=Fair    0.04391170902483732
-    Attrib RelacionPadres=Close    -0.019600074681823114
-    Attrib RelacionPadres=Distant    0.13444749531677397
+    Threshold    -0.2420649485219319
+    Attrib Sexo=Male    -1.371943134085411
+    Attrib Promedio12    -0.41529796314161077
+    Attrib UltimoAnio=2nd Year    -1.4060067216650303
+    Attrib UltimoAnio=1st Year    -0.1329841090083805
+    Attrib UltimoAnio=3rd Year    1.7956359759746958
+    Attrib UltimoAnio=4th Year    -0.16754589887843194
+    Attrib UltimoAnio=Postgraduate    0.6713985737719402
+    Attrib Facultad=Arts & Social Sciences    -0.34147500112768825
+    Attrib Facultad=Economic & Management Sciences    1.3584895869837426
+    Attrib Facultad=AgriSciences    -0.3222036376269312
+    Attrib Facultad=Engineering    0.2772844145481377
+    Attrib Facultad=Science    -0.559314500266397
+    Attrib Facultad=Law    0.594775012814051
+    Attrib Facultad=Medicine and Health Services    0.5777671930902286
+    Attrib Facultad=Education    -0.11206185873292614
+    Attrib Promedio2023%    -0.17793513923744428
+    Attrib Asignacion=R 4001- R 5000    0.5216510229400244
+    Attrib Asignacion=R 7001 - R 8000    0.01742625894486719
+    Attrib Asignacion=R 6001 - R 7000    0.7833977697227792
+    Attrib Asignacion=R 5001 - R 6000    -0.5204373352689357
+    Attrib Asignacion=R 8000+    -0.005794371663127646
+    Attrib Beca=Yes    -0.30482285675011844
+    Attrib HorasEstudio=8+    -0.3087742931173532
+    Attrib HorasEstudio=3-5    0.7114985786615846
+    Attrib HorasEstudio=1-3    -1.1333109301278188
+    Attrib HorasEstudio=5-8    -0.4220736561786394
+    Attrib HorasEstudio=0    1.9023477110092062
+    Attrib Bebidas=8+    0.5708220166762991
+    Attrib Bebidas=3-5    1.6655861410204187
+    Attrib Bebidas=5-8    -2.90873287287653
+    Attrib Bebidas=1-3    0.0799444496149165
+    Attrib Bebidas=0    1.3001020894533981
+    Attrib ClasesPerdidas=3    0.10084450227970891
+    Attrib ClasesPerdidas=4+    0.42667413104439317
+    Attrib ClasesPerdidas=2    -0.3268869464975566
+    Attrib ClasesPerdidas=1    -0.5084586356266687
+    Attrib ClasesPerdidas=0    1.0711932690519919
+    Attrib ModulosSuspendidos=0    -0.3520299311984323
+    Attrib ModulosSuspendidos=3    -0.3075837268317082
+    Attrib ModulosSuspendidos=4+    -0.003981285758289497
+    Attrib ModulosSuspendidos=1    1.29868959675434
+    Attrib ModulosSuspendidos=2    0.11833600647135875
+    Attrib Relacion=No    -0.7326209056232781
+    Attrib AprobacionPadres=No    -0.8792123369739495
+    Attrib RelacionPadres=Very close    0.10880999167448901
+    Attrib RelacionPadres=Fair    -0.28708913283635357
+    Attrib RelacionPadres=Close    0.6322412417130507
+    Attrib RelacionPadres=Distant    -0.05410563276050635
 Sigmoid Node 9
     Inputs    Weights
-    Threshold    -0.055904166138566996
-    Attrib Promedio12    -0.6996169911095639
-    Attrib UltimoAnio=2nd Year    -1.0121707643819566
-    Attrib UltimoAnio=1st Year    0.5631831657443803
-    Attrib UltimoAnio=3rd Year    0.31267480570782946
-    Attrib UltimoAnio=4th Year    0.12329976598727231
-    Attrib UltimoAnio=Postgraduate    0.21632510230342664
-    Attrib Facultad=Arts & Social Sciences    -0.1508521089990586
-    Attrib Facultad=Economic & Management Sciences    -0.6383616196031634
-    Attrib Facultad=AgriSciences    -0.3007229604163278
-    Attrib Facultad=Engineering    0.37349613422175276
-    Attrib Facultad=Science    0.6262853262446987
-    Attrib Facultad=Law    0.4364842378316273
-    Attrib Facultad=Medicine and Health Services    0.05172600846061272
-    Attrib Facultad=Education    -0.07567988158688692
-    Attrib Promedio2023%    -0.21671012579933455
-    Attrib Asignacion=R 4001- R 5000    -0.695186338746884
-    Attrib Asignacion=R 7001 - R 8000    -0.2978628931364465
-    Attrib Asignacion=R 6001 - R 7000    0.44391862898538936
-    Attrib Asignacion=R 5001 - R 6000    0.4118681141599514
-    Attrib Asignacion=R 8000+    0.23882086810446007
-    Attrib Beca=Yes    0.530594531795383
-    Attrib HorasEstudio=8+    -0.6926063155363119
-    Attrib HorasEstudio=3-5    0.4154102208680151
-    Attrib HorasEstudio=1-3    0.7910118678252958
-    Attrib HorasEstudio=5-8    -0.642232636865833
-    Attrib HorasEstudio=0    0.2646368529894538
-    Attrib Fiestas=Only weekends    -0.22179493572030695
-    Attrib Fiestas=2    -0.4757484162894208
-    Attrib Fiestas=3    -0.21257345135988762
-    Attrib Fiestas=1    0.8054559615568844
-    Attrib Fiestas=4+    -0.13450633154840647
-    Attrib Fiestas=0    0.47717563628308135
-    Attrib Bebidas=8+    0.4211242062599652
-    Attrib Bebidas=3-5    -0.2302934967701983
-    Attrib Bebidas=5-8    -0.6701891910872992
-    Attrib Bebidas=1-3    0.6044648503285422
-    Attrib Bebidas=0    0.053471489229312386
-    Attrib ClasesPerdidas=3    -0.23178997911482693
-    Attrib ClasesPerdidas=4+    0.3528400292593233
-    Attrib ClasesPerdidas=2    -0.11552485062558605
-    Attrib ClasesPerdidas=1    -0.4215532966646938
-    Attrib ClasesPerdidas=0    0.640394541436452
-    Attrib ModulosSuspendidos=0    -0.2035425450078976
-    Attrib ModulosSuspendidos=3    0.2946948956333186
-    Attrib ModulosSuspendidos=4+    0.21165747619863065
-    Attrib ModulosSuspendidos=1    -0.357061248479896
-    Attrib ModulosSuspendidos=2    0.2767190807863728
-    Attrib Relacion=No    -0.7369642478246584
-    Attrib AprobacionPadres=No    -0.43173426419189254
-    Attrib RelacionPadres=Very close    -1.5995126233404706
-    Attrib RelacionPadres=Fair    0.07176719490628722
-    Attrib RelacionPadres=Close    0.7543023757503068
-    Attrib RelacionPadres=Distant    0.805000242520924
+    Threshold    -0.3099482054076511
+    Attrib Sexo=Male    0.5130210559432321
+    Attrib Promedio12    1.7265139869933777
+    Attrib UltimoAnio=2nd Year    2.371601998765592
+    Attrib UltimoAnio=1st Year    1.354860465394407
+    Attrib UltimoAnio=3rd Year    0.3984353185752697
+    Attrib UltimoAnio=4th Year    -1.9995445412504844
+    Attrib UltimoAnio=Postgraduate    -1.160118527451058
+    Attrib Facultad=Arts & Social Sciences    -0.4972595136929708
+    Attrib Facultad=Economic & Management Sciences    1.7885162269788015
+    Attrib Facultad=AgriSciences    -1.781718857889708
+    Attrib Facultad=Engineering    0.8594827013616965
+    Attrib Facultad=Science    0.9849012638507801
+    Attrib Facultad=Law    -0.4317499732517269
+    Attrib Facultad=Medicine and Health Services    -0.3361444776323495
+    Attrib Facultad=Education    1.2781844547289867
+    Attrib Promedio2023%    -0.09647642901307815
+    Attrib Asignacion=R 4001- R 5000    -0.011096193398944682
+    Attrib Asignacion=R 7001 - R 8000    0.10567430393006369
+    Attrib Asignacion=R 6001 - R 7000    -0.7434911660969151
+    Attrib Asignacion=R 5001 - R 6000    2.6810948613764065
+    Attrib Asignacion=R 8000+    -1.1823682275254819
+    Attrib Beca=Yes    0.7046596453649226
+    Attrib HorasEstudio=8+    0.6655280741164861
+    Attrib HorasEstudio=3-5    -1.3400819397626638
+    Attrib HorasEstudio=1-3    1.1207348419956429
+    Attrib HorasEstudio=5-8    0.05079310859252
+    Attrib HorasEstudio=0    0.4726159697684471
+    Attrib Bebidas=8+    0.0820081895329041
+    Attrib Bebidas=3-5    0.3693476881887677
+    Attrib Bebidas=5-8    0.2810068308582903
+    Attrib Bebidas=1-3    -1.254008069452106
+    Attrib Bebidas=0    1.432182321562529
+    Attrib ClasesPerdidas=3    1.3901234243861116
+    Attrib ClasesPerdidas=4+    1.8705692957922258
+    Attrib ClasesPerdidas=2    -1.185110001594374
+    Attrib ClasesPerdidas=1    -0.3037862890112066
+    Attrib ClasesPerdidas=0    -0.8310864538052102
+    Attrib ModulosSuspendidos=0    1.9028648963703405
+    Attrib ModulosSuspendidos=3    0.7430762087198427
+    Attrib ModulosSuspendidos=4+    2.2423755684556554
+    Attrib ModulosSuspendidos=1    -2.6395493236410172
+    Attrib ModulosSuspendidos=2    -1.2622687878068597
+    Attrib Relacion=No    -0.17678517908635724
+    Attrib AprobacionPadres=No    1.6422959052765334
+    Attrib RelacionPadres=Very close    -0.9451682640429662
+    Attrib RelacionPadres=Fair    1.7855175384125792
+    Attrib RelacionPadres=Close    -0.407981906047258
+    Attrib RelacionPadres=Distant    0.2287659856428124
 Sigmoid Node 10
     Inputs    Weights
-    Threshold    -0.14316863488159637
-    Attrib Promedio12    0.03338494444178753
-    Attrib UltimoAnio=2nd Year    0.005300668064398803
-    Attrib UltimoAnio=1st Year    -0.019860083880947146
-    Attrib UltimoAnio=3rd Year    0.10596459029055898
-    Attrib UltimoAnio=4th Year    0.11432567151244567
-    Attrib UltimoAnio=Postgraduate    0.08508065014856528
-    Attrib Facultad=Arts & Social Sciences    0.11081369915346206
-    Attrib Facultad=Economic & Management Sciences    -0.042441577063187165
-    Attrib Facultad=AgriSciences    0.0801610171363438
-    Attrib Facultad=Engineering    0.06897545881848871
-    Attrib Facultad=Science    0.07969981503646903
-    Attrib Facultad=Law    0.13157627906661062
-    Attrib Facultad=Medicine and Health Services    0.07421744008841717
-    Attrib Facultad=Education    0.12483906124996962
-    Attrib Promedio2023%    -0.013366764977590404
-    Attrib Asignacion=R 4001- R 5000    -0.04935890005355697
-    Attrib Asignacion=R 7001 - R 8000    0.15728425670494794
-    Attrib Asignacion=R 6001 - R 7000    0.04785651471488414
-    Attrib Asignacion=R 5001 - R 6000    -0.013728640890171988
-    Attrib Asignacion=R 8000+    0.06543887050214682
-    Attrib Beca=Yes    0.10641457364021063
-    Attrib HorasEstudio=8+    -0.0011655537316536384
-    Attrib HorasEstudio=3-5    0.067733690534006
-    Attrib HorasEstudio=1-3    0.04454400783164449
-    Attrib HorasEstudio=5-8    0.09470292389435057
-    Attrib HorasEstudio=0    0.12875712505951567
-    Attrib Fiestas=Only weekends    -0.011457699351011858
-    Attrib Fiestas=2    0.07790396748082265
-    Attrib Fiestas=3    0.15271400096093907
-    Attrib Fiestas=1    0.06437708251370283
-    Attrib Fiestas=4+    0.10840811834118645
-    Attrib Fiestas=0    0.11664266456216908
-    Attrib Bebidas=8+    -0.0014681946688631649
-    Attrib Bebidas=3-5    -0.00892115915880772
-    Attrib Bebidas=5-8    0.11619433092696446
-    Attrib Bebidas=1-3    0.020032161809976166
-    Attrib Bebidas=0    0.05902467285737165
-    Attrib ClasesPerdidas=3    0.0982788879365794
-    Attrib ClasesPerdidas=4+    0.02860841052057417
-    Attrib ClasesPerdidas=2    0.07568626872095202
-    Attrib ClasesPerdidas=1    0.04275171886994082
-    Attrib ClasesPerdidas=0    -0.04167735907148333
-    Attrib ModulosSuspendidos=0    -0.041600985738453146
-    Attrib ModulosSuspendidos=3    0.08828112931330362
-    Attrib ModulosSuspendidos=4+    0.13226265179699526
-    Attrib ModulosSuspendidos=1    0.020093518016725036
-    Attrib ModulosSuspendidos=2    0.10207235991648583
-    Attrib Relacion=No    -0.008868805021857688
-    Attrib AprobacionPadres=No    0.07768471568405158
-    Attrib RelacionPadres=Very close    -0.02899577101390142
-    Attrib RelacionPadres=Fair    0.09847882453234184
-    Attrib RelacionPadres=Close    0.044193172152409636
-    Attrib RelacionPadres=Distant    0.1208155439810542
+    Threshold    -0.3753331011268341
+    Attrib Sexo=Male    0.21294015382637468
+    Attrib Promedio12    -0.7882801284926696
+    Attrib UltimoAnio=2nd Year    -0.5514660224827718
+    Attrib UltimoAnio=1st Year    1.1168149576803836
+    Attrib UltimoAnio=3rd Year    -0.36932691677450674
+    Attrib UltimoAnio=4th Year    -0.9457236524988322
+    Attrib UltimoAnio=Postgraduate    1.8078925876095107
+    Attrib Facultad=Arts & Social Sciences    0.0516030647223227
+    Attrib Facultad=Economic & Management Sciences    -0.897173787898774
+    Attrib Facultad=AgriSciences    1.8812311038767462
+    Attrib Facultad=Engineering    -1.4329511818828446
+    Attrib Facultad=Science    1.2073281935300753
+    Attrib Facultad=Law    0.16414242083541875
+    Attrib Facultad=Medicine and Health Services    -0.26134621054965335
+    Attrib Facultad=Education    1.2659248730697763
+    Attrib Promedio2023%    0.3368710470730705
+    Attrib Asignacion=R 4001- R 5000    0.1677750257611501
+    Attrib Asignacion=R 7001 - R 8000    -0.027850863071367978
+    Attrib Asignacion=R 6001 - R 7000    1.916686119499508
+    Attrib Asignacion=R 5001 - R 6000    -1.1481652609394328
+    Attrib Asignacion=R 8000+    0.02478729673511531
+    Attrib Beca=Yes    1.476698542555115
+    Attrib HorasEstudio=8+    -0.5073291042804186
+    Attrib HorasEstudio=3-5    -1.244364629384432
+    Attrib HorasEstudio=1-3    0.6786171279407461
+    Attrib HorasEstudio=5-8    1.4795273221889635
+    Attrib HorasEstudio=0    0.6020289388080826
+    Attrib Bebidas=8+    1.7213817248028036
+    Attrib Bebidas=3-5    0.09250507067922274
+    Attrib Bebidas=5-8    -1.0437415973577173
+    Attrib Bebidas=1-3    0.5298334924226259
+    Attrib Bebidas=0    -0.17457514043416442
+    Attrib ClasesPerdidas=3    -0.16186369328646819
+    Attrib ClasesPerdidas=4+    1.9387404154866175
+    Attrib ClasesPerdidas=2    0.4290310314409155
+    Attrib ClasesPerdidas=1    -0.7982668865610747
+    Attrib ClasesPerdidas=0    -0.5262856565776863
+    Attrib ModulosSuspendidos=0    0.054444050532039864
+    Attrib ModulosSuspendidos=3    0.5531297934228203
+    Attrib ModulosSuspendidos=4+    -0.06892805382721608
+    Attrib ModulosSuspendidos=1    -0.20575441743107453
+    Attrib ModulosSuspendidos=2    0.5672499530157228
+    Attrib Relacion=No    1.3188546998648716
+    Attrib AprobacionPadres=No    1.0086070677839885
+    Attrib RelacionPadres=Very close    0.49048215571667547
+    Attrib RelacionPadres=Fair    -0.4157907236692871
+    Attrib RelacionPadres=Close    0.30447800298002897
+    Attrib RelacionPadres=Distant    0.23504865659524538
 Sigmoid Node 11
     Inputs    Weights
-    Threshold    -0.03771224201681373
-    Attrib Promedio12    -1.3971254737422198
-    Attrib UltimoAnio=2nd Year    0.2537108433266647
-    Attrib UltimoAnio=1st Year    -0.24781388698866738
-    Attrib UltimoAnio=3rd Year    -0.15206480852062118
-    Attrib UltimoAnio=4th Year    0.006180684068172267
-    Attrib UltimoAnio=Postgraduate    0.17118252605654222
-    Attrib Facultad=Arts & Social Sciences    -0.6874211810832184
-    Attrib Facultad=Economic & Management Sciences    -0.9004457328462353
-    Attrib Facultad=AgriSciences    -0.37956229962464866
-    Attrib Facultad=Engineering    0.35940385569556604
-    Attrib Facultad=Science    0.7116218874045797
-    Attrib Facultad=Law    0.36775277162933484
-    Attrib Facultad=Medicine and Health Services    0.6500716503688411
-    Attrib Facultad=Education    -0.15088971225649989
-    Attrib Promedio2023%    -0.8096227737774799
-    Attrib Asignacion=R 4001- R 5000    0.5043658364032404
-    Attrib Asignacion=R 7001 - R 8000    -0.40919024572549934
-    Attrib Asignacion=R 6001 - R 7000    0.14938664437335006
-    Attrib Asignacion=R 5001 - R 6000    -1.4461641845647417
-    Attrib Asignacion=R 8000+    1.2231575175914104
-    Attrib Beca=Yes    0.8721186704960254
-    Attrib HorasEstudio=8+    -0.004268224108819065
-    Attrib HorasEstudio=3-5    0.383220406712063
-    Attrib HorasEstudio=1-3    0.09675699882173108
-    Attrib HorasEstudio=5-8    -0.8359041282324063
-    Attrib HorasEstudio=0    0.42506918307970776
-    Attrib Fiestas=Only weekends    -0.6589297648039427
-    Attrib Fiestas=2    -0.11853661798086623
-    Attrib Fiestas=3    0.03608448330304573
-    Attrib Fiestas=1    0.2659368731683024
-    Attrib Fiestas=4+    0.34540891825495507
-    Attrib Fiestas=0    0.2207945728119648
-    Attrib Bebidas=8+    1.0132985732608362
-    Attrib Bebidas=3-5    -0.9350835848203423
-    Attrib Bebidas=5-8    -0.40589184742551065
-    Attrib Bebidas=1-3    0.7261390551375898
-    Attrib Bebidas=0    -0.31602592832828147
-    Attrib ClasesPerdidas=3    -0.39853268310343226
-    Attrib ClasesPerdidas=4+    0.748546983011611
-    Attrib ClasesPerdidas=2    -0.060605079777738984
-    Attrib ClasesPerdidas=1    -0.07829374532387029
-    Attrib ClasesPerdidas=0    -0.2695330255643229
-    Attrib ModulosSuspendidos=0    -0.5420120815339247
-    Attrib ModulosSuspendidos=3    0.030501164774938607
-    Attrib ModulosSuspendidos=4+    -0.1436675864592868
-    Attrib ModulosSuspendidos=1    -0.15457859285985104
-    Attrib ModulosSuspendidos=2    0.7753963482387736
-    Attrib Relacion=No    -0.7935902645781071
-    Attrib AprobacionPadres=No    0.18024050662141605
-    Attrib RelacionPadres=Very close    -1.1719264814315515
-    Attrib RelacionPadres=Fair    -0.25978817715293295
-    Attrib RelacionPadres=Close    1.012345499480721
-    Attrib RelacionPadres=Distant    0.3769205309268531
+    Threshold    -0.57251929079886
+    Attrib Sexo=Male    -0.5126395615676387
+    Attrib Promedio12    0.8220411459095673
+    Attrib UltimoAnio=2nd Year    2.065837649559785
+    Attrib UltimoAnio=1st Year    0.04502336046788281
+    Attrib UltimoAnio=3rd Year    -1.0481800061379634
+    Attrib UltimoAnio=4th Year    0.1794813948406894
+    Attrib UltimoAnio=Postgraduate    0.3338014190169052
+    Attrib Facultad=Arts & Social Sciences    -2.105386310190864
+    Attrib Facultad=Economic & Management Sciences    -2.0046397264909017
+    Attrib Facultad=AgriSciences    2.552332421879809
+    Attrib Facultad=Engineering    0.6815482305834808
+    Attrib Facultad=Science    1.3874033907804244
+    Attrib Facultad=Law    0.745895214966385
+    Attrib Facultad=Medicine and Health Services    1.4554667263745138
+    Attrib Facultad=Education    0.49292024833676273
+    Attrib Promedio2023%    0.9625507213893134
+    Attrib Asignacion=R 4001- R 5000    0.9039529170107165
+    Attrib Asignacion=R 7001 - R 8000    -0.18685055467050124
+    Attrib Asignacion=R 6001 - R 7000    0.4482579376660497
+    Attrib Asignacion=R 5001 - R 6000    -1.5878760352125478
+    Attrib Asignacion=R 8000+    2.036104267834715
+    Attrib Beca=Yes    -1.420573857325859
+    Attrib HorasEstudio=8+    1.2594274536922712
+    Attrib HorasEstudio=3-5    0.1035519537726941
+    Attrib HorasEstudio=1-3    0.4752165816258444
+    Attrib HorasEstudio=5-8    -1.0527804987509939
+    Attrib HorasEstudio=0    0.9211407824040285
+    Attrib Bebidas=8+    -2.6771030788880377
+    Attrib Bebidas=3-5    0.7579067712675892
+    Attrib Bebidas=5-8    1.4153347278043125
+    Attrib Bebidas=1-3    0.6050745279460457
+    Attrib Bebidas=0    1.5617069976929436
+    Attrib ClasesPerdidas=3    1.52568487545222
+    Attrib ClasesPerdidas=4+    -1.5160175655592945
+    Attrib ClasesPerdidas=2    1.8608117781196083
+    Attrib ClasesPerdidas=1    -1.049289653120762
+    Attrib ClasesPerdidas=0    0.8656679792787139
+    Attrib ModulosSuspendidos=0    1.9348447825129855
+    Attrib ModulosSuspendidos=3    0.5408085408796159
+    Attrib ModulosSuspendidos=4+    -0.2609179030526145
+    Attrib ModulosSuspendidos=1    -1.0958164290108015
+    Attrib ModulosSuspendidos=2    0.4270846042591892
+    Attrib Relacion=No    1.489879675891799
+    Attrib AprobacionPadres=No    0.47439372718043865
+    Attrib RelacionPadres=Very close    1.5573140084231663
+    Attrib RelacionPadres=Fair    -0.617345405262814
+    Attrib RelacionPadres=Close    -0.01814744403439046
+    Attrib RelacionPadres=Distant    0.12497389154052987
 Sigmoid Node 12
     Inputs    Weights
-    Threshold    -0.006566350905716552
-    Attrib Promedio12    0.04182253203972342
-    Attrib UltimoAnio=2nd Year    1.524485569373614
-    Attrib UltimoAnio=1st Year    -0.6742611838386726
-    Attrib UltimoAnio=3rd Year    -1.9636015480271496
-    Attrib UltimoAnio=4th Year    0.3905189781588438
-    Attrib UltimoAnio=Postgraduate    0.7150395290578123
-    Attrib Facultad=Arts & Social Sciences    0.032223835755831286
-    Attrib Facultad=Economic & Management Sciences    -0.8877564994880114
-    Attrib Facultad=AgriSciences    0.19661845157884625
-    Attrib Facultad=Engineering    0.47325398485462555
-    Attrib Facultad=Science    1.4739620595300837
-    Attrib Facultad=Law    -0.7910976662041568
-    Attrib Facultad=Medicine and Health Services    0.01247824560564141
-    Attrib Facultad=Education    -0.3310788331372341
-    Attrib Promedio2023%    -0.15218834026074637
-    Attrib Asignacion=R 4001- R 5000    -1.2403739838176973
-    Attrib Asignacion=R 7001 - R 8000    1.3251977797997914
-    Attrib Asignacion=R 6001 - R 7000    -0.5998099317494995
-    Attrib Asignacion=R 5001 - R 6000    1.3349026519600384
-    Attrib Asignacion=R 8000+    -0.7301543909954145
-    Attrib Beca=Yes    -0.8468839012271262
-    Attrib HorasEstudio=8+    -0.4202339312863746
-    Attrib HorasEstudio=3-5    0.5242614816796363
-    Attrib HorasEstudio=1-3    0.3208352711397638
-    Attrib HorasEstudio=5-8    -0.7109260127435338
-    Attrib HorasEstudio=0    0.47050207194903315
-    Attrib Fiestas=Only weekends    -1.4030081085901087
-    Attrib Fiestas=2    -0.31533514116595845
-    Attrib Fiestas=3    -0.3032329792363831
-    Attrib Fiestas=1    -0.3358372121146396
-    Attrib Fiestas=4+    1.5514353101314333
-    Attrib Fiestas=0    0.8808643413638434
-    Attrib Bebidas=8+    2.3032968369952402
-    Attrib Bebidas=3-5    -0.3446005324727744
-    Attrib Bebidas=5-8    0.8212577018949752
-    Attrib Bebidas=1-3    -2.4302685551569327
-    Attrib Bebidas=0    -0.25125243120217
-    Attrib ClasesPerdidas=3    -0.6855208262230141
-    Attrib ClasesPerdidas=4+    0.8289598418650368
-    Attrib ClasesPerdidas=2    0.9420272966130772
-    Attrib ClasesPerdidas=1    -0.9356164576679915
-    Attrib ClasesPerdidas=0    -0.07100114700152947
-    Attrib ModulosSuspendidos=0    -0.5779573728985905
-    Attrib ModulosSuspendidos=3    1.2318006419698195
-    Attrib ModulosSuspendidos=4+    -2.3365023576362822
-    Attrib ModulosSuspendidos=1    0.5275954403828619
-    Attrib ModulosSuspendidos=2    1.2602673344886148
-    Attrib Relacion=No    1.664250375337482
-    Attrib AprobacionPadres=No    0.5201591595720984
-    Attrib RelacionPadres=Very close    0.5036602440333608
-    Attrib RelacionPadres=Fair    -0.30206168451987164
-    Attrib RelacionPadres=Close    -0.2888490810607013
-    Attrib RelacionPadres=Distant    0.19143021837622878
+    Threshold    -0.14260198197575558
+    Attrib Sexo=Male    2.3957639662130465
+    Attrib Promedio12    0.20688234363044383
+    Attrib UltimoAnio=2nd Year    1.3266792038060655
+    Attrib UltimoAnio=1st Year    0.9320352886086979
+    Attrib UltimoAnio=3rd Year    -1.6081968471545738
+    Attrib UltimoAnio=4th Year    -0.8346782207312716
+    Attrib UltimoAnio=Postgraduate    0.6186077692778204
+    Attrib Facultad=Arts & Social Sciences    -1.5926787991572144
+    Attrib Facultad=Economic & Management Sciences    -1.201895542923116
+    Attrib Facultad=AgriSciences    -1.1943800837732368
+    Attrib Facultad=Engineering    -0.004057724948738489
+    Attrib Facultad=Science    2.1215513838538675
+    Attrib Facultad=Law    1.1575637500710114
+    Attrib Facultad=Medicine and Health Services    1.0055667439000615
+    Attrib Facultad=Education    0.7063815223313525
+    Attrib Promedio2023%    0.8907309669560511
+    Attrib Asignacion=R 4001- R 5000    -0.9572915916234972
+    Attrib Asignacion=R 7001 - R 8000    1.2143366988516717
+    Attrib Asignacion=R 6001 - R 7000    1.6369422451545477
+    Attrib Asignacion=R 5001 - R 6000    -0.12167633785002512
+    Attrib Asignacion=R 8000+    -1.3239443787582312
+    Attrib Beca=Yes    0.9927774757925246
+    Attrib HorasEstudio=8+    0.5642271287676524
+    Attrib HorasEstudio=3-5    -0.6694955650935466
+    Attrib HorasEstudio=1-3    -0.4831199990685585
+    Attrib HorasEstudio=5-8    0.6125992507493417
+    Attrib HorasEstudio=0    0.5838505964547483
+    Attrib Bebidas=8+    0.82915566571917
+    Attrib Bebidas=3-5    -0.29738958410763755
+    Attrib Bebidas=5-8    -0.14454251148117792
+    Attrib Bebidas=1-3    0.01161294136027897
+    Attrib Bebidas=0    0.007275748304075727
+    Attrib ClasesPerdidas=3    1.2782315461340348
+    Attrib ClasesPerdidas=4+    1.8263239979069887
+    Attrib ClasesPerdidas=2    -0.5885178524925553
+    Attrib ClasesPerdidas=1    -1.3283232283689226
+    Attrib ClasesPerdidas=0    -0.6811745499110633
+    Attrib ModulosSuspendidos=0    0.941014740872241
+    Attrib ModulosSuspendidos=3    -0.04278631399832507
+    Attrib ModulosSuspendidos=4+    0.45734766887676387
+    Attrib ModulosSuspendidos=1    -1.4273371946054803
+    Attrib ModulosSuspendidos=2    0.5587166996505294
+    Attrib Relacion=No    0.2077408291316428
+    Attrib AprobacionPadres=No    0.14000060376414394
+    Attrib RelacionPadres=Very close    -0.2081343010555773
+    Attrib RelacionPadres=Fair    1.835251034147222
+    Attrib RelacionPadres=Close    -1.4106033494314567
+    Attrib RelacionPadres=Distant    0.2157015014211003
 Sigmoid Node 13
     Inputs    Weights
-    Threshold    0.0018690301781032611
-    Attrib Promedio12    -0.328082850890911
-    Attrib UltimoAnio=2nd Year    -0.3981172351959889
-    Attrib UltimoAnio=1st Year    0.054311386929043165
-    Attrib UltimoAnio=3rd Year    -0.06063615104436857
-    Attrib UltimoAnio=4th Year    0.22851219170627812
-    Attrib UltimoAnio=Postgraduate    0.24905495521716742
-    Attrib Facultad=Arts & Social Sciences    -0.10708836070209572
-    Attrib Facultad=Economic & Management Sciences    0.05678003389530818
-    Attrib Facultad=AgriSciences    0.19704167193945427
-    Attrib Facultad=Engineering    0.34104099663079507
-    Attrib Facultad=Science    -0.08779032726645818
-    Attrib Facultad=Law    0.026395766459666428
-    Attrib Facultad=Medicine and Health Services    -0.12724021700075883
-    Attrib Facultad=Education    -0.06481049451019753
-    Attrib Promedio2023%    -0.222917572542837
-    Attrib Asignacion=R 4001- R 5000    -0.11260286090771482
-    Attrib Asignacion=R 7001 - R 8000    -0.08848208903272621
-    Attrib Asignacion=R 6001 - R 7000    0.5319325510776638
-    Attrib Asignacion=R 5001 - R 6000    -0.3552201995775194
-    Attrib Asignacion=R 8000+    0.0896931519751955
-    Attrib Beca=Yes    -0.12050052653269228
-    Attrib HorasEstudio=8+    -0.0819094554226209
-    Attrib HorasEstudio=3-5    -0.1072138951564952
-    Attrib HorasEstudio=1-3    -0.006186229171018843
-    Attrib HorasEstudio=5-8    0.46850847796338785
-    Attrib HorasEstudio=0    -0.24587635138310607
-    Attrib Fiestas=Only weekends    0.20613795608803318
-    Attrib Fiestas=2    -0.14945470240741934
-    Attrib Fiestas=3    0.36157057496279954
-    Attrib Fiestas=1    -0.20989329446975735
-    Attrib Fiestas=4+    -0.13182962667143025
-    Attrib Fiestas=0    0.11327316402296482
-    Attrib Bebidas=8+    1.1880569877497726
-    Attrib Bebidas=3-5    -0.2715338855723425
-    Attrib Bebidas=5-8    -0.2989066259205408
-    Attrib Bebidas=1-3    -0.3499662408838782
-    Attrib Bebidas=0    -0.10594982609474085
-    Attrib ClasesPerdidas=3    0.06837648612821136
-    Attrib ClasesPerdidas=4+    0.5065155189010395
-    Attrib ClasesPerdidas=2    0.12695698058298208
-    Attrib ClasesPerdidas=1    -0.16121011089798354
-    Attrib ClasesPerdidas=0    -0.3531802063836689
-    Attrib ModulosSuspendidos=0    -0.27940482105137243
-    Attrib ModulosSuspendidos=3    0.17305351933169766
-    Attrib ModulosSuspendidos=4+    -0.27430682255123995
-    Attrib ModulosSuspendidos=1    0.10963085094905496
-    Attrib ModulosSuspendidos=2    0.34566769548714615
-    Attrib Relacion=No    -0.28566227526423327
-    Attrib AprobacionPadres=No    0.028185770393248356
-    Attrib RelacionPadres=Very close    -0.6284854933843401
-    Attrib RelacionPadres=Fair    0.37416338669158045
-    Attrib RelacionPadres=Close    -0.06267870682419649
-    Attrib RelacionPadres=Distant    0.28473817771959103
+    Threshold    -0.22746153704404481
+    Attrib Sexo=Male    1.4991883903396532
+    Attrib Promedio12    -0.5625196852796612
+    Attrib UltimoAnio=2nd Year    1.5915246796453233
+    Attrib UltimoAnio=1st Year    -0.5918918156329558
+    Attrib UltimoAnio=3rd Year    0.061243267242201964
+    Attrib UltimoAnio=4th Year    -0.34442604643134667
+    Attrib UltimoAnio=Postgraduate    0.11010780683722332
+    Attrib Facultad=Arts & Social Sciences    1.3442696818114754
+    Attrib Facultad=Economic & Management Sciences    -0.27920863167593524
+    Attrib Facultad=AgriSciences    0.08058617001043104
+    Attrib Facultad=Engineering    0.6493452251186984
+    Attrib Facultad=Science    -1.1633154624781104
+    Attrib Facultad=Law    -0.5258527418011345
+    Attrib Facultad=Medicine and Health Services    0.999015430588345
+    Attrib Facultad=Education    0.4734211408418309
+    Attrib Promedio2023%    -1.0682452821029402
+    Attrib Asignacion=R 4001- R 5000    -0.7184128522957938
+    Attrib Asignacion=R 7001 - R 8000    0.5900395094956477
+    Attrib Asignacion=R 6001 - R 7000    1.8585499121697622
+    Attrib Asignacion=R 5001 - R 6000    -1.0903390555919408
+    Attrib Asignacion=R 8000+    0.17285370913607317
+    Attrib Beca=Yes    -0.4206344618060766
+    Attrib HorasEstudio=8+    -0.34983322111826987
+    Attrib HorasEstudio=3-5    -0.23946888219566392
+    Attrib HorasEstudio=1-3    2.228026957448163
+    Attrib HorasEstudio=5-8    -0.47989804738964553
+    Attrib HorasEstudio=0    -0.4682876273483697
+    Attrib Bebidas=8+    -0.1384792307809884
+    Attrib Bebidas=3-5    0.6555521496790956
+    Attrib Bebidas=5-8    0.5751839089058008
+    Attrib Bebidas=1-3    -0.16176365027100523
+    Attrib Bebidas=0    -0.0696200757133818
+    Attrib ClasesPerdidas=3    0.29817131666367025
+    Attrib ClasesPerdidas=4+    -0.8801956937959147
+    Attrib ClasesPerdidas=2    1.6100602632943075
+    Attrib ClasesPerdidas=1    1.0397435761934661
+    Attrib ClasesPerdidas=0    -1.2180873514108665
+    Attrib ModulosSuspendidos=0    1.0320490670586107
+    Attrib ModulosSuspendidos=3    0.04902701352971688
+    Attrib ModulosSuspendidos=4+    0.10385863500000919
+    Attrib ModulosSuspendidos=1    -0.8976138352993664
+    Attrib ModulosSuspendidos=2    0.5881294897080477
+    Attrib Relacion=No    1.6265216238241746
+    Attrib AprobacionPadres=No    -0.10315438555181715
+    Attrib RelacionPadres=Very close    -0.4810537413987863
+    Attrib RelacionPadres=Fair    0.677754853440636
+    Attrib RelacionPadres=Close    0.03732579625465654
+    Attrib RelacionPadres=Distant    0.3577499672762953
 Sigmoid Node 14
     Inputs    Weights
-    Threshold    -0.14876232859139377
-    Attrib Promedio12    0.2966228323233525
-    Attrib UltimoAnio=2nd Year    1.1870379244814948
-    Attrib UltimoAnio=1st Year    -1.7030221741965736
-    Attrib UltimoAnio=3rd Year    0.939078219425992
-    Attrib UltimoAnio=4th Year    -0.004694837680625755
-    Attrib UltimoAnio=Postgraduate    -0.031450993087370635
-    Attrib Facultad=Arts & Social Sciences    -0.3335718119708831
-    Attrib Facultad=Economic & Management Sciences    1.1789512606963866
-    Attrib Facultad=AgriSciences    -0.6023808882811295
-    Attrib Facultad=Engineering    -0.1989318218172079
-    Attrib Facultad=Science    -0.16588475513936882
-    Attrib Facultad=Law    0.0014049321669125463
-    Attrib Facultad=Medicine and Health Services    0.5718658755670514
-    Attrib Facultad=Education    0.6116111645963446
-    Attrib Promedio2023%    0.5659498298648866
-    Attrib Asignacion=R 4001- R 5000    -1.908885499303557
-    Attrib Asignacion=R 7001 - R 8000    -0.44415232764491563
-    Attrib Asignacion=R 6001 - R 7000    2.114714914395424
-    Attrib Asignacion=R 5001 - R 6000    0.6923822777646612
-    Attrib Asignacion=R 8000+    -0.027802221832311264
-    Attrib Beca=Yes    -0.05637748672861591
-    Attrib HorasEstudio=8+    0.07048247035929267
-    Attrib HorasEstudio=3-5    0.18174068540487906
-    Attrib HorasEstudio=1-3    0.9742687156955128
-    Attrib HorasEstudio=5-8    -0.6453628450295318
-    Attrib HorasEstudio=0    -0.11317752610394433
-    Attrib Fiestas=Only weekends    -2.2696954459973187
-    Attrib Fiestas=2    1.0650111171608925
-    Attrib Fiestas=3    0.9260103042841612
-    Attrib Fiestas=1    0.04115528436377141
-    Attrib Fiestas=4+    -0.04358087959995972
-    Attrib Fiestas=0    0.9647727128717937
-    Attrib Bebidas=8+    1.4109263013241709
-    Attrib Bebidas=3-5    -0.3800060014642826
-    Attrib Bebidas=5-8    0.24097874459374694
-    Attrib Bebidas=1-3    0.35030883015657666
-    Attrib Bebidas=0    -1.2423464127432051
-    Attrib ClasesPerdidas=3    0.37592405807044205
-    Attrib ClasesPerdidas=4+    -0.5662246902601926
-    Attrib ClasesPerdidas=2    2.0099597024175373
-    Attrib ClasesPerdidas=1    0.3105872411630471
-    Attrib ClasesPerdidas=0    -1.6182627711279638
-    Attrib ModulosSuspendidos=0    0.3563655956163926
-    Attrib ModulosSuspendidos=3    -0.027141734221331364
-    Attrib ModulosSuspendidos=4+    0.8505196012057409
-    Attrib ModulosSuspendidos=1    -0.013948258284773477
-    Attrib ModulosSuspendidos=2    -0.6335383549221179
-    Attrib Relacion=No    -1.2318992300206737
-    Attrib AprobacionPadres=No    -1.5898492444580745
-    Attrib RelacionPadres=Very close    0.910988510488399
-    Attrib RelacionPadres=Fair    0.012357623775469478
-    Attrib RelacionPadres=Close    -0.6340262977663614
-    Attrib RelacionPadres=Distant    0.06598976173398398
+    Threshold    -0.2482805814608065
+    Attrib Sexo=Male    -0.2689330365479326
+    Attrib Promedio12    0.3713366628477104
+    Attrib UltimoAnio=2nd Year    -1.1209534947625668
+    Attrib UltimoAnio=1st Year    1.0402593268373954
+    Attrib UltimoAnio=3rd Year    -0.2303961443760633
+    Attrib UltimoAnio=4th Year    0.4158509227828514
+    Attrib UltimoAnio=Postgraduate    0.5644954011316236
+    Attrib Facultad=Arts & Social Sciences    0.7943627355704651
+    Attrib Facultad=Economic & Management Sciences    -0.9755349924752967
+    Attrib Facultad=AgriSciences    1.1729184108633823
+    Attrib Facultad=Engineering    1.0579421887524088
+    Attrib Facultad=Science    -1.040002778962363
+    Attrib Facultad=Law    -0.42873712011138015
+    Attrib Facultad=Medicine and Health Services    -0.2987315312731883
+    Attrib Facultad=Education    1.4420200260638982
+    Attrib Promedio2023%    0.42559737122585584
+    Attrib Asignacion=R 4001- R 5000    1.4339302767196884
+    Attrib Asignacion=R 7001 - R 8000    -0.3364411296459383
+    Attrib Asignacion=R 6001 - R 7000    1.3705111361890554
+    Attrib Asignacion=R 5001 - R 6000    -0.8006191383471043
+    Attrib Asignacion=R 8000+    -0.867440816485644
+    Attrib Beca=Yes    0.8061086000316839
+    Attrib HorasEstudio=8+    -0.8879055688424733
+    Attrib HorasEstudio=3-5    0.25027557687911883
+    Attrib HorasEstudio=1-3    -0.5079077135628632
+    Attrib HorasEstudio=5-8    1.5262688587342688
+    Attrib HorasEstudio=0    0.45443147159621256
+    Attrib Bebidas=8+    0.42069884651288825
+    Attrib Bebidas=3-5    1.3106889118605123
+    Attrib Bebidas=5-8    -1.778587866607238
+    Attrib Bebidas=1-3    -0.8332518805382847
+    Attrib Bebidas=0    1.6554992315649224
+    Attrib ClasesPerdidas=3    -0.023398823031517538
+    Attrib ClasesPerdidas=4+    0.7291118134724951
+    Attrib ClasesPerdidas=2    0.33628994307370247
+    Attrib ClasesPerdidas=1    -0.28248791865309164
+    Attrib ClasesPerdidas=0    -0.08109879438629848
+    Attrib ModulosSuspendidos=0    0.6238385516335903
+    Attrib ModulosSuspendidos=3    -0.08736666675469412
+    Attrib ModulosSuspendidos=4+    -0.9263560240081694
+    Attrib ModulosSuspendidos=1    1.4449004890754935
+    Attrib ModulosSuspendidos=2    -0.24447805107503445
+    Attrib Relacion=No    1.0183615572659432
+    Attrib AprobacionPadres=No    -0.12094054793013669
+    Attrib RelacionPadres=Very close    1.0797511338243866
+    Attrib RelacionPadres=Fair    -0.12664363374908602
+    Attrib RelacionPadres=Close    -0.3122502726865461
+    Attrib RelacionPadres=Distant    -0.15511374700287814
 Sigmoid Node 15
     Inputs    Weights
-    Threshold    0.0033664000987341305
-    Attrib Promedio12    -1.2803927607200165
-    Attrib UltimoAnio=2nd Year    0.031074225197144173
-    Attrib UltimoAnio=1st Year    -0.35037172731281796
-    Attrib UltimoAnio=3rd Year    -0.37120933205299683
-    Attrib UltimoAnio=4th Year    0.4042975226462128
-    Attrib UltimoAnio=Postgraduate    0.42890731167435364
-    Attrib Facultad=Arts & Social Sciences    -1.1382849807949318
-    Attrib Facultad=Economic & Management Sciences    -0.8103289467738315
-    Attrib Facultad=AgriSciences    -0.40067837396475486
-    Attrib Facultad=Engineering    1.0310321796764677
-    Attrib Facultad=Science    0.9345337544566368
-    Attrib Facultad=Law    0.18803152880942947
-    Attrib Facultad=Medicine and Health Services    0.5734002222158939
-    Attrib Facultad=Education    -0.24122587975688056
-    Attrib Promedio2023%    -0.9684459694995228
-    Attrib Asignacion=R 4001- R 5000    -0.40191539628009904
-    Attrib Asignacion=R 7001 - R 8000    -0.3748516903428835
-    Attrib Asignacion=R 6001 - R 7000    0.41531837455150167
-    Attrib Asignacion=R 5001 - R 6000    -0.43378614070780547
-    Attrib Asignacion=R 8000+    0.8672876281033989
-    Attrib Beca=Yes    -0.49925665119388213
-    Attrib HorasEstudio=8+    -0.43859590700578766
-    Attrib HorasEstudio=3-5    0.4745774112939198
-    Attrib HorasEstudio=1-3    0.9349526297248619
-    Attrib HorasEstudio=5-8    -1.4666094517827715
-    Attrib HorasEstudio=0    0.543266664909741
-    Attrib Fiestas=Only weekends    -0.9229875472373948
-    Attrib Fiestas=2    0.17664916665124103
-    Attrib Fiestas=3    -0.6558540657148972
-    Attrib Fiestas=1    1.198292247460674
-    Attrib Fiestas=4+    -0.5235145497193958
-    Attrib Fiestas=0    0.7476405667163052
-    Attrib Bebidas=8+    0.8108389210012045
-    Attrib Bebidas=3-5    -0.8880166828463688
-    Attrib Bebidas=5-8    0.45921042307875903
-    Attrib Bebidas=1-3    0.5849176651044825
-    Attrib Bebidas=0    -0.7643343006358505
-    Attrib ClasesPerdidas=3    -0.859767845377879
-    Attrib ClasesPerdidas=4+    0.5835034452697774
-    Attrib ClasesPerdidas=2    0.2318170591857349
-    Attrib ClasesPerdidas=1    -0.7672720665366896
-    Attrib ClasesPerdidas=0    0.952590131312402
-    Attrib ModulosSuspendidos=0    -1.2080819632137076
-    Attrib ModulosSuspendidos=3    0.24201938422787533
-    Attrib ModulosSuspendidos=4+    -0.5264498739395516
-    Attrib ModulosSuspendidos=1    -0.14802933263085502
-    Attrib ModulosSuspendidos=2    1.795128946393385
-    Attrib Relacion=No    -0.7146320879526719
-    Attrib AprobacionPadres=No    -1.047323130981845
-    Attrib RelacionPadres=Very close    -1.3798157349041797
-    Attrib RelacionPadres=Fair    -0.17216541516274905
-    Attrib RelacionPadres=Close    1.1377863793424958
-    Attrib RelacionPadres=Distant    0.5193782716531847
+    Threshold    -0.3635173169282984
+    Attrib Sexo=Male    0.45726737148860214
+    Attrib Promedio12    0.5974005523509311
+    Attrib UltimoAnio=2nd Year    -0.8144751330856613
+    Attrib UltimoAnio=1st Year    1.8041760299668659
+    Attrib UltimoAnio=3rd Year    0.5251601221827459
+    Attrib UltimoAnio=4th Year    -0.4478429117532212
+    Attrib UltimoAnio=Postgraduate    0.221119355127429
+    Attrib Facultad=Arts & Social Sciences    -0.6233882909366236
+    Attrib Facultad=Economic & Management Sciences    -0.3500354334655311
+    Attrib Facultad=AgriSciences    -0.15929035176999734
+    Attrib Facultad=Engineering    -0.27011474997051504
+    Attrib Facultad=Science    1.7894233559451111
+    Attrib Facultad=Law    0.10300711124152381
+    Attrib Facultad=Medicine and Health Services    1.9565155401744474
+    Attrib Facultad=Education    -0.17126877549724287
+    Attrib Promedio2023%    -1.1715456132075202
+    Attrib Asignacion=R 4001- R 5000    0.1346078002556816
+    Attrib Asignacion=R 7001 - R 8000    0.391310406574835
+    Attrib Asignacion=R 6001 - R 7000    -1.752094306842504
+    Attrib Asignacion=R 5001 - R 6000    1.5189235921745197
+    Attrib Asignacion=R 8000+    0.8248245574648896
+    Attrib Beca=Yes    0.09893642346532686
+    Attrib HorasEstudio=8+    -0.5853964138848554
+    Attrib HorasEstudio=3-5    0.8140084025962231
+    Attrib HorasEstudio=1-3    -0.38070356556536394
+    Attrib HorasEstudio=5-8    -1.9164200170799517
+    Attrib HorasEstudio=0    3.2060839784496724
+    Attrib Bebidas=8+    1.158390655470786
+    Attrib Bebidas=3-5    -1.387428096995326
+    Attrib Bebidas=5-8    1.3619453748760173
+    Attrib Bebidas=1-3    -0.35085112725716144
+    Attrib Bebidas=0    0.32778761532476736
+    Attrib ClasesPerdidas=3    -0.8528063749491868
+    Attrib ClasesPerdidas=4+    0.9297390133953117
+    Attrib ClasesPerdidas=2    1.1712923022607098
+    Attrib ClasesPerdidas=1    -1.187519014271501
+    Attrib ClasesPerdidas=0    1.2425612503480494
+    Attrib ModulosSuspendidos=0    -0.25700635208758
+    Attrib ModulosSuspendidos=3    1.7802677072273856
+    Attrib ModulosSuspendidos=4+    0.6189126150558721
+    Attrib ModulosSuspendidos=1    -0.3568462855999254
+    Attrib ModulosSuspendidos=2    -0.5438058096613646
+    Attrib Relacion=No    0.37093951875237985
+    Attrib AprobacionPadres=No    0.1520953236906446
+    Attrib RelacionPadres=Very close    1.33019691707329
+    Attrib RelacionPadres=Fair    -1.2860814237114713
+    Attrib RelacionPadres=Close    -0.058237308617512605
+    Attrib RelacionPadres=Distant    0.8151067324440737
 Sigmoid Node 16
     Inputs    Weights
-    Threshold    -0.06125843726952821
-    Attrib Promedio12    -0.3103559546795273
-    Attrib UltimoAnio=2nd Year    -0.32239454690594044
-    Attrib UltimoAnio=1st Year    -1.4542089619453618
-    Attrib UltimoAnio=3rd Year    1.153416351877825
-    Attrib UltimoAnio=4th Year    0.48525554480419114
-    Attrib UltimoAnio=Postgraduate    0.4053776582697021
-    Attrib Facultad=Arts & Social Sciences    -0.9898766526818198
-    Attrib Facultad=Economic & Management Sciences    0.09510959750651503
-    Attrib Facultad=AgriSciences    0.7946544402289626
-    Attrib Facultad=Engineering    0.32380105670294573
-    Attrib Facultad=Science    0.7100491992979057
-    Attrib Facultad=Law    -0.23984327388245413
-    Attrib Facultad=Medicine and Health Services    -0.14869380838162663
-    Attrib Facultad=Education    -0.20733010251278014
-    Attrib Promedio2023%    -0.2571956571150049
-    Attrib Asignacion=R 4001- R 5000    -0.7569883995232863
-    Attrib Asignacion=R 7001 - R 8000    0.1759979801423001
-    Attrib Asignacion=R 6001 - R 7000    -0.6000567305380553
-    Attrib Asignacion=R 5001 - R 6000    1.316284832317498
-    Attrib Asignacion=R 8000+    0.07439571506120818
-    Attrib Beca=Yes    -1.685606557049402
-    Attrib HorasEstudio=8+    -0.15140507776436937
-    Attrib HorasEstudio=3-5    0.8728416732874695
-    Attrib HorasEstudio=1-3    0.4851352440918892
-    Attrib HorasEstudio=5-8    -1.1695156836773917
-    Attrib HorasEstudio=0    0.2015253776948017
-    Attrib Fiestas=Only weekends    -0.964127893959574
-    Attrib Fiestas=2    2.22261928008905E-4
-    Attrib Fiestas=3    0.12606540961616944
-    Attrib Fiestas=1    -0.3560240014303378
-    Attrib Fiestas=4+    0.6885285255801269
-    Attrib Fiestas=0    1.024434462670994
-    Attrib Bebidas=8+    1.732207121420922
-    Attrib Bebidas=3-5    0.09732386471571484
-    Attrib Bebidas=5-8    0.024985869946749825
-    Attrib Bebidas=1-3    -1.877378184097386
-    Attrib Bebidas=0    0.22395060402104128
-    Attrib ClasesPerdidas=3    -0.7511706909019272
-    Attrib ClasesPerdidas=4+    0.7175809289588317
-    Attrib ClasesPerdidas=2    1.2239190248184102
-    Attrib ClasesPerdidas=1    -0.6357159661265236
-    Attrib ClasesPerdidas=0    -0.31781842525192755
-    Attrib ModulosSuspendidos=0    0.04789768737587795
-    Attrib ModulosSuspendidos=3    0.5348751807303442
-    Attrib ModulosSuspendidos=4+    -1.3062604772424131
-    Attrib ModulosSuspendidos=1    1.008684034654055
-    Attrib ModulosSuspendidos=2    -0.1322157295729566
-    Attrib Relacion=No    0.3117547475904677
-    Attrib AprobacionPadres=No    0.14624508477803363
-    Attrib RelacionPadres=Very close    0.23187861027526818
-    Attrib RelacionPadres=Fair    0.2161764627566507
-    Attrib RelacionPadres=Close    -0.5506164304578732
-    Attrib RelacionPadres=Distant    0.2212672500132275
+    Threshold    -0.3939685087919601
+    Attrib Sexo=Male    -1.2847825699984483
+    Attrib Promedio12    -0.4804740223046969
+    Attrib UltimoAnio=2nd Year    0.7604790735708957
+    Attrib UltimoAnio=1st Year    0.048397053210751766
+    Attrib UltimoAnio=3rd Year    2.2762382725290995
+    Attrib UltimoAnio=4th Year    0.2067107416663342
+    Attrib UltimoAnio=Postgraduate    -2.057993355360359
+    Attrib Facultad=Arts & Social Sciences    -0.9452165216994518
+    Attrib Facultad=Economic & Management Sciences    0.028955593342853764
+    Attrib Facultad=AgriSciences    0.8067708909584905
+    Attrib Facultad=Engineering    1.3961320211488684
+    Attrib Facultad=Science    0.8359208083443853
+    Attrib Facultad=Law    1.085787591732307
+    Attrib Facultad=Medicine and Health Services    0.888542071016435
+    Attrib Facultad=Education    -1.7650737580328522
+    Attrib Promedio2023%    -0.7959321446389859
+    Attrib Asignacion=R 4001- R 5000    0.8748215200844247
+    Attrib Asignacion=R 7001 - R 8000    0.3884757682024871
+    Attrib Asignacion=R 6001 - R 7000    -1.139384035974867
+    Attrib Asignacion=R 5001 - R 6000    -1.1287997218679284
+    Attrib Asignacion=R 8000+    2.1515874072785266
+    Attrib Beca=Yes    0.022603177791396235
+    Attrib HorasEstudio=8+    1.4463828779496555
+    Attrib HorasEstudio=3-5    -2.0800331392865874
+    Attrib HorasEstudio=1-3    0.7384389377004691
+    Attrib HorasEstudio=5-8    0.997383641545113
+    Attrib HorasEstudio=0    0.12923304708525615
+    Attrib Bebidas=8+    0.5890356302396068
+    Attrib Bebidas=3-5    2.4944049609790455
+    Attrib Bebidas=5-8    0.004619325724403401
+    Attrib Bebidas=1-3    0.3418913274788261
+    Attrib Bebidas=0    -2.0221254619272075
+    Attrib ClasesPerdidas=3    0.27499786257082576
+    Attrib ClasesPerdidas=4+    -0.30042335367009276
+    Attrib ClasesPerdidas=2    -2.15161968090744
+    Attrib ClasesPerdidas=1    0.3615208583108884
+    Attrib ClasesPerdidas=0    3.014743804270072
+    Attrib ModulosSuspendidos=0    -1.4985540582190635
+    Attrib ModulosSuspendidos=3    -0.26586993111257784
+    Attrib ModulosSuspendidos=4+    1.9883000868139509
+    Attrib ModulosSuspendidos=1    0.7582615571419916
+    Attrib ModulosSuspendidos=2    0.2527874314398402
+    Attrib Relacion=No    0.9182934443724108
+    Attrib AprobacionPadres=No    0.9044970738180583
+    Attrib RelacionPadres=Very close    0.6441363653008602
+    Attrib RelacionPadres=Fair    -0.4959699405412562
+    Attrib RelacionPadres=Close    -0.0441727043895156
+    Attrib RelacionPadres=Distant    0.7415374209142291
 Sigmoid Node 17
     Inputs    Weights
-    Threshold    -0.03633998460391908
-    Attrib Promedio12    -0.6092014118897526
-    Attrib UltimoAnio=2nd Year    0.024711810744433866
-    Attrib UltimoAnio=1st Year    -0.15239320868949954
-    Attrib UltimoAnio=3rd Year    0.27145117487580644
-    Attrib UltimoAnio=4th Year    -0.03090625581175468
-    Attrib UltimoAnio=Postgraduate    0.16448648628027399
-    Attrib Facultad=Arts & Social Sciences    0.05802739078068914
-    Attrib Facultad=Economic & Management Sciences    -0.31208285278126263
-    Attrib Facultad=AgriSciences    0.0491529763775812
-    Attrib Facultad=Engineering    0.324864105527134
-    Attrib Facultad=Science    -0.37792816949765673
-    Attrib Facultad=Law    0.2941441692360605
-    Attrib Facultad=Medicine and Health Services    0.3090427812247179
-    Attrib Facultad=Education    -0.021155372729118212
-    Attrib Promedio2023%    -0.4932453287384378
-    Attrib Asignacion=R 4001- R 5000    0.311348492251381
-    Attrib Asignacion=R 7001 - R 8000    -0.25026026307225785
-    Attrib Asignacion=R 6001 - R 7000    0.12010513701627988
-    Attrib Asignacion=R 5001 - R 6000    -0.4055740592503813
-    Attrib Asignacion=R 8000+    0.38783354224821315
-    Attrib Beca=Yes    0.3358404565701517
-    Attrib HorasEstudio=8+    -0.20687063234032102
-    Attrib HorasEstudio=3-5    0.8603334004491423
-    Attrib HorasEstudio=1-3    -0.5175399214106525
-    Attrib HorasEstudio=5-8    -0.2790291770029291
-    Attrib HorasEstudio=0    0.23259555178554076
-    Attrib Fiestas=Only weekends    -0.4329890325372553
-    Attrib Fiestas=2    0.425221450979937
-    Attrib Fiestas=3    -0.07547481680031179
-    Attrib Fiestas=1    0.11153945052341424
-    Attrib Fiestas=4+    0.24836676113379583
-    Attrib Fiestas=0    0.005747474669715025
-    Attrib Bebidas=8+    0.42197185100644613
-    Attrib Bebidas=3-5    -0.19291390567821862
-    Attrib Bebidas=5-8    -0.26585151775147875
-    Attrib Bebidas=1-3    0.6164117618466435
-    Attrib Bebidas=0    -0.4322309292097555
-    Attrib ClasesPerdidas=3    -0.0287717227286766
-    Attrib ClasesPerdidas=4+    0.41954603918294964
-    Attrib ClasesPerdidas=2    -0.35964506149185566
-    Attrib ClasesPerdidas=1    0.5310150275219414
-    Attrib ClasesPerdidas=0    -0.2758359242731693
-    Attrib ModulosSuspendidos=0    0.02779023699245533
-    Attrib ModulosSuspendidos=3    0.14385926616938186
-    Attrib ModulosSuspendidos=4+    -0.06985665762040158
-    Attrib ModulosSuspendidos=1    -0.29759444056533363
-    Attrib ModulosSuspendidos=2    0.37386595604435213
-    Attrib Relacion=No    -0.3001311284134297
-    Attrib AprobacionPadres=No    -0.007784650226823272
-    Attrib RelacionPadres=Very close    -0.2873022699612932
-    Attrib RelacionPadres=Fair    -0.1923602986304063
-    Attrib RelacionPadres=Close    0.35449459693464674
-    Attrib RelacionPadres=Distant    0.2552506533088823
+    Threshold    -0.18405622601828797
+    Attrib Sexo=Male    2.555431409086539
+    Attrib Promedio12    -0.888775282075517
+    Attrib UltimoAnio=2nd Year    0.9809182820289806
+    Attrib UltimoAnio=1st Year    -0.3917634721736362
+    Attrib UltimoAnio=3rd Year    -0.4938019188777861
+    Attrib UltimoAnio=4th Year    1.1895045414232284
+    Attrib UltimoAnio=Postgraduate    -0.6204258475755837
+    Attrib Facultad=Arts & Social Sciences    0.033795964533467004
+    Attrib Facultad=Economic & Management Sciences    0.3796660580891018
+    Attrib Facultad=AgriSciences    0.5505875536996925
+    Attrib Facultad=Engineering    -0.40932011683475605
+    Attrib Facultad=Science    1.2575770358435532
+    Attrib Facultad=Law    -0.10504360136018737
+    Attrib Facultad=Medicine and Health Services    -0.8078855683717283
+    Attrib Facultad=Education    0.32490888329761114
+    Attrib Promedio2023%    -0.7451734447247278
+    Attrib Asignacion=R 4001- R 5000    -0.5289933701726033
+    Attrib Asignacion=R 7001 - R 8000    -0.034914531724825885
+    Attrib Asignacion=R 6001 - R 7000    -0.008952161969755418
+    Attrib Asignacion=R 5001 - R 6000    1.7547644303081906
+    Attrib Asignacion=R 8000+    -0.5956644047771869
+    Attrib Beca=Yes    0.8673662832892045
+    Attrib HorasEstudio=8+    0.11597624790994734
+    Attrib HorasEstudio=3-5    -1.0620259659408793
+    Attrib HorasEstudio=1-3    -0.12432655096952985
+    Attrib HorasEstudio=5-8    2.389494947999601
+    Attrib HorasEstudio=0    -0.825820311001175
+    Attrib Bebidas=8+    0.7808926975053719
+    Attrib Bebidas=3-5    0.44968606996998545
+    Attrib Bebidas=5-8    -1.5634433509689896
+    Attrib Bebidas=1-3    0.2623739672864292
+    Attrib Bebidas=0    0.7755179951697402
+    Attrib ClasesPerdidas=3    0.17041211270820353
+    Attrib ClasesPerdidas=4+    0.1809733984604838
+    Attrib ClasesPerdidas=2    0.4089503290454999
+    Attrib ClasesPerdidas=1    -0.6760410249321765
+    Attrib ClasesPerdidas=0    0.506241169174746
+    Attrib ModulosSuspendidos=0    0.7807725828753757
+    Attrib ModulosSuspendidos=3    -0.08772621836376016
+    Attrib ModulosSuspendidos=4+    -0.32485020096691136
+    Attrib ModulosSuspendidos=1    -1.159097435436261
+    Attrib ModulosSuspendidos=2    1.5203583543459114
+    Attrib Relacion=No    0.5234509467186933
+    Attrib AprobacionPadres=No    0.10568171704545606
+    Attrib RelacionPadres=Very close    -0.7178093712685092
+    Attrib RelacionPadres=Fair    0.36383223559859684
+    Attrib RelacionPadres=Close    0.10723598431902878
+    Attrib RelacionPadres=Distant    0.6259623803366962
 Sigmoid Node 18
     Inputs    Weights
-    Threshold    -0.09001748044441658
-    Attrib Promedio12    0.11608787308326791
-    Attrib UltimoAnio=2nd Year    -1.0242097087795168
-    Attrib UltimoAnio=1st Year    0.8110659331834505
-    Attrib UltimoAnio=3rd Year    0.8162668340084385
-    Attrib UltimoAnio=4th Year    -0.2895500694234908
-    Attrib UltimoAnio=Postgraduate    -0.18058348512683015
-    Attrib Facultad=Arts & Social Sciences    0.9298475221097
-    Attrib Facultad=Economic & Management Sciences    -0.8809553200071729
-    Attrib Facultad=AgriSciences    1.1700677299253555
-    Attrib Facultad=Engineering    -1.4566495243087472
-    Attrib Facultad=Science    -1.366779576953386
-    Attrib Facultad=Law    0.2529382385576523
-    Attrib Facultad=Medicine and Health Services    0.9213283990175662
-    Attrib Facultad=Education    0.7162590259068682
-    Attrib Promedio2023%    -0.12482177095408288
-    Attrib Asignacion=R 4001- R 5000    0.597702221888561
-    Attrib Asignacion=R 7001 - R 8000    0.8523256684910445
-    Attrib Asignacion=R 6001 - R 7000    -0.5386920886084552
-    Attrib Asignacion=R 5001 - R 6000    -0.6794812622830831
-    Attrib Asignacion=R 8000+    -0.0326710910374741
-    Attrib Beca=Yes    0.39707921128618595
-    Attrib HorasEstudio=8+    0.5214305788072366
-    Attrib HorasEstudio=3-5    0.5640486626944955
-    Attrib HorasEstudio=1-3    0.5661318337280185
-    Attrib HorasEstudio=5-8    -1.16898739694426
-    Attrib HorasEstudio=0    -0.27112415574687837
-    Attrib Fiestas=Only weekends    1.4100684506013632
-    Attrib Fiestas=2    -1.093597823186363
-    Attrib Fiestas=3    -0.623978458319413
-    Attrib Fiestas=1    -0.10011239133808325
-    Attrib Fiestas=4+    0.6481186197699917
-    Attrib Fiestas=0    0.029643785214488957
-    Attrib Bebidas=8+    1.2761392272708836
-    Attrib Bebidas=3-5    0.8631688999906759
-    Attrib Bebidas=5-8    -0.8432366789748853
-    Attrib Bebidas=1-3    -0.6042741471779308
-    Attrib Bebidas=0    -0.4958178041055673
-    Attrib ClasesPerdidas=3    0.11089448905758867
-    Attrib ClasesPerdidas=4+    0.04104999765608879
-    Attrib ClasesPerdidas=2    -0.34485184797412893
-    Attrib ClasesPerdidas=1    -0.3790539444027411
-    Attrib ClasesPerdidas=0    0.7518618487335438
-    Attrib ModulosSuspendidos=0    -1.604661769871319
-    Attrib ModulosSuspendidos=3    0.7998190301572746
-    Attrib ModulosSuspendidos=4+    -0.6689384668654326
-    Attrib ModulosSuspendidos=1    2.158476780016604
-    Attrib ModulosSuspendidos=2    -0.5973374484627471
-    Attrib Relacion=No    0.406334961360619
-    Attrib AprobacionPadres=No    0.747238729552393
-    Attrib RelacionPadres=Very close    0.32656911633747215
-    Attrib RelacionPadres=Fair    -0.1901874164926634
-    Attrib RelacionPadres=Close    0.5437506744488682
-    Attrib RelacionPadres=Distant    -0.49757248867252757
+    Threshold    -0.22914572289603793
+    Attrib Sexo=Male    0.708874851304865
+    Attrib Promedio12    0.8727127371805606
+    Attrib UltimoAnio=2nd Year    -1.5933568914489904
+    Attrib UltimoAnio=1st Year    0.8256770975156418
+    Attrib UltimoAnio=3rd Year    0.8195452132871237
+    Attrib UltimoAnio=4th Year    1.0772777143288803
+    Attrib UltimoAnio=Postgraduate    -0.5345915881813547
+    Attrib Facultad=Arts & Social Sciences    -0.6636333007976859
+    Attrib Facultad=Economic & Management Sciences    0.48688433435912626
+    Attrib Facultad=AgriSciences    1.261851089773193
+    Attrib Facultad=Engineering    0.2056737273221401
+    Attrib Facultad=Science    -0.39794729618678937
+    Attrib Facultad=Law    -0.28316615490119984
+    Attrib Facultad=Medicine and Health Services    -0.0519146827123651
+    Attrib Facultad=Education    0.5242810404415809
+    Attrib Promedio2023%    -1.1657685821839234
+    Attrib Asignacion=R 4001- R 5000    1.2356761572897874
+    Attrib Asignacion=R 7001 - R 8000    -0.8325461100254818
+    Attrib Asignacion=R 6001 - R 7000    -0.019999325460944056
+    Attrib Asignacion=R 5001 - R 6000    2.134047328034923
+    Attrib Asignacion=R 8000+    -1.854870038165236
+    Attrib Beca=Yes    1.2331483635612195
+    Attrib HorasEstudio=8+    2.382350631206881
+    Attrib HorasEstudio=3-5    -0.9538200690233961
+    Attrib HorasEstudio=1-3    0.2274557727426709
+    Attrib HorasEstudio=5-8    -0.3429928938184986
+    Attrib HorasEstudio=0    -0.6714779512815455
+    Attrib Bebidas=8+    0.9869184456601682
+    Attrib Bebidas=3-5    1.6374304477555781
+    Attrib Bebidas=5-8    0.37055197907482373
+    Attrib Bebidas=1-3    -3.509636670151552
+    Attrib Bebidas=0    1.0995066086123726
+    Attrib ClasesPerdidas=3    0.5216956199895323
+    Attrib ClasesPerdidas=4+    -1.2668471809602118
+    Attrib ClasesPerdidas=2    0.9550185862503595
+    Attrib ClasesPerdidas=1    -0.503147562541611
+    Attrib ClasesPerdidas=0    0.9066447616199603
+    Attrib ModulosSuspendidos=0    0.6253341985039056
+    Attrib ModulosSuspendidos=3    -0.6227675219271056
+    Attrib ModulosSuspendidos=4+    1.2900788563396082
+    Attrib ModulosSuspendidos=1    -0.7290035872211224
+    Attrib ModulosSuspendidos=2    0.033643324729934705
+    Attrib Relacion=No    -1.5033529307202715
+    Attrib AprobacionPadres=No    -1.172481401104967
+    Attrib RelacionPadres=Very close    0.5379680487100225
+    Attrib RelacionPadres=Fair    0.7786879323126978
+    Attrib RelacionPadres=Close    -1.4129850253593887
+    Attrib RelacionPadres=Distant    0.4128147724822124
 Sigmoid Node 19
     Inputs    Weights
-    Threshold    0.010678770140055987
-    Attrib Promedio12    0.054560336512327876
-    Attrib UltimoAnio=2nd Year    0.04993646031759221
-    Attrib UltimoAnio=1st Year    -0.08506796423652989
-    Attrib UltimoAnio=3rd Year    0.10739304930826178
-    Attrib UltimoAnio=4th Year    -0.023783489240639517
-    Attrib UltimoAnio=Postgraduate    0.03142772582453174
-    Attrib Facultad=Arts & Social Sciences    -0.06765129458479911
-    Attrib Facultad=Economic & Management Sciences    -0.07354913006409576
-    Attrib Facultad=AgriSciences    0.05963295647789384
-    Attrib Facultad=Engineering    0.14417603547139493
-    Attrib Facultad=Science    0.1332355646651073
-    Attrib Facultad=Law    0.051098985890679335
-    Attrib Facultad=Medicine and Health Services    -0.04029490089751442
-    Attrib Facultad=Education    0.05497741077665959
-    Attrib Promedio2023%    0.035667984763961
-    Attrib Asignacion=R 4001- R 5000    0.034203500305740014
-    Attrib Asignacion=R 7001 - R 8000    0.08920216947554706
-    Attrib Asignacion=R 6001 - R 7000    -0.04945553772382134
-    Attrib Asignacion=R 5001 - R 6000    0.039846715950688935
-    Attrib Asignacion=R 8000+    0.06480395426831843
-    Attrib Beca=Yes    -0.011391141149951902
-    Attrib HorasEstudio=8+    0.014455550719215097
-    Attrib HorasEstudio=3-5    -0.012396304223942417
-    Attrib HorasEstudio=1-3    -0.05800807938394985
-    Attrib HorasEstudio=5-8    0.025340823229850568
-    Attrib HorasEstudio=0    0.03414152515474757
-    Attrib Fiestas=Only weekends    -0.0997944518023427
-    Attrib Fiestas=2    -0.043051806264881615
-    Attrib Fiestas=3    0.024950891197522165
-    Attrib Fiestas=1    0.10073076941607573
-    Attrib Fiestas=4+    0.1349935472164908
-    Attrib Fiestas=0    -0.021635785121411504
-    Attrib Bebidas=8+    0.08728919141037741
-    Attrib Bebidas=3-5    -0.09739679816899056
-    Attrib Bebidas=5-8    0.16623782747557359
-    Attrib Bebidas=1-3    -0.183073242925176
-    Attrib Bebidas=0    0.09847889429294625
-    Attrib ClasesPerdidas=3    0.016733209867608664
-    Attrib ClasesPerdidas=4+    0.08904029371544643
-    Attrib ClasesPerdidas=2    0.07909190278700541
-    Attrib ClasesPerdidas=1    -0.014348099038018085
-    Attrib ClasesPerdidas=0    -0.039110569465128184
-    Attrib ModulosSuspendidos=0    -0.03208428749622497
-    Attrib ModulosSuspendidos=3    -0.026612316880192083
-    Attrib ModulosSuspendidos=4+    0.10477950011843504
-    Attrib ModulosSuspendidos=1    -0.07420031699591746
-    Attrib ModulosSuspendidos=2    0.2164632823842994
-    Attrib Relacion=No    0.14640817205088005
-    Attrib AprobacionPadres=No    -0.03027927838915004
-    Attrib RelacionPadres=Very close    -0.09614869949784006
-    Attrib RelacionPadres=Fair    0.035161372183158596
-    Attrib RelacionPadres=Close    0.18298764724933556
-    Attrib RelacionPadres=Distant    -0.02580608736919797
+    Threshold    -0.17177779472432395
+    Attrib Sexo=Male    0.7047296609673361
+    Attrib Promedio12    -1.0784353006856202
+    Attrib UltimoAnio=2nd Year    0.14062490731848842
+    Attrib UltimoAnio=1st Year    -0.020692164186943536
+    Attrib UltimoAnio=3rd Year    -0.8510538582590897
+    Attrib UltimoAnio=4th Year    1.2906400365661848
+    Attrib UltimoAnio=Postgraduate    0.06843092421828965
+    Attrib Facultad=Arts & Social Sciences    0.051653457780720495
+    Attrib Facultad=Economic & Management Sciences    -1.0402525410413017
+    Attrib Facultad=AgriSciences    0.6624012985820508
+    Attrib Facultad=Engineering    -0.4307158764676196
+    Attrib Facultad=Science    0.026323807823562917
+    Attrib Facultad=Law    0.376817907815204
+    Attrib Facultad=Medicine and Health Services    0.5564714137830978
+    Attrib Facultad=Education    1.1637274987894928
+    Attrib Promedio2023%    0.03278562253687392
+    Attrib Asignacion=R 4001- R 5000    0.6758603271951237
+    Attrib Asignacion=R 7001 - R 8000    0.8858431860895967
+    Attrib Asignacion=R 6001 - R 7000    0.4725717941030068
+    Attrib Asignacion=R 5001 - R 6000    0.24289913730466214
+    Attrib Asignacion=R 8000+    -1.617029727499326
+    Attrib Beca=Yes    0.9202797679949345
+    Attrib HorasEstudio=8+    -1.40316698760483
+    Attrib HorasEstudio=3-5    2.144151827086187
+    Attrib HorasEstudio=1-3    0.9051442408956359
+    Attrib HorasEstudio=5-8    -1.369666202146638
+    Attrib HorasEstudio=0    0.2638658466979847
+    Attrib Bebidas=8+    1.6064498614144398
+    Attrib Bebidas=3-5    0.6239753048270212
+    Attrib Bebidas=5-8    0.49676919919654194
+    Attrib Bebidas=1-3    -0.3097347538482601
+    Attrib Bebidas=0    -1.7721879167319874
+    Attrib ClasesPerdidas=3    1.548235026238411
+    Attrib ClasesPerdidas=4+    -1.188537655699494
+    Attrib ClasesPerdidas=2    -1.7487774730461565
+    Attrib ClasesPerdidas=1    1.8489123011078727
+    Attrib ClasesPerdidas=0    0.1590733680772733
+    Attrib ModulosSuspendidos=0    -0.05786799164406931
+    Attrib ModulosSuspendidos=3    0.7498918468242379
+    Attrib ModulosSuspendidos=4+    0.673816543883562
+    Attrib ModulosSuspendidos=1    0.46971870736191795
+    Attrib ModulosSuspendidos=2    -1.1567826739655733
+    Attrib Relacion=No    -1.6795096396571734
+    Attrib AprobacionPadres=No    -1.2720326916112414
+    Attrib RelacionPadres=Very close    0.4699979394435161
+    Attrib RelacionPadres=Fair    -0.4788803204866913
+    Attrib RelacionPadres=Close    0.4355859021927169
+    Attrib RelacionPadres=Distant    0.1422524106172963
 Sigmoid Node 20
     Inputs    Weights
-    Threshold    -0.019017647589216074
-    Attrib Promedio12    0.1951168544165639
-    Attrib UltimoAnio=2nd Year    0.44848062834314995
-    Attrib UltimoAnio=1st Year    -0.11383407184986113
-    Attrib UltimoAnio=3rd Year    -0.11420867626646129
-    Attrib UltimoAnio=4th Year    0.0034978057168774286
-    Attrib UltimoAnio=Postgraduate    0.013823883463573473
-    Attrib Facultad=Arts & Social Sciences    -0.16771710551802815
-    Attrib Facultad=Economic & Management Sciences    -0.6577168625023819
-    Attrib Facultad=AgriSciences    0.03156606031117272
-    Attrib Facultad=Engineering    0.254022453963942
-    Attrib Facultad=Science    0.400867105959783
-    Attrib Facultad=Law    0.048261480649915915
-    Attrib Facultad=Medicine and Health Services    0.17089393638189598
-    Attrib Facultad=Education    0.22259266443919135
-    Attrib Promedio2023%    0.07797363091250044
-    Attrib Asignacion=R 4001- R 5000    0.12413586144529072
-    Attrib Asignacion=R 7001 - R 8000    0.22133088279148183
-    Attrib Asignacion=R 6001 - R 7000    -0.005275717735735889
-    Attrib Asignacion=R 5001 - R 6000    -0.1841349977109103
-    Attrib Asignacion=R 8000+    0.10695128238521023
-    Attrib Beca=Yes    -0.20078287237878462
-    Attrib HorasEstudio=8+    0.11370737663509495
-    Attrib HorasEstudio=3-5    -0.11893483791264642
-    Attrib HorasEstudio=1-3    -0.05335670429105188
-    Attrib HorasEstudio=5-8    -0.08516068885923964
-    Attrib HorasEstudio=0    0.16769571112021353
-    Attrib Fiestas=Only weekends    -0.37364321667406436
-    Attrib Fiestas=2    -0.10427704968734244
-    Attrib Fiestas=3    0.055583767827759804
-    Attrib Fiestas=1    0.3748624778758555
-    Attrib Fiestas=4+    0.28411893587608805
-    Attrib Fiestas=0    -0.06986266467648364
-    Attrib Bebidas=8+    -0.015376704694912346
-    Attrib Bebidas=3-5    0.4114328147751032
-    Attrib Bebidas=5-8    0.08869495474484698
-    Attrib Bebidas=1-3    -0.9157689676299443
-    Attrib Bebidas=0    0.5280514876729311
-    Attrib ClasesPerdidas=3    0.10166062031350072
-    Attrib ClasesPerdidas=4+    -0.14920963257325318
-    Attrib ClasesPerdidas=2    0.4031735529862581
-    Attrib ClasesPerdidas=1    0.262716154558403
-    Attrib ClasesPerdidas=0    -0.3105348668374127
-    Attrib ModulosSuspendidos=0    0.27191093197951755
-    Attrib ModulosSuspendidos=3    -0.2888008316905815
-    Attrib ModulosSuspendidos=4+    -0.12737167135721378
-    Attrib ModulosSuspendidos=1    -0.2713217326475348
-    Attrib ModulosSuspendidos=2    0.5167507962780702
-    Attrib Relacion=No    0.35216041642813917
-    Attrib AprobacionPadres=No    -0.30334615523540204
-    Attrib RelacionPadres=Very close    -0.21674738589655437
-    Attrib RelacionPadres=Fair    -0.04225839617678319
-    Attrib RelacionPadres=Close    0.5512027894560171
-    Attrib RelacionPadres=Distant    -0.202373910581999
+    Threshold    -0.3118602381028448
+    Attrib Sexo=Male    -0.1542631695193753
+    Attrib Promedio12    -0.3538869494839984
+    Attrib UltimoAnio=2nd Year    0.5479846222290142
+    Attrib UltimoAnio=1st Year    -0.08126638428855519
+    Attrib UltimoAnio=3rd Year    -0.27578604809595914
+    Attrib UltimoAnio=4th Year    0.08023591160820523
+    Attrib UltimoAnio=Postgraduate    0.8367012515268265
+    Attrib Facultad=Arts & Social Sciences    -0.5396986733845387
+    Attrib Facultad=Economic & Management Sciences    -0.9322699447402896
+    Attrib Facultad=AgriSciences    0.48093387908243224
+    Attrib Facultad=Engineering    0.8208459881326736
+    Attrib Facultad=Science    -0.16841193710429267
+    Attrib Facultad=Law    1.115728186340936
+    Attrib Facultad=Medicine and Health Services    0.7113465865008629
+    Attrib Facultad=Education    0.568635054497927
+    Attrib Promedio2023%    0.7124854617673596
+    Attrib Asignacion=R 4001- R 5000    1.2155039838084447
+    Attrib Asignacion=R 7001 - R 8000    -0.5030451900503281
+    Attrib Asignacion=R 6001 - R 7000    -0.13591719052149115
+    Attrib Asignacion=R 5001 - R 6000    0.04444325349357076
+    Attrib Asignacion=R 8000+    0.5339480722008008
+    Attrib Beca=Yes    -0.35284016841890486
+    Attrib HorasEstudio=8+    -0.9709916656447033
+    Attrib HorasEstudio=3-5    -0.268039800179657
+    Attrib HorasEstudio=1-3    1.372513911993715
+    Attrib HorasEstudio=5-8    0.21411558255031365
+    Attrib HorasEstudio=0    0.6084010136238516
+    Attrib Bebidas=8+    1.02081646088787
+    Attrib Bebidas=3-5    0.926841718271482
+    Attrib Bebidas=5-8    -0.40244441440244366
+    Attrib Bebidas=1-3    -0.8107742391047416
+    Attrib Bebidas=0    0.23298084530317037
+    Attrib ClasesPerdidas=3    0.3363536404599947
+    Attrib ClasesPerdidas=4+    -0.25316110814745807
+    Attrib ClasesPerdidas=2    2.1221391830800536
+    Attrib ClasesPerdidas=1    0.4178002481432595
+    Attrib ClasesPerdidas=0    -1.6475706071269822
+    Attrib ModulosSuspendidos=0    0.8069312849449639
+    Attrib ModulosSuspendidos=3    -0.21543081362120584
+    Attrib ModulosSuspendidos=4+    -1.0438713347457722
+    Attrib ModulosSuspendidos=1    -0.5215843907452173
+    Attrib ModulosSuspendidos=2    2.1602888541556435
+    Attrib Relacion=No    -1.150416898567066
+    Attrib AprobacionPadres=No    -0.3365257816170283
+    Attrib RelacionPadres=Very close    -0.4104443051766324
+    Attrib RelacionPadres=Fair    0.29446314002611523
+    Attrib RelacionPadres=Close    0.4281174295803149
+    Attrib RelacionPadres=Distant    0.32431834069461263
 Sigmoid Node 21
     Inputs    Weights
-    Threshold    -0.014301586520769568
-    Attrib Promedio12    -0.03463488492711388
-    Attrib UltimoAnio=2nd Year    -0.100622106988358
-    Attrib UltimoAnio=1st Year    0.8272269737665449
-    Attrib UltimoAnio=3rd Year    0.8296550855425264
-    Attrib UltimoAnio=4th Year    -1.4023334511378556
-    Attrib UltimoAnio=Postgraduate    0.08440557143578356
-    Attrib Facultad=Arts & Social Sciences    -0.706254024681452
-    Attrib Facultad=Economic & Management Sciences    0.9017495708501444
-    Attrib Facultad=AgriSciences    -0.6944883534379542
-    Attrib Facultad=Engineering    -0.4658931894615555
-    Attrib Facultad=Science    -1.4665894741872594
-    Attrib Facultad=Law    0.6164048292371663
-    Attrib Facultad=Medicine and Health Services    1.457372360979675
-    Attrib Facultad=Education    0.6494542317023759
-    Attrib Promedio2023%    0.20788030574450725
-    Attrib Asignacion=R 4001- R 5000    -1.888985315508943
-    Attrib Asignacion=R 7001 - R 8000    0.43311891968218647
-    Attrib Asignacion=R 6001 - R 7000    1.5915925315644737
-    Attrib Asignacion=R 5001 - R 6000    -0.6005105396630919
-    Attrib Asignacion=R 8000+    0.6741815619611325
-    Attrib Beca=Yes    2.391780638813092
-    Attrib HorasEstudio=8+    0.8117988687792261
-    Attrib HorasEstudio=3-5    -0.5210626082905455
-    Attrib HorasEstudio=1-3    0.9382875457523877
-    Attrib HorasEstudio=5-8    -0.5897380343530249
-    Attrib HorasEstudio=0    -0.5771144564113916
-    Attrib Fiestas=Only weekends    -0.2295095633308287
-    Attrib Fiestas=2    0.13524705418246918
-    Attrib Fiestas=3    2.427377028220719
-    Attrib Fiestas=1    -1.5050774695741542
-    Attrib Fiestas=4+    -1.1958074425903515
-    Attrib Fiestas=0    0.600637210230612
-    Attrib Bebidas=8+    -1.4019437456255566
-    Attrib Bebidas=3-5    -0.3037369370808579
-    Attrib Bebidas=5-8    0.3520408850344491
-    Attrib Bebidas=1-3    1.8914331492988965
-    Attrib Bebidas=0    -0.3570123020962025
-    Attrib ClasesPerdidas=3    -0.2585867737704361
-    Attrib ClasesPerdidas=4+    0.6691790899291421
-    Attrib ClasesPerdidas=2    0.24617558213012125
-    Attrib ClasesPerdidas=1    -0.5113939411509243
-    Attrib ClasesPerdidas=0    0.10751417260677637
-    Attrib ModulosSuspendidos=0    -0.6166137028710936
-    Attrib ModulosSuspendidos=3    0.035674917128937535
-    Attrib ModulosSuspendidos=4+    -0.1711453616088757
-    Attrib ModulosSuspendidos=1    1.1691662250380521
-    Attrib ModulosSuspendidos=2    -0.2681906998126618
-    Attrib Relacion=No    -1.7842219554881047
-    Attrib AprobacionPadres=No    -0.5234692634715775
-    Attrib RelacionPadres=Very close    1.063640750020504
-    Attrib RelacionPadres=Fair    -0.6748819452908276
-    Attrib RelacionPadres=Close    0.033814588844478716
-    Attrib RelacionPadres=Distant    -0.263795373168826
+    Threshold    -0.30111349584597624
+    Attrib Sexo=Male    -3.1698331656918044
+    Attrib Promedio12    -0.970094860855255
+    Attrib UltimoAnio=2nd Year    1.1457234049869902
+    Attrib UltimoAnio=1st Year    1.3316765446051722
+    Attrib UltimoAnio=3rd Year    -0.26225773076319514
+    Attrib UltimoAnio=4th Year    -0.09502944620541515
+    Attrib UltimoAnio=Postgraduate    -1.1016997126827157
+    Attrib Facultad=Arts & Social Sciences    2.003002448976751
+    Attrib Facultad=Economic & Management Sciences    -0.047362224314883176
+    Attrib Facultad=AgriSciences    -1.0904909116900796
+    Attrib Facultad=Engineering    1.3237366629298137
+    Attrib Facultad=Science    -1.670183289020467
+    Attrib Facultad=Law    1.2371253420041388
+    Attrib Facultad=Medicine and Health Services    0.6984927537390093
+    Attrib Facultad=Education    -0.38130289505562476
+    Attrib Promedio2023%    -1.2404086838612018
+    Attrib Asignacion=R 4001- R 5000    1.540742996455301
+    Attrib Asignacion=R 7001 - R 8000    -0.43278651034946036
+    Attrib Asignacion=R 6001 - R 7000    -0.5115218414891057
+    Attrib Asignacion=R 5001 - R 6000    -0.22590076743123375
+    Attrib Asignacion=R 8000+    0.7506091465457102
+    Attrib Beca=Yes    -2.2509039916284794
+    Attrib HorasEstudio=8+    0.17553403358392633
+    Attrib HorasEstudio=3-5    0.3055338657099136
+    Attrib HorasEstudio=1-3    -0.5673544821043007
+    Attrib HorasEstudio=5-8    0.6329885927026337
+    Attrib HorasEstudio=0    0.41697812714058924
+    Attrib Bebidas=8+    0.5741910483724008
+    Attrib Bebidas=3-5    0.773416619838422
+    Attrib Bebidas=5-8    -1.3161941371489998
+    Attrib Bebidas=1-3    0.9445110215975738
+    Attrib Bebidas=0    0.026838762633402225
+    Attrib ClasesPerdidas=3    0.25622800505822413
+    Attrib ClasesPerdidas=4+    1.6712095463494252
+    Attrib ClasesPerdidas=2    -1.4856138198601112
+    Attrib ClasesPerdidas=1    1.0362190075848916
+    Attrib ClasesPerdidas=0    -0.4368259616260457
+    Attrib ModulosSuspendidos=0    0.8375150762012638
+    Attrib ModulosSuspendidos=3    -0.16714244405857245
+    Attrib ModulosSuspendidos=4+    -0.7914375494183862
+    Attrib ModulosSuspendidos=1    0.9501912931059726
+    Attrib ModulosSuspendidos=2    0.28419748189006305
+    Attrib Relacion=No    2.354573823512254
+    Attrib AprobacionPadres=No    -0.22728257338973662
+    Attrib RelacionPadres=Very close    -1.6454885773473626
+    Attrib RelacionPadres=Fair    1.5074967623282036
+    Attrib RelacionPadres=Close    0.22625286115908158
+    Attrib RelacionPadres=Distant    0.5220098947354993
 Sigmoid Node 22
     Inputs    Weights
-    Threshold    -0.25587105960713175
-    Attrib Promedio12    -0.4161123597340174
-    Attrib UltimoAnio=2nd Year    -0.6074431111934022
-    Attrib UltimoAnio=1st Year    0.5733864434430479
-    Attrib UltimoAnio=3rd Year    0.31369385848937553
-    Attrib UltimoAnio=4th Year    0.07000113529002953
-    Attrib UltimoAnio=Postgraduate    0.2693937704804407
-    Attrib Facultad=Arts & Social Sciences    1.1373611608563245
-    Attrib Facultad=Economic & Management Sciences    0.06610374195000362
-    Attrib Facultad=AgriSciences    0.15231047374376733
-    Attrib Facultad=Engineering    -0.14954120008987262
-    Attrib Facultad=Science    -0.6287140850025199
-    Attrib Facultad=Law    0.37136762011954555
-    Attrib Facultad=Medicine and Health Services    0.307027591871971
-    Attrib Facultad=Education    0.02915068775205877
-    Attrib Promedio2023%    -0.36333416795848045
-    Attrib Asignacion=R 4001- R 5000    0.48025152948267125
-    Attrib Asignacion=R 7001 - R 8000    0.11622543535050353
-    Attrib Asignacion=R 6001 - R 7000    -0.019263205870641016
-    Attrib Asignacion=R 5001 - R 6000    -0.04872600020853837
-    Attrib Asignacion=R 8000+    0.006775452231422586
-    Attrib Beca=Yes    -0.09775477504165193
-    Attrib HorasEstudio=8+    -0.797705444685888
-    Attrib HorasEstudio=3-5    0.8664463636399996
-    Attrib HorasEstudio=1-3    -0.5872459790498521
-    Attrib HorasEstudio=5-8    0.787130919292203
-    Attrib HorasEstudio=0    0.2967352496564015
-    Attrib Fiestas=Only weekends    -0.4754870737703952
-    Attrib Fiestas=2    0.7532234680347669
-    Attrib Fiestas=3    0.20280739830559227
-    Attrib Fiestas=1    -0.05307688405236458
-    Attrib Fiestas=4+    0.4910201540178888
-    Attrib Fiestas=0    -0.10607519151201046
-    Attrib Bebidas=8+    0.4360353887318442
-    Attrib Bebidas=3-5    -0.04961629128259753
-    Attrib Bebidas=5-8    -0.006547240890980179
-    Attrib Bebidas=1-3    0.7907782658062578
-    Attrib Bebidas=0    -0.635941311255387
-    Attrib ClasesPerdidas=3    0.15672146893013503
-    Attrib ClasesPerdidas=4+    0.31583712089068633
-    Attrib ClasesPerdidas=2    0.028457001305735762
-    Attrib ClasesPerdidas=1    0.34568282446550525
-    Attrib ClasesPerdidas=0    -0.294103462923259
-    Attrib ModulosSuspendidos=0    0.7185105176539925
-    Attrib ModulosSuspendidos=3    -0.04430879481781233
-    Attrib ModulosSuspendidos=4+    0.007059063739121754
-    Attrib ModulosSuspendidos=1    -0.3345071412138409
-    Attrib ModulosSuspendidos=2    0.17379408893243503
-    Attrib Relacion=No    -0.3354906414936036
-    Attrib AprobacionPadres=No    0.183754899827902
-    Attrib RelacionPadres=Very close    0.17509441397384454
-    Attrib RelacionPadres=Fair    0.12308765162842517
-    Attrib RelacionPadres=Close    -0.11591910976564701
-    Attrib RelacionPadres=Distant    0.28798320173986147
+    Threshold    -0.36242805698911285
+    Attrib Sexo=Male    -0.34345536579225755
+    Attrib Promedio12    -0.08041474937065145
+    Attrib UltimoAnio=2nd Year    0.4224674089641841
+    Attrib UltimoAnio=1st Year    -0.28455761481722874
+    Attrib UltimoAnio=3rd Year    1.0400014548920287
+    Attrib UltimoAnio=4th Year    -0.34898251919861056
+    Attrib UltimoAnio=Postgraduate    0.12873087372532818
+    Attrib Facultad=Arts & Social Sciences    -1.1325760689422784
+    Attrib Facultad=Economic & Management Sciences    1.8383471754904994
+    Attrib Facultad=AgriSciences    0.23626052453627253
+    Attrib Facultad=Engineering    -0.11967441125893316
+    Attrib Facultad=Science    -0.7024591144731996
+    Attrib Facultad=Law    -0.3033798692692092
+    Attrib Facultad=Medicine and Health Services    0.2681124572986114
+    Attrib Facultad=Education    1.8216088175530507
+    Attrib Promedio2023%    0.08343042119522537
+    Attrib Asignacion=R 4001- R 5000    -0.6540615748444919
+    Attrib Asignacion=R 7001 - R 8000    0.5907262904768953
+    Attrib Asignacion=R 6001 - R 7000    1.2617542793616419
+    Attrib Asignacion=R 5001 - R 6000    0.8703825941913853
+    Attrib Asignacion=R 8000+    -1.2203761184317472
+    Attrib Beca=Yes    0.9940247441054136
+    Attrib HorasEstudio=8+    1.7428727959396622
+    Attrib HorasEstudio=3-5    -1.0857807391723795
+    Attrib HorasEstudio=1-3    0.038990180946732914
+    Attrib HorasEstudio=5-8    -0.18432902009745422
+    Attrib HorasEstudio=0    0.3371637767731722
+    Attrib Bebidas=8+    -0.5195185161771987
+    Attrib Bebidas=3-5    0.04413378967933779
+    Attrib Bebidas=5-8    1.5253236611048842
+    Attrib Bebidas=1-3    1.1026769832195715
+    Attrib Bebidas=0    -1.2046128998105132
+    Attrib ClasesPerdidas=3    0.8833250729962492
+    Attrib ClasesPerdidas=4+    -1.0213623819398128
+    Attrib ClasesPerdidas=2    1.666542934069179
+    Attrib ClasesPerdidas=1    0.6305559009019523
+    Attrib ClasesPerdidas=0    -1.304681722772504
+    Attrib ModulosSuspendidos=0    -1.3461538958101937
+    Attrib ModulosSuspendidos=3    0.5581208938261557
+    Attrib ModulosSuspendidos=4+    0.6579961549800949
+    Attrib ModulosSuspendidos=1    -0.09248573984109512
+    Attrib ModulosSuspendidos=2    1.0947885316598047
+    Attrib Relacion=No    -0.7866661348063222
+    Attrib AprobacionPadres=No    -1.1280412113304494
+    Attrib RelacionPadres=Very close    0.8034202058280936
+    Attrib RelacionPadres=Fair    -0.9504112186939342
+    Attrib RelacionPadres=Close    0.457187793571724
+    Attrib RelacionPadres=Distant    0.1820340202396071
 Sigmoid Node 23
     Inputs    Weights
-    Threshold    -0.1469717267109044
-    Attrib Promedio12    -0.02698507952696391
-    Attrib UltimoAnio=2nd Year    -0.16256569349834665
-    Attrib UltimoAnio=1st Year    -0.10956527518842019
-    Attrib UltimoAnio=3rd Year    0.38887911111523393
-    Attrib UltimoAnio=4th Year    0.06238509885437087
-    Attrib UltimoAnio=Postgraduate    0.16742269507396904
-    Attrib Facultad=Arts & Social Sciences    0.14903408290981968
-    Attrib Facultad=Economic & Management Sciences    0.4649653100441023
-    Attrib Facultad=AgriSciences    0.17955675838663362
-    Attrib Facultad=Engineering    0.025101182620857834
-    Attrib Facultad=Science    -0.43659730820590187
-    Attrib Facultad=Law    0.08973972838634946
-    Attrib Facultad=Medicine and Health Services    0.046309916135156275
-    Attrib Facultad=Education    -0.0023695605566784786
-    Attrib Promedio2023%    -0.09477235143520747
-    Attrib Asignacion=R 4001- R 5000    0.49090090550616017
-    Attrib Asignacion=R 7001 - R 8000    -0.015681458228179464
-    Attrib Asignacion=R 6001 - R 7000    0.12787846591929986
-    Attrib Asignacion=R 5001 - R 6000    -0.2800832007560834
-    Attrib Asignacion=R 8000+    -0.05945081744466753
-    Attrib Beca=Yes    -0.13470158929702525
-    Attrib HorasEstudio=8+    -0.1711428317557041
-    Attrib HorasEstudio=3-5    0.28555656400680335
-    Attrib HorasEstudio=1-3    -0.30352132967160717
-    Attrib HorasEstudio=5-8    0.5518354566222803
-    Attrib HorasEstudio=0    -0.048053246333402314
-    Attrib Fiestas=Only weekends    0.23731938890399762
-    Attrib Fiestas=2    0.18634074355398192
-    Attrib Fiestas=3    0.15513408270383974
-    Attrib Fiestas=1    -0.4553186697761363
-    Attrib Fiestas=4+    0.29329949186471077
-    Attrib Fiestas=0    -0.0010100160257969016
-    Attrib Bebidas=8+    0.3237897812621872
-    Attrib Bebidas=3-5    0.16145443781862368
-    Attrib Bebidas=5-8    0.11774799499614036
-    Attrib Bebidas=1-3    0.022634189291765132
-    Attrib Bebidas=0    -0.3236967090733977
-    Attrib ClasesPerdidas=3    0.5427844790053282
-    Attrib ClasesPerdidas=4+    0.16565673326591282
-    Attrib ClasesPerdidas=2    -0.2398711159092573
-    Attrib ClasesPerdidas=1    0.13683289934259915
-    Attrib ClasesPerdidas=0    -0.29186973139860695
-    Attrib ModulosSuspendidos=0    0.0026181369951871554
-    Attrib ModulosSuspendidos=3    0.2773269454364434
-    Attrib ModulosSuspendidos=4+    0.17555714619584636
-    Attrib ModulosSuspendidos=1    -0.239984139392629
-    Attrib ModulosSuspendidos=2    0.06975310463787182
-    Attrib Relacion=No    -0.1591233170706259
-    Attrib AprobacionPadres=No    0.2204558516593226
-    Attrib RelacionPadres=Very close    0.20387333805029412
-    Attrib RelacionPadres=Fair    -0.0026525779703440618
-    Attrib RelacionPadres=Close    -0.21576907946446247
-    Attrib RelacionPadres=Distant    0.30218844396715583
+    Threshold    -0.2320333889160727
+    Attrib Sexo=Male    0.6812370698400075
+    Attrib Promedio12    0.07090298803533172
+    Attrib UltimoAnio=2nd Year    0.2962729320083955
+    Attrib UltimoAnio=1st Year    -1.0600044458861637
+    Attrib UltimoAnio=3rd Year    0.49178173411262416
+    Attrib UltimoAnio=4th Year    -0.34280116538951233
+    Attrib UltimoAnio=Postgraduate    1.1402614613564188
+    Attrib Facultad=Arts & Social Sciences    -0.19199664240415867
+    Attrib Facultad=Economic & Management Sciences    -1.0560640234564227
+    Attrib Facultad=AgriSciences    0.06334532543648956
+    Attrib Facultad=Engineering    0.7484259679628888
+    Attrib Facultad=Science    0.5741381662197191
+    Attrib Facultad=Law    4.1114458953861834E-4
+    Attrib Facultad=Medicine and Health Services    0.3251853452181222
+    Attrib Facultad=Education    0.6239025187820756
+    Attrib Promedio2023%    0.4451043605508533
+    Attrib Asignacion=R 4001- R 5000    1.209450187245657
+    Attrib Asignacion=R 7001 - R 8000    -1.6825441524385838
+    Attrib Asignacion=R 6001 - R 7000    0.3157761187505917
+    Attrib Asignacion=R 5001 - R 6000    0.9264373950406392
+    Attrib Asignacion=R 8000+    -0.283869655910214
+    Attrib Beca=Yes    0.9270355500050416
+    Attrib HorasEstudio=8+    -0.5614223835523985
+    Attrib HorasEstudio=3-5    0.5338930054933951
+    Attrib HorasEstudio=1-3    -0.6563274911818977
+    Attrib HorasEstudio=5-8    2.25199553486761
+    Attrib HorasEstudio=0    -1.0034442647303448
+    Attrib Bebidas=8+    0.0659321631854347
+    Attrib Bebidas=3-5    -0.964075738161897
+    Attrib Bebidas=5-8    0.17134466422208489
+    Attrib Bebidas=1-3    -0.19318117378066227
+    Attrib Bebidas=0    1.503172378667376
+    Attrib ClasesPerdidas=3    -0.3291746775764885
+    Attrib ClasesPerdidas=4+    0.3621272035851749
+    Attrib ClasesPerdidas=2    0.9454299953483977
+    Attrib ClasesPerdidas=1    -2.1073735290105087
+    Attrib ClasesPerdidas=0    1.6861056885642745
+    Attrib ModulosSuspendidos=0    -0.11238590649858962
+    Attrib ModulosSuspendidos=3    0.09975205443961824
+    Attrib ModulosSuspendidos=4+    0.9051042860046536
+    Attrib ModulosSuspendidos=1    -0.6471773008524707
+    Attrib ModulosSuspendidos=2    0.3234251178283013
+    Attrib Relacion=No    1.047047337297394
+    Attrib AprobacionPadres=No    1.0716325109578186
+    Attrib RelacionPadres=Very close    0.8200373304380082
+    Attrib RelacionPadres=Fair    0.5548264045055046
+    Attrib RelacionPadres=Close    -1.10737838443815
+    Attrib RelacionPadres=Distant    0.036376321552727214
 Sigmoid Node 24
     Inputs    Weights
-    Threshold    -0.31369844082818005
-    Attrib Promedio12    0.22084699063612842
-    Attrib UltimoAnio=2nd Year    0.013391414798841943
-    Attrib UltimoAnio=1st Year    -0.7572630727261193
-    Attrib UltimoAnio=3rd Year    -0.16192372606035857
-    Attrib UltimoAnio=4th Year    1.1374115400691658
-    Attrib UltimoAnio=Postgraduate    0.8666060469596968
-    Attrib Facultad=Arts & Social Sciences    -2.181404020044504
-    Attrib Facultad=Economic & Management Sciences    1.840813439561652
-    Attrib Facultad=AgriSciences    0.9462791412322489
-    Attrib Facultad=Engineering    1.3534056149498759
-    Attrib Facultad=Science    1.5086084941041173
-    Attrib Facultad=Law    -0.8771796775459769
-    Attrib Facultad=Medicine and Health Services    -0.5496662933566783
-    Attrib Facultad=Education    -0.09128074251920634
-    Attrib Promedio2023%    0.4466500242252331
-    Attrib Asignacion=R 4001- R 5000    -0.25105229902682624
-    Attrib Asignacion=R 7001 - R 8000    2.167022873219915
-    Attrib Asignacion=R 6001 - R 7000    -0.28729607907300203
-    Attrib Asignacion=R 5001 - R 6000    1.0268022324976598
-    Attrib Asignacion=R 8000+    -1.6492946898188108
-    Attrib Beca=Yes    0.37743789198768196
-    Attrib HorasEstudio=8+    1.0031701240017086
-    Attrib HorasEstudio=3-5    0.8396637885526623
-    Attrib HorasEstudio=1-3    0.21694649374088695
-    Attrib HorasEstudio=5-8    -1.9111590671956216
-    Attrib HorasEstudio=0    1.026144403101936
-    Attrib Fiestas=Only weekends    -1.6147686993648351
-    Attrib Fiestas=2    0.11382605139577194
-    Attrib Fiestas=3    -0.19706348005899335
-    Attrib Fiestas=1    -0.9379504911159638
-    Attrib Fiestas=4+    2.180155117783261
-    Attrib Fiestas=0    1.668093415577707
-    Attrib Bebidas=8+    1.9182849531617905
-    Attrib Bebidas=3-5    -0.236327826419804
-    Attrib Bebidas=5-8    1.4486724247967506
-    Attrib Bebidas=1-3    -1.0607352339509544
-    Attrib Bebidas=0    -1.1845887683688092
-    Attrib ClasesPerdidas=3    0.05718227801202999
-    Attrib ClasesPerdidas=4+    0.844950031307429
-    Attrib ClasesPerdidas=2    1.3345977945960494
-    Attrib ClasesPerdidas=1    -1.8586682459003563
-    Attrib ClasesPerdidas=0    0.6894329214709528
-    Attrib ModulosSuspendidos=0    1.5272941837292295
-    Attrib ModulosSuspendidos=3    0.31955370252249815
-    Attrib ModulosSuspendidos=4+    -1.7213697813774511
-    Attrib ModulosSuspendidos=1    0.5724987002618189
-    Attrib ModulosSuspendidos=2    0.3291499855967922
-    Attrib Relacion=No    2.32770132499495
-    Attrib AprobacionPadres=No    -0.31312556132412817
-    Attrib RelacionPadres=Very close    2.3512690846194024
-    Attrib RelacionPadres=Fair    -0.38381754269766893
-    Attrib RelacionPadres=Close    -1.9044736023953188
-    Attrib RelacionPadres=Distant    0.48695185895941673
+    Threshold    -0.3410955373721402
+    Attrib Sexo=Male    -1.3772808549228832
+    Attrib Promedio12    2.390592815726823
+    Attrib UltimoAnio=2nd Year    1.1490186294616693
+    Attrib UltimoAnio=1st Year    -1.123709920041163
+    Attrib UltimoAnio=3rd Year    1.4976172459491306
+    Attrib UltimoAnio=4th Year    -1.2233973368827376
+    Attrib UltimoAnio=Postgraduate    0.8649733842223134
+    Attrib Facultad=Arts & Social Sciences    -0.073878950759209
+    Attrib Facultad=Economic & Management Sciences    0.5696125964149699
+    Attrib Facultad=AgriSciences    0.6131643371576366
+    Attrib Facultad=Engineering    -0.9336498028284098
+    Attrib Facultad=Science    1.3101851097174415
+    Attrib Facultad=Law    0.37730699015705116
+    Attrib Facultad=Medicine and Health Services    -0.6336755363893142
+    Attrib Facultad=Education    0.8804022903089037
+    Attrib Promedio2023%    0.6115293148462226
+    Attrib Asignacion=R 4001- R 5000    -0.7596677535520012
+    Attrib Asignacion=R 7001 - R 8000    0.357543982666201
+    Attrib Asignacion=R 6001 - R 7000    -0.5242784077684071
+    Attrib Asignacion=R 5001 - R 6000    0.6004586023810392
+    Attrib Asignacion=R 8000+    1.413778841828945
+    Attrib Beca=Yes    -1.677914713634159
+    Attrib HorasEstudio=8+    1.1481628454146031
+    Attrib HorasEstudio=3-5    -1.376720796276939
+    Attrib HorasEstudio=1-3    1.0271842288997701
+    Attrib HorasEstudio=5-8    0.78025909487448
+    Attrib HorasEstudio=0    -0.4117105886369711
+    Attrib Bebidas=8+    -0.5993489932058524
+    Attrib Bebidas=3-5    -0.20862976710506648
+    Attrib Bebidas=5-8    -1.3995580880358043
+    Attrib Bebidas=1-3    1.9219106074300776
+    Attrib Bebidas=0    1.3015901741625502
+    Attrib ClasesPerdidas=3    -0.5325708218645357
+    Attrib ClasesPerdidas=4+    1.8210266596562397
+    Attrib ClasesPerdidas=2    0.42287377142451416
+    Attrib ClasesPerdidas=1    -1.1234503883229543
+    Attrib ClasesPerdidas=0    0.3796176179575345
+    Attrib ModulosSuspendidos=0    0.6438139012705021
+    Attrib ModulosSuspendidos=3    1.4280657561970296
+    Attrib ModulosSuspendidos=4+    0.53419973847436
+    Attrib ModulosSuspendidos=1    -0.8143058834758667
+    Attrib ModulosSuspendidos=2    -0.6420874433481519
+    Attrib Relacion=No    -2.7731284520926645
+    Attrib AprobacionPadres=No    -0.8153217876756985
+    Attrib RelacionPadres=Very close    -0.8832500013990814
+    Attrib RelacionPadres=Fair    2.7326645991798957
+    Attrib RelacionPadres=Close    -0.7307530644115392
+    Attrib RelacionPadres=Distant    -0.3910757332170673
 Sigmoid Node 25
     Inputs    Weights
-    Threshold    -0.23780058083565236
-    Attrib Promedio12    -0.21965935548283205
-    Attrib UltimoAnio=2nd Year    1.0182934270945039
-    Attrib UltimoAnio=1st Year    0.236519619752908
-    Attrib UltimoAnio=3rd Year    -0.5957493786608231
-    Attrib UltimoAnio=4th Year    -0.2882775112184532
-    Attrib UltimoAnio=Postgraduate    0.2599043827124542
-    Attrib Facultad=Arts & Social Sciences    -0.1546593287709205
-    Attrib Facultad=Economic & Management Sciences    1.3742512759820313
-    Attrib Facultad=AgriSciences    -0.11400253374851843
-    Attrib Facultad=Engineering    -0.17387022624908266
-    Attrib Facultad=Science    -1.1576742227677081
-    Attrib Facultad=Law    0.25610539723604264
-    Attrib Facultad=Medicine and Health Services    0.7634914177946447
-    Attrib Facultad=Education    0.5673221001517668
-    Attrib Promedio2023%    0.6435285080982149
-    Attrib Asignacion=R 4001- R 5000    -0.788395230800426
-    Attrib Asignacion=R 7001 - R 8000    -0.6075892566741132
-    Attrib Asignacion=R 6001 - R 7000    1.0824821750511606
-    Attrib Asignacion=R 5001 - R 6000    0.26059202411192217
-    Attrib Asignacion=R 8000+    0.6955812213846809
-    Attrib Beca=Yes    1.952794386354304
-    Attrib HorasEstudio=8+    -1.4448602374356514
-    Attrib HorasEstudio=3-5    1.1802219358643036
-    Attrib HorasEstudio=1-3    0.30874613059089395
-    Attrib HorasEstudio=5-8    -0.13982529537011493
-    Attrib HorasEstudio=0    0.8068011028445438
-    Attrib Fiestas=Only weekends    0.5479570264210549
-    Attrib Fiestas=2    0.44679204360916364
-    Attrib Fiestas=3    0.7029631831197393
-    Attrib Fiestas=1    -1.2088980118130812
-    Attrib Fiestas=4+    -0.24860723885957633
-    Attrib Fiestas=0    0.5204910249784249
-    Attrib Bebidas=8+    -0.04598511452886937
-    Attrib Bebidas=3-5    -0.10303995410840863
-    Attrib Bebidas=5-8    0.2032189298131057
-    Attrib Bebidas=1-3    0.4512599030055388
-    Attrib Bebidas=0    0.23182470380765538
-    Attrib ClasesPerdidas=3    -0.02463405487599626
-    Attrib ClasesPerdidas=4+    -0.09690337868773492
-    Attrib ClasesPerdidas=2    0.23887651864328707
-    Attrib ClasesPerdidas=1    -0.6476923745835083
-    Attrib ClasesPerdidas=0    1.1686396130866854
-    Attrib ModulosSuspendidos=0    1.160184022785683
-    Attrib ModulosSuspendidos=3    0.14020157799423416
-    Attrib ModulosSuspendidos=4+    -0.5856066033869115
-    Attrib ModulosSuspendidos=1    -0.29984767043131966
-    Attrib ModulosSuspendidos=2    0.2877355625840956
-    Attrib Relacion=No    -0.22017557106263727
-    Attrib AprobacionPadres=No    0.32104012131636755
-    Attrib RelacionPadres=Very close    -0.33385910430011706
-    Attrib RelacionPadres=Fair    0.4692579590861513
-    Attrib RelacionPadres=Close    0.23534234292192605
-    Attrib RelacionPadres=Distant    0.06046046751024295
+    Threshold    -0.26929534052752585
+    Attrib Sexo=Male    0.4014022449141794
+    Attrib Promedio12    1.4327561162530609
+    Attrib UltimoAnio=2nd Year    0.7849289846828423
+    Attrib UltimoAnio=1st Year    -0.9362224567226374
+    Attrib UltimoAnio=3rd Year    -0.035745501483450216
+    Attrib UltimoAnio=4th Year    0.759809252129129
+    Attrib UltimoAnio=Postgraduate    0.14033660513261662
+    Attrib Facultad=Arts & Social Sciences    -0.25575773676463387
+    Attrib Facultad=Economic & Management Sciences    -0.8733482135273022
+    Attrib Facultad=AgriSciences    0.893232581792615
+    Attrib Facultad=Engineering    -0.2474909397299788
+    Attrib Facultad=Science    0.9922864934432429
+    Attrib Facultad=Law    0.12225725456423156
+    Attrib Facultad=Medicine and Health Services    0.4870065624416682
+    Attrib Facultad=Education    0.41060721343555306
+    Attrib Promedio2023%    0.09498328778839654
+    Attrib Asignacion=R 4001- R 5000    0.8620422098997249
+    Attrib Asignacion=R 7001 - R 8000    1.27881409249592
+    Attrib Asignacion=R 6001 - R 7000    -0.9259368152582942
+    Attrib Asignacion=R 5001 - R 6000    0.027986431230442484
+    Attrib Asignacion=R 8000+    -0.47413881575819516
+    Attrib Beca=Yes    0.3884378705813068
+    Attrib HorasEstudio=8+    0.4705428747596025
+    Attrib HorasEstudio=3-5    1.3739047619522982
+    Attrib HorasEstudio=1-3    -0.037911203115705186
+    Attrib HorasEstudio=5-8    -1.0059889787932448
+    Attrib HorasEstudio=0    -0.02206397917059448
+    Attrib Bebidas=8+    -1.1835882425107815
+    Attrib Bebidas=3-5    -0.8683256844470622
+    Attrib Bebidas=5-8    1.1633183952372201
+    Attrib Bebidas=1-3    1.3576858607543125
+    Attrib Bebidas=0    0.19869574874319185
+    Attrib ClasesPerdidas=3    0.025257003529649
+    Attrib ClasesPerdidas=4+    -0.3795770463805118
+    Attrib ClasesPerdidas=2    -0.2776610760837557
+    Attrib ClasesPerdidas=1    2.011105043205281
+    Attrib ClasesPerdidas=0    -0.5473611772060073
+    Attrib ModulosSuspendidos=0    -0.4957328597579296
+    Attrib ModulosSuspendidos=3    2.4633433778878393
+    Attrib ModulosSuspendidos=4+    -0.04885016986440919
+    Attrib ModulosSuspendidos=1    -0.7913924343019209
+    Attrib ModulosSuspendidos=2    -0.3945973113052828
+    Attrib Relacion=No    0.34302134204632806
+    Attrib AprobacionPadres=No    -0.04449619638239698
+    Attrib RelacionPadres=Very close    -0.6435021130393982
+    Attrib RelacionPadres=Fair    0.4348958315025612
+    Attrib RelacionPadres=Close    0.7803985651574906
+    Attrib RelacionPadres=Distant    -0.1047462460764676
 Sigmoid Node 26
     Inputs    Weights
-    Threshold    -0.08509225977562765
-    Attrib Promedio12    -0.7951557430222311
-    Attrib UltimoAnio=2nd Year    0.22046149769283493
-    Attrib UltimoAnio=1st Year    -0.5372936236342558
-    Attrib UltimoAnio=3rd Year    0.05222347495502093
-    Attrib UltimoAnio=4th Year    0.1983344184983811
-    Attrib UltimoAnio=Postgraduate    0.2599463860741394
-    Attrib Facultad=Arts & Social Sciences    -0.605615098591881
-    Attrib Facultad=Economic & Management Sciences    0.38039983861305326
-    Attrib Facultad=AgriSciences    0.2424499053145443
-    Attrib Facultad=Engineering    0.24252925682366758
-    Attrib Facultad=Science    0.009099824526474688
-    Attrib Facultad=Law    0.267244546589917
-    Attrib Facultad=Medicine and Health Services    -0.0639701498307803
-    Attrib Facultad=Education    -0.10304389818154708
-    Attrib Promedio2023%    -0.3786633754977784
-    Attrib Asignacion=R 4001- R 5000    -0.11497870269209648
-    Attrib Asignacion=R 7001 - R 8000    0.057123058449954335
-    Attrib Asignacion=R 6001 - R 7000    0.12423664467774853
-    Attrib Asignacion=R 5001 - R 6000    -0.22247455423778756
-    Attrib Asignacion=R 8000+    0.36168801838185394
-    Attrib Beca=Yes    0.6047686086773185
-    Attrib HorasEstudio=8+    0.9990323905851237
-    Attrib HorasEstudio=3-5    -0.5556335225182859
-    Attrib HorasEstudio=1-3    -0.0710355965619241
-    Attrib HorasEstudio=5-8    -0.16974785271924595
-    Attrib HorasEstudio=0    -0.050575101350048356
-    Attrib Fiestas=Only weekends    -0.7377896968357425
-    Attrib Fiestas=2    -0.2716835501950345
-    Attrib Fiestas=3    0.710261894231404
-    Attrib Fiestas=1    0.1171307945821774
-    Attrib Fiestas=4+    0.03973233456529093
-    Attrib Fiestas=0    0.3631982288302764
-    Attrib Bebidas=8+    1.1327044527542534
-    Attrib Bebidas=3-5    -0.6244530927839267
-    Attrib Bebidas=5-8    0.14504052404427809
-    Attrib Bebidas=1-3    -0.24477712705209628
-    Attrib Bebidas=0    -0.15536903421706352
-    Attrib ClasesPerdidas=3    -0.11357380801140007
-    Attrib ClasesPerdidas=4+    0.5961799945987508
-    Attrib ClasesPerdidas=2    0.14426181459161005
-    Attrib ClasesPerdidas=1    0.17411801599471305
-    Attrib ClasesPerdidas=0    -0.6271264171497772
-    Attrib ModulosSuspendidos=0    -0.7825933331504484
-    Attrib ModulosSuspendidos=3    0.6292067758686641
-    Attrib ModulosSuspendidos=4+    -0.36897009639226747
-    Attrib ModulosSuspendidos=1    0.7580140660983574
-    Attrib ModulosSuspendidos=2    -0.046756261187165936
-    Attrib Relacion=No    0.17075923389657735
-    Attrib AprobacionPadres=No    0.2853469480883552
-    Attrib RelacionPadres=Very close    -0.6042340974220647
-    Attrib RelacionPadres=Fair    0.5880454478807458
-    Attrib RelacionPadres=Close    -0.16432194050115864
-    Attrib RelacionPadres=Distant    0.31617434586012066
+    Threshold    -0.4515645581814846
+    Attrib Sexo=Male    -0.2501455594406361
+    Attrib Promedio12    -0.40318020153899115
+    Attrib UltimoAnio=2nd Year    -0.7739431278816533
+    Attrib UltimoAnio=1st Year    0.26990701199906847
+    Attrib UltimoAnio=3rd Year    1.423372454476078
+    Attrib UltimoAnio=4th Year    0.5894160812453783
+    Attrib UltimoAnio=Postgraduate    -0.28593083097730654
+    Attrib Facultad=Arts & Social Sciences    -1.146772444728608
+    Attrib Facultad=Economic & Management Sciences    0.8562817598122004
+    Attrib Facultad=AgriSciences    0.9892808320390487
+    Attrib Facultad=Engineering    1.0431533790366465
+    Attrib Facultad=Science    -0.8571428651399076
+    Attrib Facultad=Law    0.23116878147129588
+    Attrib Facultad=Medicine and Health Services    0.9849317334173521
+    Attrib Facultad=Education    0.5311760692615287
+    Attrib Promedio2023%    -1.4050893869468668
+    Attrib Asignacion=R 4001- R 5000    2.0250436573738253
+    Attrib Asignacion=R 7001 - R 8000    0.7842039133182638
+    Attrib Asignacion=R 6001 - R 7000    -1.0634939375974666
+    Attrib Asignacion=R 5001 - R 6000    1.6606268036508345
+    Attrib Asignacion=R 8000+    -2.162082391429367
+    Attrib Beca=Yes    0.5179414395531243
+    Attrib HorasEstudio=8+    1.2294574873004842
+    Attrib HorasEstudio=3-5    -0.17667599126288988
+    Attrib HorasEstudio=1-3    -0.6230380465608069
+    Attrib HorasEstudio=5-8    0.9147175130134707
+    Attrib HorasEstudio=0    -0.16591577730928847
+    Attrib Bebidas=8+    -0.5848951430916662
+    Attrib Bebidas=3-5    0.6252280882962171
+    Attrib Bebidas=5-8    1.4952794800676423
+    Attrib Bebidas=1-3    -0.24793783709310657
+    Attrib Bebidas=0    -0.00260384114905826
+    Attrib ClasesPerdidas=3    -0.24399494396562083
+    Attrib ClasesPerdidas=4+    -0.18080809526606786
+    Attrib ClasesPerdidas=2    -0.8505287267439664
+    Attrib ClasesPerdidas=1    -0.3826304823845529
+    Attrib ClasesPerdidas=0    3.010524866323143
+    Attrib ModulosSuspendidos=0    -0.5206473292764543
+    Attrib ModulosSuspendidos=3    -1.791628013812213
+    Attrib ModulosSuspendidos=4+    1.5983548089138653
+    Attrib ModulosSuspendidos=1    1.0643882570153447
+    Attrib ModulosSuspendidos=2    0.9228087724009301
+    Attrib Relacion=No    -0.5965271634766139
+    Attrib AprobacionPadres=No    1.8893403189194087
+    Attrib RelacionPadres=Very close    -1.446063049550257
+    Attrib RelacionPadres=Fair    -0.3843032379496526
+    Attrib RelacionPadres=Close    1.778890550778276
+    Attrib RelacionPadres=Distant    0.8912866653125201
 Sigmoid Node 27
     Inputs    Weights
-    Threshold    -0.05055198247218655
-    Attrib Promedio12    1.1776173466931088
-    Attrib UltimoAnio=2nd Year    2.33172738316316
-    Attrib UltimoAnio=1st Year    -1.950135273278217
-    Attrib UltimoAnio=3rd Year    1.2374548087913417
-    Attrib UltimoAnio=4th Year    -1.1159788412700404
-    Attrib UltimoAnio=Postgraduate    -0.22199249722377198
-    Attrib Facultad=Arts & Social Sciences    1.8096443534487263
-    Attrib Facultad=Economic & Management Sciences    -2.742976835419506
-    Attrib Facultad=AgriSciences    -0.7088821179685003
-    Attrib Facultad=Engineering    -1.86726185370792
-    Attrib Facultad=Science    0.8620501990207572
-    Attrib Facultad=Law    0.8315770817445557
-    Attrib Facultad=Medicine and Health Services    1.1305123023312633
-    Attrib Facultad=Education    1.0874288854523764
-    Attrib Promedio2023%    0.02261335956719683
-    Attrib Asignacion=R 4001- R 5000    0.0015835124384433524
-    Attrib Asignacion=R 7001 - R 8000    0.43359172443766764
-    Attrib Asignacion=R 6001 - R 7000    -0.27939058626485874
-    Attrib Asignacion=R 5001 - R 6000    0.6047182935326082
-    Attrib Asignacion=R 8000+    -0.5693424787676683
-    Attrib Beca=Yes    -0.01949390645779164
-    Attrib HorasEstudio=8+    0.6734563093125777
-    Attrib HorasEstudio=3-5    -0.13361818489039376
-    Attrib HorasEstudio=1-3    -0.9332197334985232
-    Attrib HorasEstudio=5-8    -0.08033603469476092
-    Attrib HorasEstudio=0    0.5881698445985796
-    Attrib Fiestas=Only weekends    0.2450675415548434
-    Attrib Fiestas=2    -0.1524387696660614
-    Attrib Fiestas=3    -0.07218594809002758
-    Attrib Fiestas=1    -2.3493804709121946
-    Attrib Fiestas=4+    1.6441700373267607
-    Attrib Fiestas=0    1.0960289889956265
-    Attrib Bebidas=8+    0.8000014438612771
-    Attrib Bebidas=3-5    -1.12814758292605
-    Attrib Bebidas=5-8    0.6097314426235103
-    Attrib Bebidas=1-3    1.4170920792363613
-    Attrib Bebidas=0    -1.5088822124706032
-    Attrib ClasesPerdidas=3    0.23590592160692414
-    Attrib ClasesPerdidas=4+    1.1749614139338445
-    Attrib ClasesPerdidas=2    -0.04074735365687491
-    Attrib ClasesPerdidas=1    -1.9327778836456637
-    Attrib ClasesPerdidas=0    0.7999690846375791
-    Attrib ModulosSuspendidos=0    -1.4215782679206124
-    Attrib ModulosSuspendidos=3    0.6756226189693654
-    Attrib ModulosSuspendidos=4+    0.07686142836108975
-    Attrib ModulosSuspendidos=1    0.044147020740678194
-    Attrib ModulosSuspendidos=2    0.7401360050737199
-    Attrib Relacion=No    0.5749604062540088
-    Attrib AprobacionPadres=No    0.4717109830996165
-    Attrib RelacionPadres=Very close    0.5731180172872828
-    Attrib RelacionPadres=Fair    0.7730512313591184
-    Attrib RelacionPadres=Close    -1.1676497595719448
-    Attrib RelacionPadres=Distant    -0.0672264845718407
+    Threshold    -0.06978256536694395
+    Attrib Sexo=Male    -1.2319968044747214
+    Attrib Promedio12    -2.89411881672191
+    Attrib UltimoAnio=2nd Year    -0.09449809999797264
+    Attrib UltimoAnio=1st Year    -0.3021777041454164
+    Attrib UltimoAnio=3rd Year    0.13438903128740526
+    Attrib UltimoAnio=4th Year    -0.12395937145097848
+    Attrib UltimoAnio=Postgraduate    0.7343213279387861
+    Attrib Facultad=Arts & Social Sciences    -0.5499893278975908
+    Attrib Facultad=Economic & Management Sciences    -0.38888473347272295
+    Attrib Facultad=AgriSciences    1.566823192048253
+    Attrib Facultad=Engineering    -1.3390063775707797
+    Attrib Facultad=Science    -0.937130721132621
+    Attrib Facultad=Law    1.5625074236512118
+    Attrib Facultad=Medicine and Health Services    0.05812492631499818
+    Attrib Facultad=Education    0.5488326045488974
+    Attrib Promedio2023%    2.9731005287872008
+    Attrib Asignacion=R 4001- R 5000    -0.2345996198013683
+    Attrib Asignacion=R 7001 - R 8000    -0.46458953081008864
+    Attrib Asignacion=R 6001 - R 7000    -1.9835074692057708
+    Attrib Asignacion=R 5001 - R 6000    2.455883986943514
+    Attrib Asignacion=R 8000+    0.5096324055583694
+    Attrib Beca=Yes    1.652019428543984
+    Attrib HorasEstudio=8+    2.520825080491584
+    Attrib HorasEstudio=3-5    0.4141360401390788
+    Attrib HorasEstudio=1-3    -0.7843873247508893
+    Attrib HorasEstudio=5-8    -2.308449256799457
+    Attrib HorasEstudio=0    0.3448141660567365
+    Attrib Bebidas=8+    -0.19303766856780524
+    Attrib Bebidas=3-5    -0.435026096555152
+    Attrib Bebidas=5-8    0.14530999790357527
+    Attrib Bebidas=1-3    0.33829470280137713
+    Attrib Bebidas=0    0.5408866639759482
+    Attrib ClasesPerdidas=3    0.5978444482970278
+    Attrib ClasesPerdidas=4+    0.35617304092821084
+    Attrib ClasesPerdidas=2    1.769301447366801
+    Attrib ClasesPerdidas=1    -0.9340137800503204
+    Attrib ClasesPerdidas=0    -1.54181823753298
+    Attrib ModulosSuspendidos=0    1.5609531234287348
+    Attrib ModulosSuspendidos=3    -0.8833483297032676
+    Attrib ModulosSuspendidos=4+    -0.14322407767554113
+    Attrib ModulosSuspendidos=1    -0.3926560921844073
+    Attrib ModulosSuspendidos=2    0.15327830769458403
+    Attrib Relacion=No    -2.7420429933821016
+    Attrib AprobacionPadres=No    -1.650336142890106
+    Attrib RelacionPadres=Very close    -0.7750626033219651
+    Attrib RelacionPadres=Fair    1.4921565701933484
+    Attrib RelacionPadres=Close    -0.6410315310569652
+    Attrib RelacionPadres=Distant    0.06808903832372618
 Sigmoid Node 28
     Inputs    Weights
-    Threshold    -0.23655920471141886
-    Attrib Promedio12    0.00798282635933647
-    Attrib UltimoAnio=2nd Year    0.3428171119467325
-    Attrib UltimoAnio=1st Year    -0.23670490008791037
-    Attrib UltimoAnio=3rd Year    -0.009018823233044433
-    Attrib UltimoAnio=4th Year    0.20953374646841474
-    Attrib UltimoAnio=Postgraduate    0.32416000244356963
-    Attrib Facultad=Arts & Social Sciences    0.419580403091283
-    Attrib Facultad=Economic & Management Sciences    0.5910289406403545
-    Attrib Facultad=AgriSciences    0.5092140475329249
-    Attrib Facultad=Engineering    -0.08187187174146934
-    Attrib Facultad=Science    -0.8990772945340069
-    Attrib Facultad=Law    0.13382824122295456
-    Attrib Facultad=Medicine and Health Services    0.5630488955484947
-    Attrib Facultad=Education    0.01644960043397041
-    Attrib Promedio2023%    0.013772759929821951
-    Attrib Asignacion=R 4001- R 5000    1.4846536800169345
-    Attrib Asignacion=R 7001 - R 8000    0.06803379904873524
-    Attrib Asignacion=R 6001 - R 7000    -0.09883592226871966
-    Attrib Asignacion=R 5001 - R 6000    -0.5713844099754499
-    Attrib Asignacion=R 8000+    -0.23546905961946582
-    Attrib Beca=Yes    -0.11881089782875841
-    Attrib HorasEstudio=8+    0.6862926327919335
-    Attrib HorasEstudio=3-5    0.6194793869846958
-    Attrib HorasEstudio=1-3    -1.3720074066781167
-    Attrib HorasEstudio=5-8    0.6946339743361211
-    Attrib HorasEstudio=0    0.06710800172397952
-    Attrib Fiestas=Only weekends    0.6294738942805814
-    Attrib Fiestas=2    0.25400122905897904
-    Attrib Fiestas=3    0.2807700339330177
-    Attrib Fiestas=1    -0.7214142370619248
-    Attrib Fiestas=4+    0.4433703876235761
-    Attrib Fiestas=0    -0.16234620456228674
-    Attrib Bebidas=8+    0.500196886154364
-    Attrib Bebidas=3-5    0.05341612309136106
-    Attrib Bebidas=5-8    0.7547695058341964
-    Attrib Bebidas=1-3    -0.0896781517359695
-    Attrib Bebidas=0    -0.5627121094545586
-    Attrib ClasesPerdidas=3    0.5131664512284311
-    Attrib ClasesPerdidas=4+    0.4881435139803618
-    Attrib ClasesPerdidas=2    -0.6065426715628872
-    Attrib ClasesPerdidas=1    0.782970909299977
-    Attrib ClasesPerdidas=0    -0.5429450247153614
-    Attrib ModulosSuspendidos=0    0.32857512092574814
-    Attrib ModulosSuspendidos=3    0.3416233907436536
-    Attrib ModulosSuspendidos=4+    -0.10996606358600927
-    Attrib ModulosSuspendidos=1    0.25979394071276307
-    Attrib ModulosSuspendidos=2    -0.11114570571506689
-    Attrib Relacion=No    0.6614963614288535
-    Attrib AprobacionPadres=No    0.4483972629193695
-    Attrib RelacionPadres=Very close    0.7115405875468735
-    Attrib RelacionPadres=Fair    -0.062270266214491894
-    Attrib RelacionPadres=Close    -0.6367399300923087
-    Attrib RelacionPadres=Distant    0.33548121626300564
-Class Female
+    Threshold    -0.22033693256074305
+    Attrib Sexo=Male    -1.0541502283190811
+    Attrib Promedio12    -0.1604745458548059
+    Attrib UltimoAnio=2nd Year    -2.184828433905791
+    Attrib UltimoAnio=1st Year    2.034514307076712
+    Attrib UltimoAnio=3rd Year    -0.4313290119478843
+    Attrib UltimoAnio=4th Year    0.38274792818361486
+    Attrib UltimoAnio=Postgraduate    0.7264569465559928
+    Attrib Facultad=Arts & Social Sciences    0.47542102048377827
+    Attrib Facultad=Economic & Management Sciences    1.287984419909737
+    Attrib Facultad=AgriSciences    1.3076838995669202
+    Attrib Facultad=Engineering    0.5590668108501186
+    Attrib Facultad=Science    -0.5100857774246937
+    Attrib Facultad=Law    -0.6078101914056371
+    Attrib Facultad=Medicine and Health Services    -1.7298747973598863
+    Attrib Facultad=Education    0.4524735635451083
+    Attrib Promedio2023%    0.051400745398382734
+    Attrib Asignacion=R 4001- R 5000    -1.1201071359567054
+    Attrib Asignacion=R 7001 - R 8000    0.11994449473689067
+    Attrib Asignacion=R 6001 - R 7000    1.6185177626008833
+    Attrib Asignacion=R 5001 - R 6000    0.3204157848409785
+    Attrib Asignacion=R 8000+    -0.30005578547449
+    Attrib Beca=Yes    0.3816674111235468
+    Attrib HorasEstudio=8+    0.6567315266512935
+    Attrib HorasEstudio=3-5    -1.1431354812968244
+    Attrib HorasEstudio=1-3    -0.0962822999407309
+    Attrib HorasEstudio=5-8    0.9179396280423311
+    Attrib HorasEstudio=0    0.22411119303257457
+    Attrib Bebidas=8+    0.8703890856898793
+    Attrib Bebidas=3-5    1.3922361005186774
+    Attrib Bebidas=5-8    -0.7480422071100944
+    Attrib Bebidas=1-3    -1.6616024060220314
+    Attrib Bebidas=0    0.6449386093819136
+    Attrib ClasesPerdidas=3    1.2755074907977109
+    Attrib ClasesPerdidas=4+    -0.9739455088850801
+    Attrib ClasesPerdidas=2    -0.02646860237902766
+    Attrib ClasesPerdidas=1    1.4231445653963894
+    Attrib ClasesPerdidas=0    -1.0909125074926571
+    Attrib ModulosSuspendidos=0    0.9964489883691499
+    Attrib ModulosSuspendidos=3    -0.23103666004312082
+    Attrib ModulosSuspendidos=4+    -0.7995050858455096
+    Attrib ModulosSuspendidos=1    -0.19502563362344116
+    Attrib ModulosSuspendidos=2    0.8152447529213833
+    Attrib Relacion=No    2.0108912233491276
+    Attrib AprobacionPadres=No    0.03567841046272801
+    Attrib RelacionPadres=Very close    -0.5568015121121208
+    Attrib RelacionPadres=Fair    0.3664412800201368
+    Attrib RelacionPadres=Close    0.6649941051855368
+    Attrib RelacionPadres=Distant    -0.058868257142947765
+Sigmoid Node 29
+    Inputs    Weights
+    Threshold    -0.15225066714396934
+    Attrib Sexo=Male    -2.189298424952783
+    Attrib Promedio12    -1.2088792596775526
+    Attrib UltimoAnio=2nd Year    -1.3836938091051856
+    Attrib UltimoAnio=1st Year    1.1417956255742696
+    Attrib UltimoAnio=3rd Year    0.743966965527473
+    Attrib UltimoAnio=4th Year    -0.012619020827985057
+    Attrib UltimoAnio=Postgraduate    -0.12234020463020118
+    Attrib Facultad=Arts & Social Sciences    -0.07716137619504687
+    Attrib Facultad=Economic & Management Sciences    -1.7841514685394726
+    Attrib Facultad=AgriSciences    1.298235362130009
+    Attrib Facultad=Engineering    2.879891376301853
+    Attrib Facultad=Science    -1.677956162322518
+    Attrib Facultad=Law    0.022818426678857875
+    Attrib Facultad=Medicine and Health Services    0.7986271823212766
+    Attrib Facultad=Education    -0.7598421119793856
+    Attrib Promedio2023%    -0.30035484956866165
+    Attrib Asignacion=R 4001- R 5000    0.78028745542544
+    Attrib Asignacion=R 7001 - R 8000    0.5505101473012924
+    Attrib Asignacion=R 6001 - R 7000    0.17120315411694706
+    Attrib Asignacion=R 5001 - R 6000    -1.486615766718927
+    Attrib Asignacion=R 8000+    0.3788737934985679
+    Attrib Beca=Yes    -0.5477124170816015
+    Attrib HorasEstudio=8+    -1.7487635743555225
+    Attrib HorasEstudio=3-5    0.8769758178578057
+    Attrib HorasEstudio=1-3    -0.5648361436596371
+    Attrib HorasEstudio=5-8    1.9518590829242588
+    Attrib HorasEstudio=0    -0.12152738354672411
+    Attrib Bebidas=8+    -1.6967489443141373
+    Attrib Bebidas=3-5    0.5695479569281715
+    Attrib Bebidas=5-8    0.976385944714367
+    Attrib Bebidas=1-3    2.1805994617055555
+    Attrib Bebidas=0    -1.6510858293661894
+    Attrib ClasesPerdidas=3    -0.20674281761586769
+    Attrib ClasesPerdidas=4+    -0.9180317198686828
+    Attrib ClasesPerdidas=2    1.4259932493719436
+    Attrib ClasesPerdidas=1    0.34074870500114823
+    Attrib ClasesPerdidas=0    -0.2243179940955064
+    Attrib ModulosSuspendidos=0    0.3933538924641589
+    Attrib ModulosSuspendidos=3    -0.08831672870159354
+    Attrib ModulosSuspendidos=4+    -0.8531911834736987
+    Attrib ModulosSuspendidos=1    0.36182580558516575
+    Attrib ModulosSuspendidos=2    0.6209634360568641
+    Attrib Relacion=No    1.8155685606469978
+    Attrib AprobacionPadres=No    1.0040019338160187
+    Attrib RelacionPadres=Very close    -0.3762466266867204
+    Attrib RelacionPadres=Fair    -0.21772090690791635
+    Attrib RelacionPadres=Close    0.45723511621654483
+    Attrib RelacionPadres=Distant    0.3588024813253365
+Sigmoid Node 30
+    Inputs    Weights
+    Threshold    -0.08898320602718453
+    Attrib Sexo=Male    2.25277904590577
+    Attrib Promedio12    -1.1607655247337942
+    Attrib UltimoAnio=2nd Year    2.271548544629027
+    Attrib UltimoAnio=1st Year    -1.8620712153568135
+    Attrib UltimoAnio=3rd Year    -0.17815174263586353
+    Attrib UltimoAnio=4th Year    -1.077028566978888
+    Attrib UltimoAnio=Postgraduate    1.037610989541873
+    Attrib Facultad=Arts & Social Sciences    -3.4649689136281454
+    Attrib Facultad=Economic & Management Sciences    2.4559026135592874
+    Attrib Facultad=AgriSciences    -0.42438635237368294
+    Attrib Facultad=Engineering    1.0426165417480093
+    Attrib Facultad=Science    2.8691529192068557
+    Attrib Facultad=Law    -0.5595173537625807
+    Attrib Facultad=Medicine and Health Services    0.04922603226823499
+    Attrib Facultad=Education    -1.301108958220748
+    Attrib Promedio2023%    -1.5657724000296518
+    Attrib Asignacion=R 4001- R 5000    -1.043146224606013
+    Attrib Asignacion=R 7001 - R 8000    0.08750866112936727
+    Attrib Asignacion=R 6001 - R 7000    1.966932588942672
+    Attrib Asignacion=R 5001 - R 6000    -0.1564348297120269
+    Attrib Asignacion=R 8000+    -0.39956786940504313
+    Attrib Beca=Yes    -0.10724246972638947
+    Attrib HorasEstudio=8+    -1.674632701705967
+    Attrib HorasEstudio=3-5    0.07309655559367814
+    Attrib HorasEstudio=1-3    1.9648140664019325
+    Attrib HorasEstudio=5-8    -0.5591685045393249
+    Attrib HorasEstudio=0    0.4969590659652062
+    Attrib Bebidas=8+    0.6129043226227598
+    Attrib Bebidas=3-5    -1.5964811134530934
+    Attrib Bebidas=5-8    1.7883440670024984
+    Attrib Bebidas=1-3    -0.7024129144366519
+    Attrib Bebidas=0    0.2483713748073083
+    Attrib ClasesPerdidas=3    -0.3848526315285426
+    Attrib ClasesPerdidas=4+    -0.6444666178264644
+    Attrib ClasesPerdidas=2    1.1263021424648485
+    Attrib ClasesPerdidas=1    0.9366350339779026
+    Attrib ClasesPerdidas=0    -0.7366693997884993
+    Attrib ModulosSuspendidos=0    1.0712494255080738
+    Attrib ModulosSuspendidos=3    -1.1570012965399927
+    Attrib ModulosSuspendidos=4+    0.6769688196595689
+    Attrib ModulosSuspendidos=1    1.5343047264889202
+    Attrib ModulosSuspendidos=2    -1.7104914113932994
+    Attrib Relacion=No    0.2573786025046974
+    Attrib AprobacionPadres=No    -1.2443948559369176
+    Attrib RelacionPadres=Very close    -2.0015704604585136
+    Attrib RelacionPadres=Fair    0.2948162653828146
+    Attrib RelacionPadres=Close    2.503309489234333
+    Attrib RelacionPadres=Distant    -0.5910802796269259
+Sigmoid Node 31
+    Inputs    Weights
+    Threshold    -0.661412323347777
+    Attrib Sexo=Male    0.7466586492319601
+    Attrib Promedio12    -0.9504011618178534
+    Attrib UltimoAnio=2nd Year    -0.4510943680096431
+    Attrib UltimoAnio=1st Year    2.445131454973537
+    Attrib UltimoAnio=3rd Year    0.05362715582527348
+    Attrib UltimoAnio=4th Year    0.8522516633864895
+    Attrib UltimoAnio=Postgraduate    -0.9734000743877459
+    Attrib Facultad=Arts & Social Sciences    1.982158392393956
+    Attrib Facultad=Economic & Management Sciences    -0.12587706988001568
+    Attrib Facultad=AgriSciences    0.08375944582085336
+    Attrib Facultad=Engineering    2.835003865672205
+    Attrib Facultad=Science    -1.4252923445699566
+    Attrib Facultad=Law    -0.6483711345573548
+    Attrib Facultad=Medicine and Health Services    0.36762537090865105
+    Attrib Facultad=Education    0.9618256632523635
+    Attrib Promedio2023%    0.24227695734004917
+    Attrib Asignacion=R 4001- R 5000    0.04272760197566083
+    Attrib Asignacion=R 7001 - R 8000    2.3428379869163782
+    Attrib Asignacion=R 6001 - R 7000    0.5006707072158351
+    Attrib Asignacion=R 5001 - R 6000    -1.3440501295407479
+    Attrib Asignacion=R 8000+    0.5022698848456025
+    Attrib Beca=Yes    -1.2403918785388006
+    Attrib HorasEstudio=8+    1.0427143111685275
+    Attrib HorasEstudio=3-5    0.8395711006020826
+    Attrib HorasEstudio=1-3    1.7748799945991147
+    Attrib HorasEstudio=5-8    -1.476246533411476
+    Attrib HorasEstudio=0    -0.04242741042315818
+    Attrib Bebidas=8+    0.41465804424956726
+    Attrib Bebidas=3-5    2.674618756067596
+    Attrib Bebidas=5-8    -0.8222719283392657
+    Attrib Bebidas=1-3    -0.3616001681872352
+    Attrib Bebidas=0    0.12199391673299693
+    Attrib ClasesPerdidas=3    0.5735515079613538
+    Attrib ClasesPerdidas=4+    -0.6818177752733701
+    Attrib ClasesPerdidas=2    1.3169403721031974
+    Attrib ClasesPerdidas=1    2.227899383196817
+    Attrib ClasesPerdidas=0    -1.3880711117750937
+    Attrib ModulosSuspendidos=0    -0.2864977160344797
+    Attrib ModulosSuspendidos=3    -0.883960182258025
+    Attrib ModulosSuspendidos=4+    0.277142468937245
+    Attrib ModulosSuspendidos=1    0.14498660021690446
+    Attrib ModulosSuspendidos=2    2.741863461178717
+    Attrib Relacion=No    1.1256598590558975
+    Attrib AprobacionPadres=No    -1.8612806624198897
+    Attrib RelacionPadres=Very close    1.7965828788934808
+    Attrib RelacionPadres=Fair    -0.14412081639665822
+    Attrib RelacionPadres=Close    -0.8481266361445841
+    Attrib RelacionPadres=Distant    0.5635115336871623
+Sigmoid Node 32
+    Inputs    Weights
+    Threshold    -0.18578560632509666
+    Attrib Sexo=Male    -0.8195241020813706
+    Attrib Promedio12    1.3003163561549573
+    Attrib UltimoAnio=2nd Year    1.0849861405824723
+    Attrib UltimoAnio=1st Year    -1.2784933214941723
+    Attrib UltimoAnio=3rd Year    -0.44292842693947737
+    Attrib UltimoAnio=4th Year    1.2300544467620222
+    Attrib UltimoAnio=Postgraduate    0.11593610561134823
+    Attrib Facultad=Arts & Social Sciences    -1.1619694104603466
+    Attrib Facultad=Economic & Management Sciences    -0.15830405366184772
+    Attrib Facultad=AgriSciences    1.25807595107092
+    Attrib Facultad=Engineering    0.01848585987644992
+    Attrib Facultad=Science    0.687992704820747
+    Attrib Facultad=Law    -0.057733873988631834
+    Attrib Facultad=Medicine and Health Services    0.5073897092100534
+    Attrib Facultad=Education    0.25046281842833973
+    Attrib Promedio2023%    0.14287720271124477
+    Attrib Asignacion=R 4001- R 5000    0.8768412710629317
+    Attrib Asignacion=R 7001 - R 8000    0.5493564896110038
+    Attrib Asignacion=R 6001 - R 7000    0.16305112043248435
+    Attrib Asignacion=R 5001 - R 6000    -0.09296446201815321
+    Attrib Asignacion=R 8000+    -0.7980504892128917
+    Attrib Beca=Yes    0.6051660977989541
+    Attrib HorasEstudio=8+    0.5838553091677748
+    Attrib HorasEstudio=3-5    0.46214776359507936
+    Attrib HorasEstudio=1-3    -0.33917673343616633
+    Attrib HorasEstudio=5-8    -0.14441622199205315
+    Attrib HorasEstudio=0    0.14998761179773118
+    Attrib Bebidas=8+    -0.052630272776692556
+    Attrib Bebidas=3-5    -0.5551129170095257
+    Attrib Bebidas=5-8    0.25853041169343804
+    Attrib Bebidas=1-3    0.6530117005866249
+    Attrib Bebidas=0    0.3461173227845059
+    Attrib ClasesPerdidas=3    0.0901715221985446
+    Attrib ClasesPerdidas=4+    -0.22422072480759384
+    Attrib ClasesPerdidas=2    0.5043098644176579
+    Attrib ClasesPerdidas=1    1.6764068958856748
+    Attrib ClasesPerdidas=0    -1.3604986827387593
+    Attrib ModulosSuspendidos=0    -0.6928266781216513
+    Attrib ModulosSuspendidos=3    1.2282085768646362
+    Attrib ModulosSuspendidos=4+    1.087370684087855
+    Attrib ModulosSuspendidos=1    -1.0451970623872457
+    Attrib ModulosSuspendidos=2    0.09637396873997751
+    Attrib Relacion=No    -0.18686999746543928
+    Attrib AprobacionPadres=No    0.0029654238781611922
+    Attrib RelacionPadres=Very close    0.425825962662333
+    Attrib RelacionPadres=Fair    -0.8793460989597819
+    Attrib RelacionPadres=Close    0.9233284058405068
+    Attrib RelacionPadres=Distant    -0.035091979350975674
+Class Only weekends
     Input
     Node 0
-Class Male
+Class 2
     Input
     Node 1
+Class 3
+    Input
+    Node 2
+Class 1
+    Input
+    Node 3
+Class 4+
+    Input
+    Node 4
+Class 0
+    Input
+    Node 5
