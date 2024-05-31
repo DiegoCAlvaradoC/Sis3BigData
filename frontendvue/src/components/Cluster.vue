@@ -1,27 +1,33 @@
 <template>
-    <div class="container">
-      <button @click="$router.push('/menu')">Volver al menú</button>
-      <div class="card">
-        <h2>Generar Clustering KMeans</h2>
-        <form @submit.prevent="generateClusterImage">
-          <div v-if="metadataLoaded" class="form-group">
-            <label for="attributeX">Atributo X:</label>
-            <select id="attributeX" v-model="attributeX">
-              <option v-for="(index, attributeName) in metadata" :value="index">{{ attributeName }}</option>
-            </select>
-          </div>
-          <div v-if="metadataLoaded" class="form-group">
-            <label for="attributeY">Atributo Y:</label>
-            <select id="attributeY" v-model="attributeY">
-              <option v-for="(index, attributeName) in metadata" :value="index">{{ attributeName }}</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="numClusters">Número de Clusters:</label>
-            <input type="number" id="numClusters" v-model="numClusters" required>
-          </div>
-          <button type="submit">Generar Imagen de Clustering</button>
-        </form>
+  <div class="container">
+    <button @click="$router.push('/menu')" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+      Volver al menú
+    </button>
+    <div class="card bg-white rounded-lg shadow-lg p-6 mt-4">
+      <h2 class="text-xl font-bold mb-4">Generar Clustering KMeans</h2>
+      <form @submit.prevent="generateClusterImage">
+        <div v-if="metadataLoaded" class="form-group">
+          <label for="attributeX" class="text-gray-700">Atributo X:</label>
+          <select id="attributeX" v-model="attributeX" class="form-select mt-1 block w-full">
+            <option v-for="(index, attributeName) in metadata" :value="index">{{ attributeName }}</option>
+          </select>
+        </div>
+        <div v-if="metadataLoaded" class="form-group">
+          <label for="attributeY" class="text-gray-700">Atributo Y:</label>
+          <select id="attributeY" v-model="attributeY" class="form-select mt-1 block w-full">
+            <option v-for="(index, attributeName) in metadata" :value="index">{{ attributeName }}</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="numClusters" class="text-gray-700">Número de Clusters:</label>
+          <input type="number" id="numClusters" v-model="numClusters" required class="form-input mt-1 block w-full rounded-md">
+        </div>
+        <br/>
+        <div class="flex justify-center">
+          <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Generar Imagen de Clustering</button>
+        </div>
+        
+      </form>
         <img :src="imagePath1" alt="Cluster Image" v-if="imagePath1">
       </div>
     </div>

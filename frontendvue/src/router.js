@@ -5,9 +5,11 @@ import ClassifyTrees from './components/ClassifyTrees.vue';
 import ClassifyFunctions from './components/ClassifyFunctions.vue';
 import Cluster from './components/Cluster.vue';
 import EditCsv from './components/EditCsv.vue'; // Asegúrate de tener este componente creado
+import Home from './components/Home.vue';
 
 const routes = [
-  { path: '/', component: CsvUpload },
+  { path: '/', component: Home },
+  { path: '/CsvUpload', component: CsvUpload },
   { path: '/menu', component: Menu },
   { path: '/classify-trees', component: ClassifyTrees },
   { path: '/classify-functions', component: ClassifyFunctions },

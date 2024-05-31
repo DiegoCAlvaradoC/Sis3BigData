@@ -1,72 +1,80 @@
 <template>
-    <div class="container">
-      <div class="card">
-        <h2>Editar Archivo CSV</h2>
-        <div class="form-group">
-          <label for="selectedRow">Seleccionar Fila:</label>
-          <select id="selectedRow" v-model="selectedRow">
-            <option v-for="(row, index) in data" :value="index" :key="index">
-              Fila {{ index + 1 }}
-            </option>
-          </select>
-        </div>
-  
-        <div v-if="selectedRow !== null" class="form-group">
-          <label v-for="(value, key) in data[selectedRow]" :key="key">
-            {{ key }}:
-            <input type="text" v-model="data[selectedRow][key]" />
-          </label>
-        </div>
-  
-        <button @click="saveChanges">Guardar Cambios</button>
-        <button @click="$router.push('/menu')">Volver al Menú</button>
-  
-        <div v-if="message" class="message">{{ message }}</div>
+  <div class="container mx-auto p-4">
+    <div class="card bg-white rounded-lg shadow-lg p-6">
+      <h2 class="text-xl font-bold mb-4">Editar Archivo CSV</h2>
+      <div class="form-group">
+        <label for="selectedRow" class="text-gray-700">Seleccionar Fila:</label>
+        <select id="selectedRow" v-model="selectedRow" class="form-select mt-1 block w-full">
+          <option v-for="(row, index) in data" :value="index" :key="index">
+            Fila {{ index + 1 }}
+          </option>
+        </select>
+      </div>
+
+      <div v-if="selectedRow !== null" class="form-group">
+        <label v-for="(value, key) in data[selectedRow]" :key="key" class="text-gray-700">
+          {{ key }}:
+          <input type="text" v-model="data[selectedRow][key]" class="form-input mt-1 block w-full rounded-md" />
+        </label>
+      </div>
+
+      <div class="flex justify-between mt-4">
+        <button @click="saveChanges" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+          Guardar Cambios
+        </button>
+        <button @click="$router.push('/menu')" class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded">
+          Volver al Menú
+        </button>
+      </div>
+
+      <div v-if="message" class="message mt-4 text-green-600">
+        {{ message }}
       </div>
     </div>
-  </template>
-  
-  <script>
-  import axios from 'axios';
-  
-  export default {
-    data() {
-      return {
-        data: [],
-        selectedRow: null,
-        message: ''
-      };
-    },
-    methods: {
-      fetchData() {
-        axios.get('http://localhost:8080/arff-metadata')
-          .then(response => {
-            const metadata = response.data;
-            this.data = Object.keys(metadata).map(key => {
-              return { attribute: key, index: metadata[key] };
-            });
-          })
-          .catch(error => {
-            console.error('Error al obtener la metadata del archivo ARFF:', error);
+  </div>
+</template>
+
+<script>
+import axios from 'axios';
+
+export default {
+  data() {
+    return {
+      data: [],
+      selectedRow: null,
+      message: ''
+    };
+  },
+  methods: {
+    fetchData() {
+      axios.get('http://localhost:8080/arff-metadata')
+        .then(response => {
+          const metadata = response.data;
+          this.data = Object.keys(metadata).map(key => {
+            return { attribute: key, index: metadata[key] };
           });
-      },
-      saveChanges() {
-        axios.post('http://localhost:8080/update-csv', this.data)
-          .then(response => {
-            this.message = 'Cambios guardados correctamente.';
-          })
-          .catch(error => {
-            console.error('Error al guardar los cambios:', error);
-            this.message = 'Error al guardar los cambios.';
-          });
-      }
+        })
+        .catch(error => {
+          console.error('Error al obtener la metadata del archivo ARFF:', error);
+        });
     },
-    created() {
-      this.fetchData();
+    saveChanges() {
+      axios.post('http://localhost:8080/update-csv', this.data)
+        .then(response => {
+          this.message = 'Cambios guardados correctamente.';
+        })
+        .catch(error => {
+          console.error('Error al guardar los cambios:', error);
+          this.message = 'Error al guardar los cambios.';
+        });
     }
-  };
-  </script>
-  
+  },
+  created() {
+    this.fetchData();
+  }
+};
+</script>
+
   <style>
   /*body {
     font-family: 'Metropolis', sans-serif;
