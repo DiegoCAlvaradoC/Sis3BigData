@@ -10,8 +10,12 @@
   },
   "dependencies": {
     "@vueuse/motion": "^2.2.3",
+    "@handsontable/vue": "^14.3.0",
     "axios": "^1.6.8",
+    "handsontable": "^14.3.0",
+    "papaparse": "^5.4.1",
     "vue": "^3.4.21",
+    "vue-csv-import": "^4.1.2",
     "vue-router": "^4.0.13"
   },
   "devDependencies": {

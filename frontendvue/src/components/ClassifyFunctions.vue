@@ -24,22 +24,84 @@
 </template>
   <script>
   import axios from 'axios';
-  
+  import image1 from '../assets/P_AprobacionPadres.png';
+  import image2 from '../assets/P_Asigancion.png';
+  import image3 from '../assets/P_Bebidas.png';
+  import image4 from '../assets/P_Beca.png';
+  import image5 from '../assets/P_classPerd.png';
+  import image6 from '../assets/P_Facultad.png';
+  import image7 from '../assets/P_Fiestas.png';
+  import image8 from '../assets/P_HorasEst.png';
+  import image9 from '../assets/P_ModSuspend.png';
+  import image10 from '../assets/P_prom12.png';
+  import image11 from '../assets/P_Prom23.png';
+  import image12 from '../assets/P_Relacion.png';
+  import image13 from '../assets/P_RelacionPadres.png';
+  import image14 from '../assets/P_sexo.png';
+  import image15 from '../assets/P_ultim.png';
   export default {
     data() {
       return {
         classIndex: 0,
+        imageP: 0,
         perceptronFilePath: '',
         metadata: {},
-        metadataLoaded: false
+        metadataLoaded: false,
+        evaluationResults: '',
+        error2: '',
+        imageNumber: 1, // Inicialmente el número puede ser 1
+        imagePaths: [
+          image1,
+          image2,
+          image3,
+          image4,
+          image5,
+          image6,
+          image7,
+          image8,
+          image9,
+          image10,
+          image11,
+          image12,
+          image13,
+          image14,
+          image15,
+
+        ],
       };
     },
     methods: {
+      getImageSrc(number) {
+        // Ajusta el índice del número para asegurarte de que esté dentro del rango
+        const index = number - 1;
+        if (index >= 0 && index < this.imagePaths.length) {
+          return this.imagePaths[index];
+        }
+        return 'path/to/default_image.jpg'; // Imagen por defecto si el número no es válido
+      },
       generatePerceptronInfo() {
         axios.get(`http://localhost:8080/generate-perceptron?classIndex=${this.classIndex}`, { responseType: 'blob' })
-          .then(response => {
+          .then(async response => {
             const url = URL.createObjectURL(response.data);
-            this.perceptronFilePath = url;
+
+            // Obtener Evaluacion de clasificacion
+            this.evaluationResults = '';
+            this.error2 = '';
+            try {
+              const response = await fetch(`http://localhost:8080/evaluate-perceptron?classIndex=${this.classIndex}`);
+              if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+              }
+              const result = await response.text();
+              this.evaluationResults = result;
+              this.imageP = this.getImageSrc(this.classIndex+1);
+              this.perceptronFilePath = url;
+
+            } catch (e) {
+              this.error = e.message;
+            }
+
+
           })
           .catch(error => {
             console.error('Error al generar la información del perceptrón:', error);
@@ -75,6 +137,11 @@
   .link {
     color: #b3d6fb;
   
+  }
+
+  .text-evaluation {
+    text-align: left;
+    white-space: pre-wrap; /* Para preservar los saltos de línea */
   }
   
   .container {
