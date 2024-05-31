@@ -1,26 +1,27 @@
 <template>
-    <div class="container">
-      <button @click="$router.push('/menu')">Volver al menú</button>
-      <div class="card">
-        <h2>Multilayer Perceptron</h2>
-        <form @submit.prevent="generatePerceptronInfo">
-          <div v-if="metadataLoaded">
-            <label for="classIndex">Índice de la columna de clase:</label>
-            <select id="classIndex" v-model="classIndex">
-              <option v-for="(index, attributeName) in metadata" :value="index">{{ attributeName }}</option>
-            </select>
-          </div>
-          <br>
-          <button type="submit">Generar Información del Perceptrón</button>
-        </form>
-        <div v-if="perceptronFilePath">
-          <h3>Información del Perceptrón generada:</h3>
-          <a :href="perceptronFilePath" download="perceptron_info.txt" class="link">Descargar archivo de información del perceptrón</a>
+  <div class="container">
+    <button @click="$router.push('/menu')" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+      Volver al menú
+    </button>
+    <div class="card bg-white rounded-lg shadow-lg p-6 mt-4 text-blue-500">
+      <h2 class="text-xl font-bold mb-4">Multilayer Perceptron</h2>
+      <form @submit.prevent="generatePerceptronInfo">
+        <div v-if="metadataLoaded" class="form-group">
+          <label for="classIndex" class="text-gray-700">Índice de la columna de clase:</label>
+          <select id="classIndex" v-model="classIndex" class="form-select mt-1 block w-full">
+            <option v-for="(index, attributeName) in metadata" :value="index">{{ attributeName }}</option>
+          </select>
         </div>
+        <br>
+        <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Generar Información del Perceptrón</button>
+      </form>
+      <div v-if="perceptronFilePath" class="mt-4">
+        <h3 class="text-lg font-semibold">Información del Perceptrón generada:</h3>
+        <a :href="perceptronFilePath" download="perceptron_info.txt" class="link text-blue-500">Descargar archivo de información del perceptrón</a>
       </div>
     </div>
-  </template>
-  
+  </div>
+</template>
   <script>
   import axios from 'axios';
   
