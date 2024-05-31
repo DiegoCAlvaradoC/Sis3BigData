@@ -13,6 +13,7 @@ import org.springframework.web.multipart.MultipartFile;
 
 // Carga CSV
 
+import weka.classifiers.Evaluation;
 import weka.classifiers.functions.MultilayerPerceptron;
 import weka.classifiers.trees.HoeffdingTree;
 import weka.classifiers.trees.RandomForest;
@@ -133,6 +134,33 @@ public class file {
             // Maneja los errores según sea necesario
             e.printStackTrace();
             return null;
+        }
+    }
+
+    @GetMapping(value = "/evaluate-tree", produces = MediaType.TEXT_PLAIN_VALUE)
+    public ResponseEntity<String> evaluateTree(@RequestParam(value = "classIndex") int classIndex) {
+        try {
+            // Crear el clasificador J48
+            J48 cls = new J48();
+            Instances data = DataLoad; // Supongo que DataLoad es tu conjunto de datos
+
+            // Establecer el índice de la clase
+            data.setClassIndex(classIndex);
+
+            // Construir el clasificador
+            cls.buildClassifier(data);
+
+            // Evaluar el modelo en el conjunto de datos
+            Evaluation eval = new Evaluation(data);
+            eval.evaluateModel(cls, data);
+
+            // Obtener los resultados de la evaluación
+            String evaluationResults = eval.toSummaryString("\nEvaluation on training set:\n", false);
+
+            return ResponseEntity.ok().body(evaluationResults);
+        } catch (Exception e) {
+            e.printStackTrace();
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(null);
         }
     }
 
@@ -263,13 +291,6 @@ public class file {
             modelResults.append(cls.toString());
             String classificationResults = modelResults.toString();
 
-            // Extraer información relevante
-            //System.out.println("Información: ");
-            //System.out.println(classificationResults);
-            String relevantInfo = extractRelevantInfo(classificationResults);
-            //System.out.println("Información relevante: ");
-            //System.out.println(relevantInfo);
-
             // Guardar la información relevante en un archivo .txt
             String filePath = "perceptron_info.txt";
             try (BufferedWriter writer = new BufferedWriter(new FileWriter(filePath))) {
@@ -283,6 +304,35 @@ public class file {
             return ResponseEntity.ok()
                     .header("Content-Disposition", "attachment; filename=" + file.getName())
                     .body(fileContent);
+
+        } catch (Exception e) {
+            e.printStackTrace();
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(null);
+        }
+    }
+
+    // Funcion para la evaluacion del Perceptron
+    @GetMapping(value = "/evaluate-perceptron", produces = MediaType.TEXT_PLAIN_VALUE)
+    public ResponseEntity<String> evaluatePerceptron(@RequestParam(value = "classIndex") int classIndex) {
+        try {
+            MultilayerPerceptron cls = new MultilayerPerceptron();
+            Instances data = DataLoad;
+
+            data.setClassIndex(classIndex);
+
+            cls.buildClassifier(data);
+
+            // Evaluar el modelo en el conjunto de entrenamiento
+            Evaluation eval = new Evaluation(data);
+            eval.evaluateModel(cls, data);
+
+            // Obtener los resultados de la evaluación
+            String evaluationResults = eval.toSummaryString("\nEvaluation on training set:\n", false);
+            evaluationResults += "\n\nDetailed accuracy by class:\n" + eval.toClassDetailsString();
+            evaluationResults += "\n\nConfusion matrix:\n" + eval.toMatrixString();
+
+            return ResponseEntity.ok()
+                    .body(evaluationResults);
 
         } catch (Exception e) {
             e.printStackTrace();

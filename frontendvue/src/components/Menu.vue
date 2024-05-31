@@ -4,10 +4,7 @@
             <h1>Menu WEKA</h1>
             <img src="@/assets/weka-logo.png" alt="WEKA Logo" class="weka-logo">
             <div class="button-list">
-                <div class="button-item">
-                    <p>La edición del archivo CSV permite modificar y actualizar los datos cargados previamente para mejorar la precisión del análisis.</p>
-                    <button @click="navigate('edit-csv')">Edit CSV</button>
-                </div>
+
                 <div class="button-item">
                     <p>La clasificación utilizando árboles de decisión, como J48, construye un modelo predictivo que mapea observaciones sobre un ítem a conclusiones sobre el valor del ítem objetivo.</p>
                     <button @click="navigate('classify-trees')">Classify: Trees</button>
